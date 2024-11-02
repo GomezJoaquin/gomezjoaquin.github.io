@@ -30,11 +30,11 @@ Menus:
       title: Blog posts
       url: /blogs
       weight: 1
-    - identifier: gallery
-      name: Gallery
-      title: Blog posts
-      url: /gallery
-      weight: 2
+    #- identifier: gallery
+    #  name: Gallery
+    #  title: Blog posts
+    #  url: /gallery
+    #  weight: 2
     #Dropdown menu
     # - identifier: dropdown
     #   title: Example dropdown menu
@@ -282,7 +282,7 @@ params:
         url: https://learn.microsoft.com/api/credentials/share/es-mx/JoaqunGmez-2593/16A11669F0EE1F91?sharingId
         image: /images/azure-az.png
 
-  # projects
+  #Projects
   projects:
     enable: false
     # title: "Custom Name"
