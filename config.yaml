@@ -155,18 +155,18 @@ params:
     title: "About Me"
     image: "/images/me.png"
     content: |-
-      I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA.
+      I am a software developer. My passion is building solutions. 
+      I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA.
       I am currently working on a project that will be used to help people find the best way to get around the city.
     skills:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
       items:
         - "AWS"
+        - "Azure"
         - "Kubernetes"
         - "Jenkins"
-        - "Java"
         - "Ansible"
-        - "Cloud Development Kit"
 
   # Experience
   experience:
@@ -277,6 +277,10 @@ params:
         content: Earned AWS Cloud Practitioner certification, demonstrating foundational knowledge of AWS Cloud.
         url: https://www.credly.com/badges/dc0a3411-721b-45ed-88df-02b271e2b570
         image: /images/aws-cloud-practitioner.png
+      - title: Azure Fundamentals 
+        content: Achieved Azure Fundamentals certification, showcasing essential knowledge of core Azure services, cloud concepts, security, compliance, and pricing.
+        url: https://learn.microsoft.com/api/credentials/share/es-mx/JoaqunGmez-2593/16A11669F0EE1F91?sharingId
+        image: /images/azure-az.png
 
   # projects
   projects:
