@@ -180,7 +180,7 @@ params:
           enable: false
           name: "View the project"
           url: "https://example.com"
-        content: "I am currently working as a DevOps Enginer at [GeneXus Consulting](https://www.genexusconsulting.com/) in Montevideo, Uruguay. I am currently working on a project that will be used to help people find the best way to get around the city."
+        content: "I am currently working as a DevOps Enginer at [GeneXus Consulting](https://www.genexusconsulting.com/) in Montevideo, Uruguay. I am currently providing DevOps consulting services for clients who want to automate their development workflow."
 
     #  - job: "Software Developer"
     #    company: "Amazon"
