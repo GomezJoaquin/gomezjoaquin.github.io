@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AWS on Joaquín Gómez</title>
-    <link>http://localhost:1313/tags/aws/</link>
+    <link>https://GomezJoaquin.github.io/tags/aws/</link>
     <description>Recent content in AWS on Joaquín Gómez</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 28 Dec 2024 01:54:00 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://GomezJoaquin.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>I AM</title>
-      <link>http://localhost:1313/blogs/aws-iam/</link>
+      <link>https://GomezJoaquin.github.io/blogs/aws-iam/</link>
       <pubDate>Sat, 28 Dec 2024 01:54:00 +0530</pubDate>
-      <guid>http://localhost:1313/blogs/aws-iam/</guid>
+      <guid>https://GomezJoaquin.github.io/blogs/aws-iam/</guid>
       <description>&lt;h2 id=&#34;aws-i-am-identiy-and-acces-management&#34;&gt;AWS: I AM Identiy and Acces Management&lt;/h2&gt;&#xA;&lt;p&gt;Es un servicio global.&lt;/p&gt;&#xA;&lt;p&gt;Se utiliza para gestionar el acceso a los recursos de la nube, controlando quién puede realizar qué acciones sobre qué recursos mediante políticas de permisos.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Cuenta root/ raíz&lt;/strong&gt; es la cuenta que se crea por defecto, es buena práctica utilizarla unicamente. cuando es necesario ser root, para el resto de tareas utilizar una cuenta con el mimino privilegio.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Usuarios&lt;/strong&gt;: Representan a personas dentro de una organización. 1 usuario  = 1 persona.&lt;/p&gt;</description>
     </item>
     <item>
       <title>I AM Policies</title>
-      <link>http://localhost:1313/blogs/aws-iam-policies/</link>
+      <link>https://GomezJoaquin.github.io/blogs/aws-iam-policies/</link>
       <pubDate>Sat, 28 Dec 2024 01:54:00 +0530</pubDate>
-      <guid>http://localhost:1313/blogs/aws-iam-policies/</guid>
+      <guid>https://GomezJoaquin.github.io/blogs/aws-iam-policies/</guid>
       <description>&lt;h2 id=&#34;aws-iam-policies&#34;&gt;AWS: IAM Policies&lt;/h2&gt;&#xA;&lt;p&gt;Las políticas se utilizan para &lt;strong&gt;definir los permisos&lt;/strong&gt; de los usuarios.&lt;br&gt;&#xA;A los usuarios se les pueden asignar políticas mediante documentos JSON.&lt;/p&gt;&#xA;&lt;p&gt;Es una buena práctica aplicar el &lt;strong&gt;&lt;em&gt;principio de mínimo privilegio&lt;/em&gt;&lt;/strong&gt;: No dar más permisos de los que el usuario necesita.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;herencia-de-políticas-iam&#34;&gt;Herencia de políticas IAM&lt;/h2&gt;&#xA;&lt;p&gt;Existen las políticas &lt;strong&gt;por grupo&lt;/strong&gt; y las &lt;strong&gt;políticas directas&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Las &lt;strong&gt;políticas directas&lt;/strong&gt; se aplican directamente sobre el usuario.&lt;/li&gt;&#xA;&lt;li&gt;Las &lt;strong&gt;políticas de grupo&lt;/strong&gt; se aplican a todos los usuarios pertenecientes a ese grupo.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;estructura-de-las-políticas-iam&#34;&gt;Estructura de las políticas IAM&lt;/h2&gt;&#xA;&lt;p&gt;Las políticas IAM tienen la siguiente estructura:&lt;/p&gt;</description>
     </item>
   </channel>

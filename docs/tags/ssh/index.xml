@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SSH on Joaquín Gómez</title>
-    <link>http://localhost:1313/tags/ssh/</link>
+    <link>https://GomezJoaquin.github.io/tags/ssh/</link>
     <description>Recent content in SSH on Joaquín Gómez</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 28 Dec 2024 01:54:00 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://GomezJoaquin.github.io/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Configuración de Claves SSH en Windows y Linux: Guía Práctica</title>
-      <link>http://localhost:1313/blogs/ssh-clave-publica/</link>
+      <link>https://GomezJoaquin.github.io/blogs/ssh-clave-publica/</link>
       <pubDate>Sat, 28 Dec 2024 01:54:00 +0530</pubDate>
-      <guid>http://localhost:1313/blogs/ssh-clave-publica/</guid>
+      <guid>https://GomezJoaquin.github.io/blogs/ssh-clave-publica/</guid>
       <description>&lt;h2 id=&#34;habilita-conexión-ssh-con-clave-pública-en-windows-y-servidores-linux&#34;&gt;Habilita Conexión SSH con Clave Pública en Windows y Servidores Linux&lt;/h2&gt;&#xA;&lt;h6 id=&#34;usar-la-clave-pública-que-en-windows-se-encuentra-en-la-carpeta-del-usuario&#34;&gt;Usar la clave pública que en Windows se encuentra en la carpeta del usuario&lt;/h6&gt;&#xA;&lt;p&gt;La clave pública de SSH en Windows se encuentra en la siguiente ruta:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;C:\Users\TuUsuario\.ssh\id_rsa.pub&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Si no hay una clave, será necesario &lt;strong&gt;generar una&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h6 id=&#34;generar-una-clave-ssh-en-la-máquina-local&#34;&gt;Generar una clave SSH en la máquina local&lt;/h6&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Abrir &lt;strong&gt;PowerShell&lt;/strong&gt; y ejecutar el siguiente comando para generar una nueva clave SSH:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh-keygen -t rsa -b &lt;span style=&#34;color:#ae81ff&#34;&gt;4096&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h6 id=&#34;copia-la-clave-pública-al-servidor&#34;&gt;Copia la clave pública al servidor&lt;/h6&gt;&#xA;&lt;p&gt;Para copiar la clave pública al servidor, puedes utilizar el siguiente comando:&lt;/p&gt;</description>
     </item>
   </channel>

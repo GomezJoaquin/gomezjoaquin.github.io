@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Joaquín Gómez</title>
-    <link>http://localhost:1313/</link>
+    <link>https://GomezJoaquin.github.io/</link>
     <description>Recent content on Joaquín Gómez</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 28 Dec 2024 01:54:00 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://GomezJoaquin.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Configuración de Claves SSH en Windows y Linux: Guía Práctica</title>
-      <link>http://localhost:1313/blogs/ssh-clave-publica/</link>
+      <link>https://GomezJoaquin.github.io/blogs/ssh-clave-publica/</link>
       <pubDate>Sat, 28 Dec 2024 01:54:00 +0530</pubDate>
-      <guid>http://localhost:1313/blogs/ssh-clave-publica/</guid>
+      <guid>https://GomezJoaquin.github.io/blogs/ssh-clave-publica/</guid>
       <description>&lt;h2 id=&#34;habilita-conexión-ssh-con-clave-pública-en-windows-y-servidores-linux&#34;&gt;Habilita Conexión SSH con Clave Pública en Windows y Servidores Linux&lt;/h2&gt;&#xA;&lt;h6 id=&#34;usar-la-clave-pública-que-en-windows-se-encuentra-en-la-carpeta-del-usuario&#34;&gt;Usar la clave pública que en Windows se encuentra en la carpeta del usuario&lt;/h6&gt;&#xA;&lt;p&gt;La clave pública de SSH en Windows se encuentra en la siguiente ruta:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;C:\Users\TuUsuario\.ssh\id_rsa.pub&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Si no hay una clave, será necesario &lt;strong&gt;generar una&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h6 id=&#34;generar-una-clave-ssh-en-la-máquina-local&#34;&gt;Generar una clave SSH en la máquina local&lt;/h6&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Abrir &lt;strong&gt;PowerShell&lt;/strong&gt; y ejecutar el siguiente comando para generar una nueva clave SSH:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh-keygen -t rsa -b &lt;span style=&#34;color:#ae81ff&#34;&gt;4096&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h6 id=&#34;copia-la-clave-pública-al-servidor&#34;&gt;Copia la clave pública al servidor&lt;/h6&gt;&#xA;&lt;p&gt;Para copiar la clave pública al servidor, puedes utilizar el siguiente comando:&lt;/p&gt;</description>
     </item>
     <item>
       <title>I AM</title>
-      <link>http://localhost:1313/blogs/aws-iam/</link>
+      <link>https://GomezJoaquin.github.io/blogs/aws-iam/</link>
       <pubDate>Sat, 28 Dec 2024 01:54:00 +0530</pubDate>
-      <guid>http://localhost:1313/blogs/aws-iam/</guid>
+      <guid>https://GomezJoaquin.github.io/blogs/aws-iam/</guid>
       <description>&lt;h2 id=&#34;aws-i-am-identiy-and-acces-management&#34;&gt;AWS: I AM Identiy and Acces Management&lt;/h2&gt;&#xA;&lt;p&gt;Es un servicio global.&lt;/p&gt;&#xA;&lt;p&gt;Se utiliza para gestionar el acceso a los recursos de la nube, controlando quién puede realizar qué acciones sobre qué recursos mediante políticas de permisos.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Cuenta root/ raíz&lt;/strong&gt; es la cuenta que se crea por defecto, es buena práctica utilizarla unicamente. cuando es necesario ser root, para el resto de tareas utilizar una cuenta con el mimino privilegio.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Usuarios&lt;/strong&gt;: Representan a personas dentro de una organización. 1 usuario  = 1 persona.&lt;/p&gt;</description>
     </item>
     <item>
       <title>I AM Policies</title>
-      <link>http://localhost:1313/blogs/aws-iam-policies/</link>
+      <link>https://GomezJoaquin.github.io/blogs/aws-iam-policies/</link>
       <pubDate>Sat, 28 Dec 2024 01:54:00 +0530</pubDate>
-      <guid>http://localhost:1313/blogs/aws-iam-policies/</guid>
+      <guid>https://GomezJoaquin.github.io/blogs/aws-iam-policies/</guid>
       <description>&lt;h2 id=&#34;aws-iam-policies&#34;&gt;AWS: IAM Policies&lt;/h2&gt;&#xA;&lt;p&gt;Las políticas se utilizan para &lt;strong&gt;definir los permisos&lt;/strong&gt; de los usuarios.&lt;br&gt;&#xA;A los usuarios se les pueden asignar políticas mediante documentos JSON.&lt;/p&gt;&#xA;&lt;p&gt;Es una buena práctica aplicar el &lt;strong&gt;&lt;em&gt;principio de mínimo privilegio&lt;/em&gt;&lt;/strong&gt;: No dar más permisos de los que el usuario necesita.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;herencia-de-políticas-iam&#34;&gt;Herencia de políticas IAM&lt;/h2&gt;&#xA;&lt;p&gt;Existen las políticas &lt;strong&gt;por grupo&lt;/strong&gt; y las &lt;strong&gt;políticas directas&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Las &lt;strong&gt;políticas directas&lt;/strong&gt; se aplican directamente sobre el usuario.&lt;/li&gt;&#xA;&lt;li&gt;Las &lt;strong&gt;políticas de grupo&lt;/strong&gt; se aplican a todos los usuarios pertenecientes a ese grupo.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;estructura-de-las-políticas-iam&#34;&gt;Estructura de las políticas IAM&lt;/h2&gt;&#xA;&lt;p&gt;Las políticas IAM tienen la siguiente estructura:&lt;/p&gt;</description>
     </item>
   </channel>
