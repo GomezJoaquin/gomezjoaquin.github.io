@@ -6,42 +6,42 @@
     <description>Recent content in Blogs on Joaquín Gómez</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Dec 2022 19:53:33 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 28 Dec 2024 01:54:00 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/blogs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Render Math With Mathjax</title>
-      <link>http://localhost:1313/blogs/math/</link>
-      <pubDate>Fri, 09 Dec 2022 19:53:33 +0530</pubDate>
-      <guid>http://localhost:1313/blogs/math/</guid>
-      <description>Mathjax Math equations can be rendered using Mathjax syntax with AMS symbol support.&#xA;Optionally enable this on a per-page basis by adding mathjax: true to your frontmatter.&#xA;Then, use $$ ... $$ on a line by itself to render a block equation:&#xA;$$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow P_{2}} [A(x) = 1] | &amp;lt; \text{negligible} $$&#xA;The raw version is:&#xA;$$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow P_{2}} [A(x) = 1] | &amp;lt; \text{negligible} $$ Write in-line equations with \\( .</description>
+      <title>I AM</title>
+      <link>http://localhost:1313/blogs/aws-iam/</link>
+      <pubDate>Sat, 28 Dec 2024 01:54:00 +0530</pubDate>
+      <guid>http://localhost:1313/blogs/aws-iam/</guid>
+      <description>&lt;h2 id=&#34;aws-i-am-identiy-and-acces-management&#34;&gt;AWS: I AM Identiy and Acces Management&lt;/h2&gt;&#xA;&lt;p&gt;Es un servicio global.&lt;/p&gt;&#xA;&lt;p&gt;Se utiliza para gestionar el acceso a los recursos de la nube, controlando quién puede realizar qué acciones sobre qué recursos mediante políticas de permisos.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Cuenta root/ raíz&lt;/strong&gt; es la cuenta que se crea por defecto, es buena práctica utilizarla unicamente. cuando es necesario ser root, para el resto de tareas utilizar una cuenta con el mimino privilegio.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Usuarios&lt;/strong&gt;: Representan a personas dentro de una organización. 1 usuario  = 1 persona.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>I AM Policies</title>
+      <link>http://localhost:1313/blogs/aws-iam-policies/</link>
+      <pubDate>Sat, 28 Dec 2024 01:54:00 +0530</pubDate>
+      <guid>http://localhost:1313/blogs/aws-iam-policies/</guid>
+      <description>&lt;h2 id=&#34;aws-iam-policies&#34;&gt;AWS: IAM Policies&lt;/h2&gt;&#xA;&lt;p&gt;Las políticas se utilizan para definir los permisos de los usuarios.&#xA;A los usuarios se les pueden asignar politicas mediante documentos JSON.&lt;/p&gt;&#xA;&lt;p&gt;Es una buena práctica aplicar el &lt;em&gt;&lt;strong&gt;principio de mínimo privilegio.&lt;/strong&gt;&lt;/em&gt; : No dar más permisos de los que el usuario necesita.&lt;/p&gt;&#xA;&lt;h2 id=&#34;herencia-de-políticas-iam&#34;&gt;Herencia de políticas IAM&lt;/h2&gt;&#xA;&lt;p&gt;Existen las políticas por grupo y las politicas directas.&lt;/p&gt;&#xA;&lt;p&gt;Las políticas directas se aplican directamente sobre el usuario a diferencia de las politicas de grupos que se aplican a todos los usuarios pertenecientes a ese grupo.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Markdown Syntax</title>
       <link>http://localhost:1313/blogs/markdown-syntax/</link>
       <pubDate>Sat, 03 Apr 2021 23:29:21 +0530</pubDate>
       <guid>http://localhost:1313/blogs/markdown-syntax/</guid>
-      <description>Paragraph Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga.</description>
+      <description>&lt;h2 id=&#34;paragraph&#34;&gt;Paragraph&lt;/h2&gt;&#xA;&lt;p&gt;Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Emoji Support</title>
       <link>http://localhost:1313/blogs/emoji-support/</link>
       <pubDate>Sat, 03 Apr 2021 22:53:58 +0530</pubDate>
       <guid>http://localhost:1313/blogs/emoji-support/</guid>
-      <description>Emoji can be enabled in a Hugo project in a number of ways. :zap:&#xA;Emoji Support The emojify function can be called directly in templates or Inline Shortcodes.&#xA;To enable emoji globally, set enableEmoji to true in your site’s configuration and then you can type emoji shorthand codes directly in content files; e.g.&#xA;The Emoji cheat sheet is a useful reference for emoji shorthand codes.&#xA;N.B. The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform.</description>
+      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways. :zap:&lt;/p&gt;&#xA;&lt;h2 id=&#34;emoji-support&#34;&gt;Emoji Support&lt;/h2&gt;&#xA;&lt;p&gt;The &lt;a href=&#34;https://gohugo.io/functions/emojify/&#34;&gt;emojify&lt;/a&gt; function can be called directly in templates or &lt;a href=&#34;https://gohugo.io/templates/shortcode-templates/#inline-shortcodes&#34;&gt;Inline Shortcodes&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;To enable emoji globally, set &lt;code&gt;enableEmoji&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; in your site’s &lt;a href=&#34;https://gohugo.io/getting-started/configuration/&#34;&gt;configuration&lt;/a&gt; and then you can type emoji shorthand codes directly in content files; e.g.&lt;/p&gt;&#xA;&lt;p&gt;The &lt;a href=&#34;http://www.emoji-cheat-sheet.com/&#34;&gt;Emoji cheat sheet&lt;/a&gt; is a useful reference for emoji shorthand codes.&lt;/p&gt;&#xA;&lt;hr&gt;&#xD;&#xA;&lt;p&gt;&lt;strong&gt;N.B.&lt;/strong&gt; The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder Text</title>
       <link>http://localhost:1313/blogs/placeholder-text/</link>
       <pubDate>Sat, 03 Apr 2021 22:41:10 +0530</pubDate>
       <guid>http://localhost:1313/blogs/placeholder-text/</guid>
-      <description>Lorem est tota propiore conpellat pectoribus de pectora summo.&#xA;Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.&#xA;Exierant elisi ambit vivere dedere Duce pollice Eris modo Spargitque ferrea quos palude Rursus nulli murmur; hastile inridet ut ab gravi sententia!</description>
-    </item>
-    <item>
-      <title>Rich Content</title>
-      <link>http://localhost:1313/blogs/rich-content/</link>
-      <pubDate>Sat, 03 Apr 2021 19:53:33 +0530</pubDate>
-      <guid>http://localhost:1313/blogs/rich-content/</guid>
-      <description>Hugo ships with several Built-in Shortcodes for rich content, along with a Privacy Config and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&#xA;Gist Simple Shortcode {{&amp;lt; gist spf13 7896402 &amp;#34;img.html&amp;#34; &amp;gt;}} Vimeo Simple Shortcode {{&amp;lt; vimeo 146022717 &amp;gt;}} Youtube Simple Shortcode {{&amp;lt; youtube w7Ft2ymGmfc &amp;gt;}} Theme Custom Shortcodes These shortcodes are not Hugo built-ins, but are provided by the theme.&#xA;Responsive Images with Cloudinary You can learn more about this here.</description>
+      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;&#xA;&lt;p&gt;Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Exierant elisi ambit vivere dedere&lt;/li&gt;&#xA;&lt;li&gt;Duce pollice&lt;/li&gt;&#xA;&lt;li&gt;Eris modo&lt;/li&gt;&#xA;&lt;li&gt;Spargitque ferrea quos palude&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Rursus nulli murmur; hastile inridet ut ab gravi sententia! Nomine potitus silentia flumen, sustinet placuit petis in dilapsa erat sunt. Atria tractus malis.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
