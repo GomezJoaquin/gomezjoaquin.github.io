@@ -9,24 +9,38 @@
     <lastBuildDate>Fri, 09 Dec 2022 19:53:33 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>AWS</title>
+      <link>http://localhost:1313/tags/aws/</link>
+      <pubDate>Fri, 09 Dec 2022 19:53:33 +0530</pubDate>
+      <guid>http://localhost:1313/tags/aws/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud</title>
+      <link>http://localhost:1313/tags/cloud/</link>
+      <pubDate>Fri, 09 Dec 2022 19:53:33 +0530</pubDate>
+      <guid>http://localhost:1313/tags/cloud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IAM</title>
+      <link>http://localhost:1313/tags/iam/</link>
+      <pubDate>Fri, 09 Dec 2022 19:53:33 +0530</pubDate>
+      <guid>http://localhost:1313/tags/iam/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Example</title>
       <link>http://localhost:1313/tags/example/</link>
-      <pubDate>Fri, 09 Dec 2022 19:53:33 +0530</pubDate>
+      <pubDate>Sat, 03 Apr 2021 23:29:21 +0530</pubDate>
       <guid>http://localhost:1313/tags/example/</guid>
       <description></description>
     </item>
     <item>
       <title>Markdown Syntax</title>
       <link>http://localhost:1313/tags/markdown-syntax/</link>
-      <pubDate>Fri, 09 Dec 2022 19:53:33 +0530</pubDate>
+      <pubDate>Sat, 03 Apr 2021 23:29:21 +0530</pubDate>
       <guid>http://localhost:1313/tags/markdown-syntax/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mathjax</title>
-      <link>http://localhost:1313/tags/mathjax/</link>
-      <pubDate>Fri, 09 Dec 2022 19:53:33 +0530</pubDate>
-      <guid>http://localhost:1313/tags/mathjax/</guid>
       <description></description>
     </item>
     <item>
@@ -48,13 +62,6 @@
       <link>http://localhost:1313/tags/placeholder-text/</link>
       <pubDate>Sat, 03 Apr 2021 22:41:10 +0530</pubDate>
       <guid>http://localhost:1313/tags/placeholder-text/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Rich Content</title>
-      <link>http://localhost:1313/tags/rich-content/</link>
-      <pubDate>Sat, 03 Apr 2021 19:53:33 +0530</pubDate>
-      <guid>http://localhost:1313/tags/rich-content/</guid>
       <description></description>
     </item>
   </channel>
