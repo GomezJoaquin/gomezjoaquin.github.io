@@ -13,13 +13,13 @@ toc: true
 mathjax: true
 ---
 
-## AWS: I AM Identiy and Acces Management
+## AWS: I AM Identity and Acces Management
 
 Es un servicio global. 
 
 Se utiliza para gestionar el acceso a los recursos de la nube, controlando quién puede realizar qué acciones sobre qué recursos mediante políticas de permisos.
 
-**Cuenta root/ raíz** es la cuenta que se crea por defecto, es buena práctica utilizarla unicamente. cuando es necesario ser root, para el resto de tareas utilizar una cuenta con el mimino privilegio. 
+**Cuenta root/ raíz** es la cuenta que se crea por defecto, es buena práctica utilizarla unicamente cuando es necesario ser root, para el resto de tareas utilizar una cuenta con el mimino privilegio. 
 
 **Usuarios**: Representan a personas dentro de una organización. 1 usuario  = 1 persona. 
 
