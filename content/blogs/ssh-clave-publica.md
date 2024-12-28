@@ -1,6 +1,6 @@
 ---
 title: "Configuración de Claves SSH en Windows y Linux: Guía Práctica"
-date: 2024-12-29T01:54:00+05:30
+date: 2024-12-28T01:54:00+05:30
 draft: false
 author: "Joaquín Gómez"
 tags:
