@@ -29,4 +29,4 @@ Se utiliza para gestionar el acceso a los recursos de la nube, controlando quié
 * Los usuarios pueden pertenecer a multiples grupos en simultaneo. 
 
 
-The [IAM Policies](https://gomezjoaquin.github.io/blogs/aws-iam-policies/).
+[IAM Policies](https://gomezjoaquin.github.io/blogs/aws-iam-policies/).
