@@ -31,10 +31,11 @@
 <meta property="og:url" content="https://GomezJoaquin.github.io/blogs/aws-iam-policies/">
   <meta property="og:site_name" content="Joaquín Gómez">
   <meta property="og:title" content="I AM Policies">
-  <meta property="og:description" content="AWS: IAM Policies Las políticas se utilizan para definir los permisos de los usuarios. A los usuarios se les pueden asignar politicas mediante documentos JSON.
-Es una buena práctica aplicar el principio de mínimo privilegio. : No dar más permisos de los que el usuario necesita.
-Herencia de políticas IAM Existen las políticas por grupo y las politicas directas.
-Las políticas directas se aplican directamente sobre el usuario a diferencia de las politicas de grupos que se aplican a todos los usuarios pertenecientes a ese grupo.">
+  <meta property="og:description" content="AWS: IAM Policies Las políticas se utilizan para definir los permisos de los usuarios.
+A los usuarios se les pueden asignar políticas mediante documentos JSON.
+Es una buena práctica aplicar el principio de mínimo privilegio: No dar más permisos de los que el usuario necesita.
+Herencia de políticas IAM Existen las políticas por grupo y las políticas directas.
+Las políticas directas se aplican directamente sobre el usuario. Las políticas de grupo se aplican a todos los usuarios pertenecientes a ese grupo. Estructura de las políticas IAM Las políticas IAM tienen la siguiente estructura:">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blogs">
@@ -47,10 +48,11 @@ Las políticas directas se aplican directamente sobre el usuario a diferencia de
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="I AM Policies">
-  <meta name="twitter:description" content="AWS: IAM Policies Las políticas se utilizan para definir los permisos de los usuarios. A los usuarios se les pueden asignar politicas mediante documentos JSON.
-Es una buena práctica aplicar el principio de mínimo privilegio. : No dar más permisos de los que el usuario necesita.
-Herencia de políticas IAM Existen las políticas por grupo y las politicas directas.
-Las políticas directas se aplican directamente sobre el usuario a diferencia de las politicas de grupos que se aplican a todos los usuarios pertenecientes a ese grupo.">
+  <meta name="twitter:description" content="AWS: IAM Policies Las políticas se utilizan para definir los permisos de los usuarios.
+A los usuarios se les pueden asignar políticas mediante documentos JSON.
+Es una buena práctica aplicar el principio de mínimo privilegio: No dar más permisos de los que el usuario necesita.
+Herencia de políticas IAM Existen las políticas por grupo y las políticas directas.
+Las políticas directas se aplican directamente sobre el usuario. Las políticas de grupo se aplican a todos los usuarios pertenecientes a ese grupo. Estructura de las políticas IAM Las políticas IAM tienen la siguiente estructura:">
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -336,24 +338,31 @@ I AM Policies | Joaquín Gómez
           
           <article class="page-content  p-2">
           <h2 id="aws-iam-policies">AWS: IAM Policies</h2>
-<p>Las políticas se utilizan para definir los permisos de los usuarios.
-A los usuarios se les pueden asignar politicas mediante documentos JSON.</p>
-<p>Es una buena práctica aplicar el <em><strong>principio de mínimo privilegio.</strong></em> : No dar más permisos de los que el usuario necesita.</p>
+<p>Las políticas se utilizan para <strong>definir los permisos</strong> de los usuarios.<br>
+A los usuarios se les pueden asignar políticas mediante documentos JSON.</p>
+<p>Es una buena práctica aplicar el <strong><em>principio de mínimo privilegio</em></strong>: No dar más permisos de los que el usuario necesita.</p>
+<hr>
 <h2 id="herencia-de-políticas-iam">Herencia de políticas IAM</h2>
-<p>Existen las políticas por grupo y las politicas directas.</p>
-<p>Las políticas directas se aplican directamente sobre el usuario a diferencia de las politicas de grupos que se aplican a todos los usuarios pertenecientes a ese grupo.</p>
-<h2 id="estructura-de-las-políticas-iam">Estructura de las políticas IAM</h2>
-<p>Consta de:</p>
+<p>Existen las políticas <strong>por grupo</strong> y las <strong>políticas directas</strong>.</p>
 <ul>
-<li><strong>Version</strong>: Version del lenguaje de la política, siempre incluye &ldquo;2012-10-17&rdquo;</li>
-<li><strong>Id</strong>: Un identificador para la política (opcional)</li>
-<li><strong>Statement</strong>: Una o más declaraciones individuales (Obligatorio).</li>
-<li><strong>Sid</strong>: Es un identificador para la declaración</li>
-<li><strong>Prinicipal</strong>: Cuenta/Usuario/Rol al que se aplica esta política.</li>
-<li><strong>Action</strong>: Lista de recursos a los que se aplican las acciones.</li>
-<li><strong>Resource:</strong> Lista de recursos a los que se aplican las acciones.</li>
-<li><strong>Condicion:</strong> Condiciones para cuando esta política está en efecto (opcional).</li>
+<li>Las <strong>políticas directas</strong> se aplican directamente sobre el usuario.</li>
+<li>Las <strong>políticas de grupo</strong> se aplican a todos los usuarios pertenecientes a ese grupo.</li>
 </ul>
+<hr>
+<h2 id="estructura-de-las-políticas-iam">Estructura de las políticas IAM</h2>
+<p>Las políticas IAM tienen la siguiente estructura:</p>
+<ul>
+<li><strong>Version</strong>: Versión del lenguaje de la política, siempre incluye <code>&quot;2012-10-17&quot;</code>.</li>
+<li><strong>Id</strong>: Un identificador único para la política (opcional).</li>
+<li><strong>Statement</strong>: Una o más declaraciones individuales (Obligatorio).</li>
+<li><strong>Sid</strong>: Identificador para la declaración (opcional).</li>
+<li><strong>Principal</strong>: Cuenta/Usuario/Rol al que se aplica esta política.</li>
+<li><strong>Action</strong>: Lista de acciones que se pueden realizar sobre los recursos.</li>
+<li><strong>Resource</strong>: Lista de recursos sobre los que se pueden realizar las acciones.</li>
+<li><strong>Condition</strong>: Condiciones para cuando esta política está en efecto (opcional).</li>
+</ul>
+<hr>
+<p>¡Ahora tienes una idea clara sobre las políticas IAM de AWS y su estructura!</p>
 
           </article>
         </div>
@@ -536,9 +545,10 @@ A los usuarios se les pueden asignar politicas mediante documentos JSON.</p>
                     </a>
                     <div class="card-text secondary-font">
                         <p><h2 id="aws-iam-policies">AWS: IAM Policies</h2>
-<p>Las políticas se utilizan para definir los permisos de los usuarios.
-A los usuarios se les pueden asignar politicas mediante documentos JSON.</p>
-<p>Es una buena práctica aplicar el <em><strong>principio de mínimo privilegio.</strong></em> : No dar más permisos de los que el usuario necesita.</p>
+<p>Las políticas se utilizan para <strong>definir los permisos</strong> de los usuarios.<br>
+A los usuarios se les pueden asignar políticas mediante documentos JSON.</p>
+<p>Es una buena práctica aplicar el <strong><em>principio de mínimo privilegio</em></strong>: No dar más permisos de los que el usuario necesita.</p>
+<hr>
 <h2 id="herencia-de-políticas-iam">Herencia de políticas …</h2></p>
                     </div>
                 </div>
