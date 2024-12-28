@@ -2,54 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/aws/</loc>
+    <loc>https://GomezJoaquin.github.io/tags/aws/</loc>
     <lastmod>2024-12-28T01:54:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/</loc>
+    <loc>https://GomezJoaquin.github.io/blogs/</loc>
     <lastmod>2024-12-28T01:54:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cloud/</loc>
+    <loc>https://GomezJoaquin.github.io/tags/cloud/</loc>
     <lastmod>2024-12-28T01:54:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/aws-iam/</loc>
+    <loc>https://GomezJoaquin.github.io/blogs/aws-iam/</loc>
     <lastmod>2024-12-28T01:54:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/aws-iam-policies/</loc>
+    <loc>https://GomezJoaquin.github.io/blogs/aws-iam-policies/</loc>
     <lastmod>2024-12-28T01:54:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/iam/</loc>
+    <loc>https://GomezJoaquin.github.io/tags/iam/</loc>
     <lastmod>2024-12-28T01:54:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://GomezJoaquin.github.io/</loc>
     <lastmod>2024-12-28T01:54:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://GomezJoaquin.github.io/tags/</loc>
     <lastmod>2024-12-28T01:54:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/example/</loc>
+    <loc>https://GomezJoaquin.github.io/tags/example/</loc>
     <lastmod>2021-04-03T23:29:21+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/markdown-syntax/</loc>
+    <loc>https://GomezJoaquin.github.io/tags/markdown-syntax/</loc>
     <lastmod>2021-04-03T23:29:21+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/markdown-syntax/</loc>
+    <loc>https://GomezJoaquin.github.io/blogs/markdown-syntax/</loc>
     <lastmod>2021-04-03T23:29:21+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/sample/</loc>
+    <loc>https://GomezJoaquin.github.io/tags/sample/</loc>
     <lastmod>2021-04-03T23:29:21+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/emoji-support/</loc>
+    <loc>https://GomezJoaquin.github.io/tags/emoji-support/</loc>
     <lastmod>2021-04-03T22:53:58+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/emoji-support/</loc>
+    <loc>https://GomezJoaquin.github.io/blogs/emoji-support/</loc>
     <lastmod>2021-04-03T22:53:58+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/placeholder-text/</loc>
+    <loc>https://GomezJoaquin.github.io/tags/placeholder-text/</loc>
     <lastmod>2021-04-03T22:41:10+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/placeholder-text/</loc>
+    <loc>https://GomezJoaquin.github.io/blogs/placeholder-text/</loc>
     <lastmod>2021-04-03T22:41:10+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://GomezJoaquin.github.io/categories/</loc>
   </url>
 </urlset>
