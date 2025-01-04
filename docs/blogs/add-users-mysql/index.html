@@ -28,29 +28,25 @@
 
 
 
-<meta property="og:url" content="https://gomezjoaquin.github.io/blogs/ssh-clave-publica/">
+<meta property="og:url" content="https://gomezjoaquin.github.io/blogs/add-users-mysql/">
   <meta property="og:site_name" content="Joaquín Gómez">
-  <meta property="og:title" content="Configuración de Claves SSH en Windows y Linux: Guía Práctica">
-  <meta property="og:description" content="Habilita Conexión SSH con Clave Pública en Windows y Servidores Linux Usar la clave pública que en Windows se encuentra en la carpeta del usuario La clave pública de SSH en Windows se encuentra en la siguiente ruta:
-C:\Users\TuUsuario\.ssh\id_rsa.pub Si no hay una clave, será necesario generar una.
-Generar una clave SSH en la máquina local Abrir PowerShell y ejecutar el siguiente comando para generar una nueva clave SSH:
-ssh-keygen -t rsa -b 4096 Copia la clave pública al servidor Para copiar la clave pública al servidor, puedes utilizar el siguiente comando:">
+  <meta property="og:title" content="Crear un Usuario de Solo Lectura en MySQL">
+  <meta property="og:description" content="Creación de Usuario solo lectura en MySQL Crear un usuario de solo lectura para la base de datos DataBase, permitiendo conexiones desde cualquier host.
+Pasos Realizados 1. Conexión al Servidor MySQL Se realizó la conexión al servidor MySQL utilizando un usuario con privilegios suficientes (por ejemplo, root).
+mysql -u root -p 2. Creación del Usuario Se creó el usuario user_readonly que podrá conectarse desde cualquier host (%). Este usuario fue creado sin privilegios iniciales utilizando el siguiente comando:">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blogs">
-    <meta property="article:published_time" content="2024-12-28T01:54:00+05:30">
-    <meta property="article:modified_time" content="2024-12-28T01:54:00+05:30">
-    <meta property="article:tag" content="Linux">
-    <meta property="article:tag" content="Windows">
-    <meta property="article:tag" content="SSH">
+    <meta property="article:published_time" content="2025-01-04T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-01-04T00:00:00+00:00">
+    <meta property="article:tag" content="MySQL">
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Configuración de Claves SSH en Windows y Linux: Guía Práctica">
-  <meta name="twitter:description" content="Habilita Conexión SSH con Clave Pública en Windows y Servidores Linux Usar la clave pública que en Windows se encuentra en la carpeta del usuario La clave pública de SSH en Windows se encuentra en la siguiente ruta:
-C:\Users\TuUsuario\.ssh\id_rsa.pub Si no hay una clave, será necesario generar una.
-Generar una clave SSH en la máquina local Abrir PowerShell y ejecutar el siguiente comando para generar una nueva clave SSH:
-ssh-keygen -t rsa -b 4096 Copia la clave pública al servidor Para copiar la clave pública al servidor, puedes utilizar el siguiente comando:">
+  <meta name="twitter:title" content="Crear un Usuario de Solo Lectura en MySQL">
+  <meta name="twitter:description" content="Creación de Usuario solo lectura en MySQL Crear un usuario de solo lectura para la base de datos DataBase, permitiendo conexiones desde cualquier host.
+Pasos Realizados 1. Conexión al Servidor MySQL Se realizó la conexión al servidor MySQL utilizando un usuario con privilegios suficientes (por ejemplo, root).
+mysql -u root -p 2. Creación del Usuario Se creó el usuario user_readonly que podrá conectarse desde cualquier host (%). Este usuario fue creado sin privilegios iniciales utilizando el siguiente comando:">
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -125,7 +121,7 @@ ssh-keygen -t rsa -b 4096 Copia la clave pública al servidor Para copiar la cla
   
 
   <title>
-Configuración de Claves SSH en Windows y Linux: Guía Práctica | Joaquín Gómez
+Crear un Usuario de Solo Lectura en MySQL | Joaquín Gómez
 
   </title>
 </head>
@@ -314,13 +310,13 @@ Configuración de Claves SSH en Windows y Linux: Guía Práctica | Joaquín Góm
       <div class="col-sm-12 col-md-12 col-lg-9">
         <div class="pr-lg-4">
           <div class="title mb-5">
-            <h1 class="text-center mb-4">Configuración de Claves SSH en Windows y Linux: Guía Práctica</h1>
+            <h1 class="text-center mb-4">Crear un Usuario de Solo Lectura en MySQL</h1>
             <div class="text-center">
               
                 Joaquín Gómez
                 <small>|</small>
               
-              Dec 28, 2024
+              Jan 4, 2025
 
               
               <span id="readingTime">
@@ -331,64 +327,60 @@ Configuración de Claves SSH en Windows y Linux: Guía Práctica | Joaquín Góm
           </div>
           
           <div class="featured-image">
-            <img class="img-fluid mx-auto d-block" src="/images/cifrado-asimetrico.jpg" alt="Configuración de Claves SSH en Windows y Linux: Guía Práctica">
+            <img class="img-fluid mx-auto d-block" src="/images/add-user-mysq.jpg" alt="Crear un Usuario de Solo Lectura en MySQL">
           </div>
           
           <article class="page-content  p-2">
-          <h2 id="habilita-conexión-ssh-con-clave-pública-en-windows-y-servidores-linux">Habilita Conexión SSH con Clave Pública en Windows y Servidores Linux</h2>
-<h6 id="usar-la-clave-pública-que-en-windows-se-encuentra-en-la-carpeta-del-usuario">Usar la clave pública que en Windows se encuentra en la carpeta del usuario</h6>
-<p>La clave pública de SSH en Windows se encuentra en la siguiente ruta:</p>
-<pre tabindex="0"><code>C:\Users\TuUsuario\.ssh\id_rsa.pub
-</code></pre><p>Si no hay una clave, será necesario <strong>generar una</strong>.</p>
+          <h2 id="creación-de-usuario-solo-lectura-en-mysql">Creación de Usuario solo lectura en MySQL</h2>
+<p>Crear un usuario de solo lectura para la base de datos <code>DataBase</code>, permitiendo conexiones desde cualquier host.</p>
 <hr>
-<h6 id="generar-una-clave-ssh-en-la-máquina-local">Generar una clave SSH en la máquina local</h6>
-<ol>
-<li>
-<p>Abrir <strong>PowerShell</strong> y ejecutar el siguiente comando para generar una nueva clave SSH:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh-keygen -t rsa -b <span style="color:#ae81ff">4096</span>
-</span></span></code></pre></div></li>
-</ol>
-<hr>
-<h6 id="copia-la-clave-pública-al-servidor">Copia la clave pública al servidor</h6>
-<p>Para copiar la clave pública al servidor, puedes utilizar el siguiente comando:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh-copy-id usuario@direccion_ip_del_servidor
-</span></span></code></pre></div><p><strong>Nota:</strong> Este comando <strong>no es nativo en Windows</strong>. Sin embargo, si tienes instalado <strong>Git Bash</strong> en Windows, puedes usarlo.</p>
-<hr>
-<h6 id="copiar-la-clave-pública-al-servidor-linux-a-la-vieja-escuela">Copiar la clave pública al servidor Linux a la &ldquo;vieja escuela&rdquo;</h6>
-<p>Si no tienes Git Bash o prefieres hacerlo manualmente, sigue estos pasos:</p>
-<ol>
-<li>
-<p><strong>Copiar el contenido de la clave pública</strong> desde la máquina local:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat $HOME<span style="color:#ae81ff">\.</span>ssh<span style="color:#ae81ff">\i</span>d_rsa.pub
-</span></span></code></pre></div></li>
-<li>
-<p><strong>Conéctate al servidor</strong> usando la contraseña y ejecuta los siguientes comandos:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir -p ~/.ssh
-</span></span><span style="display:flex;"><span>chmod <span style="color:#ae81ff">700</span> ~/.ssh
-</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;PEGA_AQUÍ_TU_CLAVE_PÚBLICA&#34;</span> &gt;&gt; ~/.ssh/authorized_keys
-</span></span><span style="display:flex;"><span>chmod <span style="color:#ae81ff">600</span> ~/.ssh/authorized_keys
-</span></span></code></pre></div></li>
-</ol>
-<p>O puedes usar este comando, que es más práctico y seguro de que quede bien copiado:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat ~/.ssh/id_rsa.pub | ssh joaquin@192.168.1.5 <span style="color:#e6db74">&#39;cat &gt;&gt; ~/.ssh/authorized_keys&#39;</span>
-</span></span></code></pre></div><hr>
-<h3 id="habilitar-la-conexión-con-clave-pública-privada">Habilitar la conexión con clave pública-privada</h3>
-<p>En las últimas versiones de <strong>Ubuntu Server</strong>, las líneas que permiten la conexión con clave pública-privada suelen venir comentadas en el archivo de configuración. Para habilitarla:</p>
-<ol>
-<li>
-<p>Edita el archivo de configuración de SSH:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo vi /etc/ssh/sshd_config
-</span></span></code></pre></div></li>
-<li>
-<p>Asegúrate de que las siguientes líneas estén habilitadas (sin <code>#</code> al principio):</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>PubkeyAuthentication yes
-</span></span><span style="display:flex;"><span>AuthorizedKeysFile .ssh/authorized_keys
-</span></span></code></pre></div></li>
-<li>
-<p><strong>Reinicia el servicio SSH</strong> para aplicar los cambios:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl restart ssh
-</span></span></code></pre></div></li>
-</ol>
+<h2 id="pasos-realizados">Pasos Realizados</h2>
+<h3 id="1-conexión-al-servidor-mysql">1. Conexión al Servidor MySQL</h3>
+<p>Se realizó la conexión al servidor MySQL utilizando un usuario con privilegios suficientes (por ejemplo, <code>root</code>).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mysql -u root -p
+</span></span></code></pre></div><h3 id="2-creación-del-usuario">2. Creación del Usuario</h3>
+<p>Se creó el usuario <code>user_readonly</code> que podrá conectarse desde cualquier host (<code>%</code>). Este usuario fue creado sin privilegios iniciales utilizando el siguiente comando:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">USER</span> <span style="color:#e6db74">&#39;user_readonly&#39;</span><span style="color:#f92672">@</span><span style="color:#e6db74">&#39;%&#39;</span> IDENTIFIED <span style="color:#66d9ef">BY</span> <span style="color:#e6db74">&#39;contraseña&#39;</span>;
+</span></span></code></pre></div><h3 id="21-creación-del-usuario-para-que-solo-se-pueda-conectar-desde-un-host-especifico">2.1 Creación del Usuario para que solo se pueda conectar desde un host especifico</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">USER</span> <span style="color:#e6db74">&#39;user_readonly&#39;</span><span style="color:#f92672">@</span><span style="color:#e6db74">&#39;192.168.1.100&#39;</span> IDENTIFIED <span style="color:#66d9ef">BY</span> <span style="color:#e6db74">&#39;contraseña&#39;</span>;
+</span></span></code></pre></div><p>con rangos exactos:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">USER</span> <span style="color:#e6db74">&#39;user_readonly&#39;</span><span style="color:#f92672">@</span><span style="color:#e6db74">&#39;192.168.1.100-192.168.1.110&#39;</span> IDENTIFIED <span style="color:#66d9ef">BY</span> <span style="color:#e6db74">&#39;contraseña&#39;</span>;
+</span></span></code></pre></div><p>También se puede especificar un nombre de host, si está configurado en el DNS:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">USER</span> <span style="color:#e6db74">&#39;user_readonly&#39;</span><span style="color:#f92672">@</span><span style="color:#e6db74">&#39;examplehostname.com&#39;</span> IDENTIFIED <span style="color:#66d9ef">BY</span> <span style="color:#e6db74">&#39;contraseña&#39;</span>;
+</span></span></code></pre></div><p><strong>Notas</strong>:</p>
+<ul>
+<li>Es una buena práctica de seguridad restringir el host desde donde el usuario debe conectarse al servidor de bases de datos.</li>
+<li>Sustituir <code>'contraseña'</code> por una contraseña segura.</li>
+</ul>
+<h3 id="3-otorgar-permisos-de-solo-lectura">3. Otorgar Permisos de Solo Lectura</h3>
+<p>Se otorgaron permisos de solo lectura (<code>SELECT</code>) sobre todas las tablas de la base de datos <code>DataBase</code> con el siguiente comando:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">GRANT</span> <span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">ON</span> <span style="color:#66d9ef">DataBase</span>.<span style="color:#f92672">*</span> <span style="color:#66d9ef">TO</span> <span style="color:#e6db74">&#39;user_readonly&#39;</span><span style="color:#f92672">@</span><span style="color:#e6db74">&#39;%&#39;</span>;
+</span></span></code></pre></div><h3 id="4-aplicar-cambios">4. Aplicar Cambios</h3>
+<p>Se aplicaron los cambios realizados para asegurar que los nuevos permisos tomen efecto:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>FLUSH <span style="color:#66d9ef">PRIVILEGES</span>;
+</span></span></code></pre></div><h3 id="5-verificación-de-la-creación-del-usuario">5. Verificación de la Creación del Usuario</h3>
+<p>Para verificar que el usuario fue creado correctamente, se ejecutó la siguiente consulta:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">User</span>, <span style="color:#66d9ef">Host</span> <span style="color:#66d9ef">FROM</span> mysql.<span style="color:#66d9ef">user</span>;
+</span></span></code></pre></div><p>Se buscó el usuario <code>user_readonly</code> en la lista de usuarios. La salida esperada debería incluir:</p>
+<pre tabindex="0"><code>+---------------------+-----------+
+| User                | Host      |
++---------------------+-----------+
+| user_readonly       | %         |
+| ...                 | ...       |
++---------------------+-----------+
+</code></pre><h3 id="6-verificación-de-permisos">6. Verificación de Permisos</h3>
+<p>Para verificar que el usuario tiene los permisos correctos, se inició sesión como <code>user_readonly</code> y se ejecutó:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SHOW</span> GRANTS;
+</span></span></code></pre></div><p>La salida esperada debería incluir:</p>
+<pre tabindex="0"><code>+----------------------------------------------------+
+| Grants for user_readonly@%                     |
++----------------------------------------------------+
+| GRANT USAGE ON *.* TO `user_readonly`@`%`      |
+| GRANT SELECT ON `DataBase`.* TO `user_readonly`@`%` |
++----------------------------------------------------+
+</code></pre><h2 id="heading"></h2>
+<h2 id="conclusiones">Conclusiones</h2>
+<p>Se ha creado un usuario <code>user_readonly</code> con permisos de solo lectura en la base de datos <code>DataBase</code>, permitiendo conexiones desde cualquier host. Se recomienda asegurar la contraseña y considerar el uso de conexiones seguras (SSL) si el servidor es accesible a través de Internet.</p>
 <hr>
 
           </article>
@@ -404,12 +396,20 @@ Configuración de Claves SSH en Windows y Linux: Guía Práctica | Joaquín Góm
               <div class="toc-content">
                 <nav id="TableOfContents">
   <ul>
-    <li><a href="#habilita-conexión-ssh-con-clave-pública-en-windows-y-servidores-linux">Habilita Conexión SSH con Clave Pública en Windows y Servidores Linux</a>
+    <li><a href="#creación-de-usuario-solo-lectura-en-mysql">Creación de Usuario solo lectura en MySQL</a></li>
+    <li><a href="#pasos-realizados">Pasos Realizados</a>
       <ul>
-        <li></li>
-        <li><a href="#habilitar-la-conexión-con-clave-pública-privada">Habilitar la conexión con clave pública-privada</a></li>
+        <li><a href="#1-conexión-al-servidor-mysql">1. Conexión al Servidor MySQL</a></li>
+        <li><a href="#2-creación-del-usuario">2. Creación del Usuario</a></li>
+        <li><a href="#21-creación-del-usuario-para-que-solo-se-pueda-conectar-desde-un-host-especifico">2.1 Creación del Usuario para que solo se pueda conectar desde un host especifico</a></li>
+        <li><a href="#3-otorgar-permisos-de-solo-lectura">3. Otorgar Permisos de Solo Lectura</a></li>
+        <li><a href="#4-aplicar-cambios">4. Aplicar Cambios</a></li>
+        <li><a href="#5-verificación-de-la-creación-del-usuario">5. Verificación de la Creación del Usuario</a></li>
+        <li><a href="#6-verificación-de-permisos">6. Verificación de Permisos</a></li>
       </ul>
     </li>
+    <li><a href="#heading"></a></li>
+    <li><a href="#conclusiones">Conclusiones</a></li>
   </ul>
 </nav>
               </div>
@@ -421,17 +421,9 @@ Configuración de Claves SSH en Windows y Linux: Guía Práctica | Joaquín Góm
             <h5>Tags</h5>
             <ul class="tags-ul list-unstyled list-inline">
               
-              <li class="list-inline-item"><a href="https://gomezjoaquin.github.io/tags/linux"
+              <li class="list-inline-item"><a href="https://gomezjoaquin.github.io/tags/mysql"
                 target="_blank"
-              >Linux</a></li>
-              
-              <li class="list-inline-item"><a href="https://gomezjoaquin.github.io/tags/windows"
-                target="_blank"
-              >Windows</a></li>
-              
-              <li class="list-inline-item"><a href="https://gomezjoaquin.github.io/tags/ssh"
-                target="_blank"
-              >SSH</a></li>
+              >MySQL</a></li>
               
             </ul>
           </aside>
@@ -443,22 +435,22 @@ Configuración de Claves SSH en Windows y Linux: Guía Práctica | Joaquín Góm
             <div class="social-content">
               <ul class="list-inline">
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fgomezjoaquin.github.io%2fblogs%2fssh-clave-publica%2f">
+                  <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fgomezjoaquin.github.io%2fblogs%2fadd-users-mysql%2f">
                     <i class="fab fa-linkedin"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://twitter.com/share?text=Configuraci%c3%b3n%20de%20Claves%20SSH%20en%20Windows%20y%20Linux%3a%20Gu%c3%ada%20Pr%c3%a1ctica&url=https%3a%2f%2fgomezjoaquin.github.io%2fblogs%2fssh-clave-publica%2f">
+                  <a target="_blank" href="https://twitter.com/share?text=Crear%20un%20Usuario%20de%20Solo%20Lectura%20en%20MySQL&url=https%3a%2f%2fgomezjoaquin.github.io%2fblogs%2fadd-users-mysql%2f">
                     <i class="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://api.whatsapp.com/send?text=Configuraci%c3%b3n%20de%20Claves%20SSH%20en%20Windows%20y%20Linux%3a%20Gu%c3%ada%20Pr%c3%a1ctica: https%3a%2f%2fgomezjoaquin.github.io%2fblogs%2fssh-clave-publica%2f">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=Crear%20un%20Usuario%20de%20Solo%20Lectura%20en%20MySQL: https%3a%2f%2fgomezjoaquin.github.io%2fblogs%2fadd-users-mysql%2f">
                     <i class="fab fa-whatsapp"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href='mailto:?subject=Configuraci%c3%b3n%20de%20Claves%20SSH%20en%20Windows%20y%20Linux%3a%20Gu%c3%ada%20Pr%c3%a1ctica&amp;body=Check%20out%20this%20site https%3a%2f%2fgomezjoaquin.github.io%2fblogs%2fssh-clave-publica%2f'>
+                  <a target="_blank" href='mailto:?subject=Crear%20un%20Usuario%20de%20Solo%20Lectura%20en%20MySQL&amp;body=Check%20out%20this%20site https%3a%2f%2fgomezjoaquin.github.io%2fblogs%2fadd-users-mysql%2f'>
                     <i class="fa fa-envelope"></i>
                   </a>
                 </li>

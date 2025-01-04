@@ -6,8 +6,15 @@
     <description>Recent content on Joaquín Gómez</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Dec 2024 01:54:00 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://gomezjoaquin.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Crear un Usuario de Solo Lectura en MySQL</title>
+      <link>https://gomezjoaquin.github.io/blogs/add-users-mysql/</link>
+      <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://gomezjoaquin.github.io/blogs/add-users-mysql/</guid>
+      <description>&lt;h2 id=&#34;creación-de-usuario-solo-lectura-en-mysql&#34;&gt;Creación de Usuario solo lectura en MySQL&lt;/h2&gt;&#xA;&lt;p&gt;Crear un usuario de solo lectura para la base de datos &lt;code&gt;DataBase&lt;/code&gt;, permitiendo conexiones desde cualquier host.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;pasos-realizados&#34;&gt;Pasos Realizados&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-conexión-al-servidor-mysql&#34;&gt;1. Conexión al Servidor MySQL&lt;/h3&gt;&#xA;&lt;p&gt;Se realizó la conexión al servidor MySQL utilizando un usuario con privilegios suficientes (por ejemplo, &lt;code&gt;root&lt;/code&gt;).&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mysql -u root -p&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;2-creación-del-usuario&#34;&gt;2. Creación del Usuario&lt;/h3&gt;&#xA;&lt;p&gt;Se creó el usuario &lt;code&gt;user_readonly&lt;/code&gt; que podrá conectarse desde cualquier host (&lt;code&gt;%&lt;/code&gt;). Este usuario fue creado sin privilegios iniciales utilizando el siguiente comando:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Configuración de Claves SSH en Windows y Linux: Guía Práctica</title>
       <link>https://gomezjoaquin.github.io/blogs/ssh-clave-publica/</link>
