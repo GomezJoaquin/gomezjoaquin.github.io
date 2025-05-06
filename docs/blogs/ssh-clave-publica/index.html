@@ -30,11 +30,11 @@
 
 <meta property="og:url" content="https://gomezjoaquin.github.io/blogs/ssh-clave-publica/">
   <meta property="og:site_name" content="Joaquín Gómez">
-  <meta property="og:title" content="Configuración de Claves SSH en Windows y Linux: Guía Práctica">
-  <meta property="og:description" content="Habilita Conexión SSH con Clave Pública en Windows y Servidores Linux Usar la clave pública que en Windows se encuentra en la carpeta del usuario La clave pública de SSH en Windows se encuentra en la siguiente ruta:
-C:\Users\TuUsuario\.ssh\id_rsa.pub Si no hay una clave, será necesario generar una.
-Generar una clave SSH en la máquina local Abrir PowerShell y ejecutar el siguiente comando para generar una nueva clave SSH:
-ssh-keygen -t rsa -b 4096 Copia la clave pública al servidor Para copiar la clave pública al servidor, puedes utilizar el siguiente comando:">
+  <meta property="og:title" content="Configuring SSH Keys on Windows and Linux: A Practical Guide">
+  <meta property="og:description" content="Enable SSH Connection with Public Key on Windows and Linux Servers Use the public key located in the user’s folder on Windows The SSH public key on Windows can be found at the following path:
+C:UsersYourUser.sshid_rsa.pub If there is no key, you will need to generate one.
+Generate an SSH key on the local machine Open PowerShell and run the following command to generate a new SSH key:
+ssh-keygen -t rsa -b 4096 Copy the public key to the server To copy the public key to the server, you can use the following command:">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blogs">
@@ -46,11 +46,11 @@ ssh-keygen -t rsa -b 4096 Copia la clave pública al servidor Para copiar la cla
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Configuración de Claves SSH en Windows y Linux: Guía Práctica">
-  <meta name="twitter:description" content="Habilita Conexión SSH con Clave Pública en Windows y Servidores Linux Usar la clave pública que en Windows se encuentra en la carpeta del usuario La clave pública de SSH en Windows se encuentra en la siguiente ruta:
-C:\Users\TuUsuario\.ssh\id_rsa.pub Si no hay una clave, será necesario generar una.
-Generar una clave SSH en la máquina local Abrir PowerShell y ejecutar el siguiente comando para generar una nueva clave SSH:
-ssh-keygen -t rsa -b 4096 Copia la clave pública al servidor Para copiar la clave pública al servidor, puedes utilizar el siguiente comando:">
+  <meta name="twitter:title" content="Configuring SSH Keys on Windows and Linux: A Practical Guide">
+  <meta name="twitter:description" content="Enable SSH Connection with Public Key on Windows and Linux Servers Use the public key located in the user’s folder on Windows The SSH public key on Windows can be found at the following path:
+C:UsersYourUser.sshid_rsa.pub If there is no key, you will need to generate one.
+Generate an SSH key on the local machine Open PowerShell and run the following command to generate a new SSH key:
+ssh-keygen -t rsa -b 4096 Copy the public key to the server To copy the public key to the server, you can use the following command:">
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -125,7 +125,7 @@ ssh-keygen -t rsa -b 4096 Copia la clave pública al servidor Para copiar la cla
   
 
   <title>
-Configuración de Claves SSH en Windows y Linux: Guía Práctica | Joaquín Gómez
+Configuring SSH Keys on Windows and Linux: A Practical Guide | Joaquín Gómez
 
   </title>
 </head>
@@ -225,6 +225,13 @@ Configuración de Claves SSH en Windows y Linux: Guía Práctica | Joaquín Góm
                     
 
                     
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience"
+                            aria-label="experience">
+                            Experience
+                        </a>
+                    </li>
+                    
 
                     
                     <li class="nav-item navbar-text">
@@ -237,6 +244,13 @@ Configuración de Claves SSH en Windows y Linux: Guía Práctica | Joaquín Góm
 
                     
 
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#achievements"
+                            aria-label="achievements">
+                            Achievements
+                        </a>
+                    </li>
                     
 
                     
@@ -300,7 +314,7 @@ Configuración de Claves SSH en Windows y Linux: Guía Práctica | Joaquín Góm
       <div class="col-sm-12 col-md-12 col-lg-9">
         <div class="pr-lg-4">
           <div class="title mb-5">
-            <h1 class="text-center mb-4">Configuración de Claves SSH en Windows y Linux: Guía Práctica</h1>
+            <h1 class="text-center mb-4">Configuring SSH Keys on Windows and Linux: A Practical Guide</h1>
             <div class="text-center">
               
                 Joaquín Gómez
@@ -317,61 +331,61 @@ Configuración de Claves SSH en Windows y Linux: Guía Práctica | Joaquín Góm
           </div>
           
           <div class="featured-image">
-            <img class="img-fluid mx-auto d-block" src="/images/cifrado-asimetrico.jpg" alt="Configuración de Claves SSH en Windows y Linux: Guía Práctica">
+            <img class="img-fluid mx-auto d-block" src="/images/cifrado-asimetrico.jpg" alt="Configuring SSH Keys on Windows and Linux: A Practical Guide">
           </div>
           
           <article class="page-content  p-2">
-          <h2 id="habilita-conexión-ssh-con-clave-pública-en-windows-y-servidores-linux">Habilita Conexión SSH con Clave Pública en Windows y Servidores Linux</h2>
-<h6 id="usar-la-clave-pública-que-en-windows-se-encuentra-en-la-carpeta-del-usuario">Usar la clave pública que en Windows se encuentra en la carpeta del usuario</h6>
-<p>La clave pública de SSH en Windows se encuentra en la siguiente ruta:</p>
-<pre tabindex="0"><code>C:\Users\TuUsuario\.ssh\id_rsa.pub
-</code></pre><p>Si no hay una clave, será necesario <strong>generar una</strong>.</p>
+          <h2 id="enable-ssh-connection-with-public-key-on-windows-and-linux-servers">Enable SSH Connection with Public Key on Windows and Linux Servers</h2>
+<h6 id="use-the-public-key-located-in-the-users-folder-on-windows">Use the public key located in the user&rsquo;s folder on Windows</h6>
+<p>The SSH public key on Windows can be found at the following path:</p>
+<pre tabindex="0"><code>C:UsersYourUser.sshid_rsa.pub
+</code></pre><p>If there is no key, you will need to <strong>generate one</strong>.</p>
 <hr>
-<h6 id="generar-una-clave-ssh-en-la-máquina-local">Generar una clave SSH en la máquina local</h6>
+<h6 id="generate-an-ssh-key-on-the-local-machine">Generate an SSH key on the local machine</h6>
 <ol>
 <li>
-<p>Abrir <strong>PowerShell</strong> y ejecutar el siguiente comando para generar una nueva clave SSH:</p>
+<p>Open <strong>PowerShell</strong> and run the following command to generate a new SSH key:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh-keygen -t rsa -b <span style="color:#ae81ff">4096</span>
 </span></span></code></pre></div></li>
 </ol>
 <hr>
-<h6 id="copia-la-clave-pública-al-servidor">Copia la clave pública al servidor</h6>
-<p>Para copiar la clave pública al servidor, puedes utilizar el siguiente comando:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh-copy-id usuario@direccion_ip_del_servidor
-</span></span></code></pre></div><p><strong>Nota:</strong> Este comando <strong>no es nativo en Windows</strong>. Sin embargo, si tienes instalado <strong>Git Bash</strong> en Windows, puedes usarlo.</p>
+<h6 id="copy-the-public-key-to-the-server">Copy the public key to the server</h6>
+<p>To copy the public key to the server, you can use the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh-copy-id user@server_ip_address
+</span></span></code></pre></div><p><strong>Note:</strong> This command is <strong>not natively available on Windows</strong>. However, if you have <strong>Git Bash</strong> installed on Windows, you can use it.</p>
 <hr>
-<h6 id="copiar-la-clave-pública-al-servidor-linux-a-la-vieja-escuela">Copiar la clave pública al servidor Linux a la &ldquo;vieja escuela&rdquo;</h6>
-<p>Si no tienes Git Bash o prefieres hacerlo manualmente, sigue estos pasos:</p>
+<h6 id="copy-the-public-key-to-the-linux-server-manually">Copy the public key to the Linux server manually</h6>
+<p>If you don&rsquo;t have Git Bash or prefer to do it manually, follow these steps:</p>
 <ol>
 <li>
-<p><strong>Copiar el contenido de la clave pública</strong> desde la máquina local:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat $HOME<span style="color:#ae81ff">\.</span>ssh<span style="color:#ae81ff">\i</span>d_rsa.pub
+<p><strong>Copy the content of the public key</strong> from the local machine:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat $HOME.sshid_rsa.pub
 </span></span></code></pre></div></li>
 <li>
-<p><strong>Conéctate al servidor</strong> usando la contraseña y ejecuta los siguientes comandos:</p>
+<p><strong>Connect to the server</strong> using the password and run the following commands:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir -p ~/.ssh
 </span></span><span style="display:flex;"><span>chmod <span style="color:#ae81ff">700</span> ~/.ssh
-</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;PEGA_AQUÍ_TU_CLAVE_PÚBLICA&#34;</span> &gt;&gt; ~/.ssh/authorized_keys
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;PASTE_YOUR_PUBLIC_KEY_HERE&#34;</span> &gt;&gt; ~/.ssh/authorized_keys
 </span></span><span style="display:flex;"><span>chmod <span style="color:#ae81ff">600</span> ~/.ssh/authorized_keys
 </span></span></code></pre></div></li>
 </ol>
-<p>O puedes usar este comando, que es más práctico y seguro de que quede bien copiado:</p>
+<p>Alternatively, you can use this command, which is more practical and ensures the key is copied correctly:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat ~/.ssh/id_rsa.pub | ssh joaquin@192.168.1.5 <span style="color:#e6db74">&#39;cat &gt;&gt; ~/.ssh/authorized_keys&#39;</span>
 </span></span></code></pre></div><hr>
-<h3 id="habilitar-la-conexión-con-clave-pública-privada">Habilitar la conexión con clave pública-privada</h3>
-<p>En las últimas versiones de <strong>Ubuntu Server</strong>, las líneas que permiten la conexión con clave pública-privada suelen venir comentadas en el archivo de configuración. Para habilitarla:</p>
+<h3 id="enable-public-private-key-connection">Enable public-private key connection</h3>
+<p>In the latest versions of <strong>Ubuntu Server</strong>, the lines that allow public-private key connections are often commented out in the configuration file. To enable it:</p>
 <ol>
 <li>
-<p>Edita el archivo de configuración de SSH:</p>
+<p>Edit the SSH configuration file:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo vi /etc/ssh/sshd_config
 </span></span></code></pre></div></li>
 <li>
-<p>Asegúrate de que las siguientes líneas estén habilitadas (sin <code>#</code> al principio):</p>
+<p>Make sure the following lines are enabled (without <code>#</code> at the beginning):</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>PubkeyAuthentication yes
 </span></span><span style="display:flex;"><span>AuthorizedKeysFile .ssh/authorized_keys
 </span></span></code></pre></div></li>
 <li>
-<p><strong>Reinicia el servicio SSH</strong> para aplicar los cambios:</p>
+<p><strong>Restart the SSH service</strong> to apply the changes:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl restart ssh
 </span></span></code></pre></div></li>
 </ol>
@@ -390,10 +404,10 @@ Configuración de Claves SSH en Windows y Linux: Guía Práctica | Joaquín Góm
               <div class="toc-content">
                 <nav id="TableOfContents">
   <ul>
-    <li><a href="#habilita-conexión-ssh-con-clave-pública-en-windows-y-servidores-linux">Habilita Conexión SSH con Clave Pública en Windows y Servidores Linux</a>
+    <li><a href="#enable-ssh-connection-with-public-key-on-windows-and-linux-servers">Enable SSH Connection with Public Key on Windows and Linux Servers</a>
       <ul>
         <li></li>
-        <li><a href="#habilitar-la-conexión-con-clave-pública-privada">Habilitar la conexión con clave pública-privada</a></li>
+        <li><a href="#enable-public-private-key-connection">Enable public-private key connection</a></li>
       </ul>
     </li>
   </ul>
@@ -434,17 +448,17 @@ Configuración de Claves SSH en Windows y Linux: Guía Práctica | Joaquín Góm
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://twitter.com/share?text=Configuraci%c3%b3n%20de%20Claves%20SSH%20en%20Windows%20y%20Linux%3a%20Gu%c3%ada%20Pr%c3%a1ctica&url=https%3a%2f%2fgomezjoaquin.github.io%2fblogs%2fssh-clave-publica%2f">
+                  <a target="_blank" href="https://twitter.com/share?text=Configuring%20SSH%20Keys%20on%20Windows%20and%20Linux%3a%20A%20Practical%20Guide&url=https%3a%2f%2fgomezjoaquin.github.io%2fblogs%2fssh-clave-publica%2f">
                     <i class="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://api.whatsapp.com/send?text=Configuraci%c3%b3n%20de%20Claves%20SSH%20en%20Windows%20y%20Linux%3a%20Gu%c3%ada%20Pr%c3%a1ctica: https%3a%2f%2fgomezjoaquin.github.io%2fblogs%2fssh-clave-publica%2f">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=Configuring%20SSH%20Keys%20on%20Windows%20and%20Linux%3a%20A%20Practical%20Guide: https%3a%2f%2fgomezjoaquin.github.io%2fblogs%2fssh-clave-publica%2f">
                     <i class="fab fa-whatsapp"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href='mailto:?subject=Configuraci%c3%b3n%20de%20Claves%20SSH%20en%20Windows%20y%20Linux%3a%20Gu%c3%ada%20Pr%c3%a1ctica&amp;body=Check%20out%20this%20site https%3a%2f%2fgomezjoaquin.github.io%2fblogs%2fssh-clave-publica%2f'>
+                  <a target="_blank" href='mailto:?subject=Configuring%20SSH%20Keys%20on%20Windows%20and%20Linux%3a%20A%20Practical%20Guide&amp;body=Check%20out%20this%20site https%3a%2f%2fgomezjoaquin.github.io%2fblogs%2fssh-clave-publica%2f'>
                     <i class="fa fa-envelope"></i>
                   </a>
                 </li>
@@ -524,21 +538,24 @@ Configuración de Claves SSH en Windows y Linux: Guía Práctica | Joaquín Góm
                 
                 <div class="card-header">
                     <a href="/blogs/add-users-mysql/">
-                        <img src="/images/add-user-mysq.jpg" class="card-img-top" alt="Crear un Usuario de Solo Lectura en MySQL">
+                        <img src="/images/add-user-mysq.jpg" class="card-img-top" alt="Create a Read-Only User in MySQL">
                     </a>
                 </div>
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
                     <a href="/blogs/add-users-mysql/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Crear un Usuario de Solo Lectura en MySQL">Crear un Usuario de Solo …</h5>
+                        <h5 class="card-title bg-transparent" title="Create a Read-Only User in MySQL">Create a Read-Only User …</h5>
                     </a>
                     <div class="card-text secondary-font">
-                        <p><h2 id="creación-de-usuario-solo-lectura-en-mysql">Creación de Usuario solo lectura en MySQL</h2>
-<p>Crear un usuario de solo lectura para la base de datos <code>DataBase</code>, permitiendo conexiones desde cualquier host.</p>
+                        <p><h2 id="creating-a-read-only-user-in-mysql">Creating a Read-Only User in MySQL</h2>
+<p>Create a read-only user for the <code>DataBase</code> database, allowing connections from any host.</p>
 <hr>
-<h2 id="pasos-realizados">Pasos Realizados</h2>
-<h3 id="1-conexión-al-servidor-mysql">1. Conexión al Servidor MySQL</h3>
-<p>Se realizó la conexión al servidor MySQL utilizando un usuario con privilegios suficientes (por …</p></p>
+<h2 id="steps-performed">Steps Performed</h2>
+<h3 id="1-connect-to-the-mysql-server">1. Connect to the MySQL Server</h3>
+<p>Connected to the MySQL server using a user with sufficient privileges (e.g., <code>root</code>).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mysql -u root -p
+</span></span></code></pre></div><h3 id="2-create-the-user">2. Create the User</h3>
+<p>Created …</p></p>
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
@@ -553,20 +570,22 @@ Configuración de Claves SSH en Windows y Linux: Guía Práctica | Joaquín Góm
                 
                 <div class="card-header">
                     <a href="/blogs/ssh-clave-publica/">
-                        <img src="/images/cifrado-asimetrico.jpg" class="card-img-top" alt="Configuración de Claves SSH en Windows y Linux: Guía Práctica">
+                        <img src="/images/cifrado-asimetrico.jpg" class="card-img-top" alt="Configuring SSH Keys on Windows and Linux: A Practical Guide">
                     </a>
                 </div>
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
                     <a href="/blogs/ssh-clave-publica/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Configuración de Claves SSH en Windows y Linux: Guía Práctica">Configuración de Claves …</h5>
+                        <h5 class="card-title bg-transparent" title="Configuring SSH Keys on Windows and Linux: A Practical Guide">Configuring SSH Keys on …</h5>
                     </a>
                     <div class="card-text secondary-font">
-                        <p><h2 id="habilita-conexión-ssh-con-clave-pública-en-windows-y-servidores-linux">Habilita Conexión SSH con Clave Pública en Windows y Servidores Linux</h2>
-<h6 id="usar-la-clave-pública-que-en-windows-se-encuentra-en-la-carpeta-del-usuario">Usar la clave pública que en Windows se encuentra en la carpeta del usuario</h6>
-<p>La clave pública de SSH en Windows se encuentra en la siguiente ruta:</p>
-<pre tabindex="0"><code>C:\Users\TuUsuario\.ssh\id_rsa.pub
-</code></pre><p>Si no hay una clave, será necesario <strong>generar una</strong>. …</p></p>
+                        <p><h2 id="enable-ssh-connection-with-public-key-on-windows-and-linux-servers">Enable SSH Connection with Public Key on Windows and Linux Servers</h2>
+<h6 id="use-the-public-key-located-in-the-users-folder-on-windows">Use the public key located in the user&rsquo;s folder on Windows</h6>
+<p>The SSH public key on Windows can be found at the following path:</p>
+<pre tabindex="0"><code>C:UsersYourUser.sshid_rsa.pub
+</code></pre><p>If there is no key, you will need to <strong>generate one</strong>.</p>
+<hr>
+<h6 id="generate-an-ssh-key-on-the-local-machine">Generate an SSH key …</h6></p>
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
@@ -581,19 +600,21 @@ Configuración de Claves SSH en Windows y Linux: Guía Práctica | Joaquín Góm
                 
                 <div class="card-header">
                     <a href="/blogs/aws-iam/">
-                        <img src="/images/iam.png" class="card-img-top" alt="I AM">
+                        <img src="/images/iam.png" class="card-img-top" alt="IAM">
                     </a>
                 </div>
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
                     <a href="/blogs/aws-iam/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="I AM">I AM</h5>
+                        <h5 class="card-title bg-transparent" title="IAM">IAM</h5>
                     </a>
                     <div class="card-text secondary-font">
-                        <p><h2 id="aws-i-am-identity-and-acces-management">AWS: I AM Identity and Acces Management</h2>
-<p>Es un servicio global.</p>
-<p>Se utiliza para gestionar el acceso a los recursos de la nube, controlando quién puede realizar qué acciones sobre qué recursos mediante políticas de permisos.</p>
-<p><strong>Cuenta root/ raíz</strong> es la cuenta que se crea por defecto, es buena práctica …</p></p>
+                        <p><h2 id="aws-iam-identity-and-access-management">AWS: IAM (Identity and Access Management)</h2>
+<p>IAM is a <strong>global service</strong>.</p>
+<p>It is used to manage access to cloud resources, controlling <strong>who</strong> can perform <strong>what actions</strong> on <strong>which resources</strong> through permission policies.</p>
+<hr>
+<h3 id="root-account"><strong>Root Account</strong></h3>
+<p>The <strong>root account</strong> is the account that is created by default when setting up AWS. It …</p></p>
                     </div>
                 </div>
                 <div class="mt-auto card-footer">

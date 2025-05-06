@@ -1,5 +1,6 @@
 ---
-title: "Configuración de Claves SSH en Windows y Linux: Guía Práctica"
+
+title: "Configuring SSH Keys on Windows and Linux: A Practical Guide"
 date: 2024-12-28T01:54:00+05:30
 draft: false
 author: "Joaquín Gómez"
@@ -13,23 +14,23 @@ toc: true
 mathjax: true
 ---
 
-## Habilita Conexión SSH con Clave Pública en Windows y Servidores Linux
+## Enable SSH Connection with Public Key on Windows and Linux Servers
 
-###### Usar la clave pública que en Windows se encuentra en la carpeta del usuario
+###### Use the public key located in the user's folder on Windows
 
-La clave pública de SSH en Windows se encuentra en la siguiente ruta:
+The SSH public key on Windows can be found at the following path:
 
 ```
-C:\Users\TuUsuario\.ssh\id_rsa.pub
+C:UsersYourUser.sshid_rsa.pub
 ```
 
-Si no hay una clave, será necesario **generar una**.
+If there is no key, you will need to **generate one**.
 
 ---
 
-###### Generar una clave SSH en la máquina local
+###### Generate an SSH key on the local machine
 
-1. Abrir **PowerShell** y ejecutar el siguiente comando para generar una nueva clave SSH:
+1. Open **PowerShell** and run the following command to generate a new SSH key:
 
    ```bash
    ssh-keygen -t rsa -b 4096
@@ -37,38 +38,38 @@ Si no hay una clave, será necesario **generar una**.
 
 ---
 
-###### Copia la clave pública al servidor
+###### Copy the public key to the server
 
-Para copiar la clave pública al servidor, puedes utilizar el siguiente comando:
+To copy the public key to the server, you can use the following command:
 
 ```bash
-ssh-copy-id usuario@direccion_ip_del_servidor
+ssh-copy-id user@server_ip_address
 ```
 
-**Nota:** Este comando **no es nativo en Windows**. Sin embargo, si tienes instalado **Git Bash** en Windows, puedes usarlo.
+**Note:** This command is **not natively available on Windows**. However, if you have **Git Bash** installed on Windows, you can use it.
 
 ---
 
-###### Copiar la clave pública al servidor Linux a la "vieja escuela"
+###### Copy the public key to the Linux server manually
 
-Si no tienes Git Bash o prefieres hacerlo manualmente, sigue estos pasos:
+If you don't have Git Bash or prefer to do it manually, follow these steps:
 
-1. **Copiar el contenido de la clave pública** desde la máquina local:
+1. **Copy the content of the public key** from the local machine:
 
    ```bash
-   cat $HOME\.ssh\id_rsa.pub
+   cat $HOME.sshid_rsa.pub
    ```
 
-2. **Conéctate al servidor** usando la contraseña y ejecuta los siguientes comandos:
+2. **Connect to the server** using the password and run the following commands:
 
    ```bash
    mkdir -p ~/.ssh
    chmod 700 ~/.ssh
-   echo "PEGA_AQUÍ_TU_CLAVE_PÚBLICA" >> ~/.ssh/authorized_keys
+   echo "PASTE_YOUR_PUBLIC_KEY_HERE" >> ~/.ssh/authorized_keys
    chmod 600 ~/.ssh/authorized_keys
    ```
 
-O puedes usar este comando, que es más práctico y seguro de que quede bien copiado:
+Alternatively, you can use this command, which is more practical and ensures the key is copied correctly:
 
 ```bash
 cat ~/.ssh/id_rsa.pub | ssh joaquin@192.168.1.5 'cat >> ~/.ssh/authorized_keys'
@@ -76,28 +77,27 @@ cat ~/.ssh/id_rsa.pub | ssh joaquin@192.168.1.5 'cat >> ~/.ssh/authorized_keys'
 
 ---
 
-### Habilitar la conexión con clave pública-privada
+### Enable public-private key connection
 
-En las últimas versiones de **Ubuntu Server**, las líneas que permiten la conexión con clave pública-privada suelen venir comentadas en el archivo de configuración. Para habilitarla:
+In the latest versions of **Ubuntu Server**, the lines that allow public-private key connections are often commented out in the configuration file. To enable it:
 
-1. Edita el archivo de configuración de SSH:
+1. Edit the SSH configuration file:
 
    ```bash
    sudo vi /etc/ssh/sshd_config
    ```
 
-2. Asegúrate de que las siguientes líneas estén habilitadas (sin `#` al principio):
+2. Make sure the following lines are enabled (without `#` at the beginning):
 
    ```bash
    PubkeyAuthentication yes
    AuthorizedKeysFile .ssh/authorized_keys
    ```
 
-3. **Reinicia el servicio SSH** para aplicar los cambios:
+3. **Restart the SSH service** to apply the changes:
 
    ```bash
    sudo systemctl restart ssh
    ```
 
 ---
-

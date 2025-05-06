@@ -1,5 +1,5 @@
 ---
-title: "I AM Policies"
+title: "IAM Policies"
 date: 2024-12-28T01:54:00+05:30
 draft: false
 author: "Joaquín Gómez"
@@ -15,35 +15,32 @@ mathjax: true
 
 ## AWS: IAM Policies
 
-Las políticas se utilizan para **definir los permisos** de los usuarios.  
-A los usuarios se les pueden asignar políticas mediante documentos JSON.
+Policies are used to **define permissions** for users.  
+Users can be assigned policies through JSON documents.
 
-Es una buena práctica aplicar el **_principio de mínimo privilegio_**: No dar más permisos de los que el usuario necesita. 
-
----
-
-## Herencia de políticas IAM
-
-Existen las políticas **por grupo** y las **políticas directas**.
-
-- Las **políticas directas** se aplican directamente sobre el usuario.
-- Las **políticas de grupo** se aplican a todos los usuarios pertenecientes a ese grupo.
+It is a best practice to apply the **_principle of least privilege_**: Do not grant more permissions than the user needs.
 
 ---
 
-## Estructura de las políticas IAM
+## Inheritance of IAM Policies
 
-Las políticas IAM tienen la siguiente estructura:
+There are **group policies** and **direct policies**.
 
-- **Version**: Versión del lenguaje de la política, siempre incluye `"2012-10-17"`.
-- **Id**: Un identificador único para la política (opcional).
-- **Statement**: Una o más declaraciones individuales (Obligatorio).
-- **Sid**: Identificador para la declaración (opcional).
-- **Principal**: Cuenta/Usuario/Rol al que se aplica esta política.
-- **Action**: Lista de acciones que se pueden realizar sobre los recursos.
-- **Resource**: Lista de recursos sobre los que se pueden realizar las acciones.
-- **Condition**: Condiciones para cuando esta política está en efecto (opcional).
+- **Direct policies** are applied directly to the user.
+- **Group policies** are applied to all users belonging to that group.
 
 ---
 
-¡Ahora tienes una idea clara sobre las políticas IAM de AWS y su estructura!
+## Structure of IAM Policies
+
+IAM policies have the following structure:
+
+- **Version**: The version of the policy language, always includes `"2012-10-17"`.
+- **Id**: A unique identifier for the policy (optional).
+- **Statement**: One or more individual statements (Required).
+- **Sid**: Identifier for the statement (optional).
+- **Principal**: The account/user/role to which this policy applies.
+- **Action**: A list of actions that can be performed on the resources.
+- **Resource**: A list of resources on which the actions can be performed.
+- **Condition**: Conditions for when this policy is in effect (optional).
+---

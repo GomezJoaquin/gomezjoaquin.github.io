@@ -1,5 +1,6 @@
 ---
-title: "Crear un Usuario de Solo Lectura en MySQL"
+
+title: "Create a Read-Only User in MySQL"
 date: 2025-01-04T00:00:00+00:00
 draft: false
 author: "Joaquín Gómez"
@@ -11,79 +12,76 @@ toc: true
 mathjax: true
 ---
 
-## Creación de Usuario solo lectura en MySQL
-Crear un usuario de solo lectura para la base de datos `DataBase`, permitiendo conexiones desde cualquier host.
+## Creating a Read-Only User in MySQL
+Create a read-only user for the `DataBase` database, allowing connections from any host.
 
 ---
-## Pasos Realizados
 
-### 1. Conexión al Servidor MySQL
+## Steps Performed
 
-Se realizó la conexión al servidor MySQL utilizando un usuario con privilegios suficientes (por ejemplo, `root`).
+### 1. Connect to the MySQL Server
+
+Connected to the MySQL server using a user with sufficient privileges (e.g., `root`).
 
 ```bash
 mysql -u root -p
 ```
 
-### 2. Creación del Usuario
+### 2. Create the User
 
-Se creó el usuario `user_readonly` que podrá conectarse desde cualquier host (`%`). Este usuario fue creado sin privilegios iniciales utilizando el siguiente comando:
-
-```sql
-CREATE USER 'user_readonly'@'%' IDENTIFIED BY 'contraseña';
-```
-
-### 2.1 Creación del Usuario para que solo se pueda conectar desde un host especifico
-
-
-
+Created the `user_readonly` user, allowing connections from any host (`%`). This user was created without initial privileges using the following command:
 
 ```sql
-CREATE USER 'user_readonly'@'192.168.1.100' IDENTIFIED BY 'contraseña';
+CREATE USER 'user_readonly'@'%' IDENTIFIED BY 'password';
 ```
-con rangos exactos: 
+
+### 2.1 Create the User to Connect from a Specific Host
 
 ```sql
-CREATE USER 'user_readonly'@'192.168.1.100-192.168.1.110' IDENTIFIED BY 'contraseña';
+CREATE USER 'user_readonly'@'192.168.1.100' IDENTIFIED BY 'password';
 ```
 
-
-También se puede especificar un nombre de host, si está configurado en el DNS: 
+For exact ranges:
 
 ```sql
-CREATE USER 'user_readonly'@'examplehostname.com' IDENTIFIED BY 'contraseña';
+CREATE USER 'user_readonly'@'192.168.1.100-192.168.1.110' IDENTIFIED BY 'password';
 ```
 
-**Notas**:
-- Es una buena práctica de seguridad restringir el host desde donde el usuario debe conectarse al servidor de bases de datos. 
-- Sustituir `'contraseña'` por una contraseña segura.
-  
+You can also specify a hostname if it is configured in the DNS:
 
-### 3. Otorgar Permisos de Solo Lectura
+```sql
+CREATE USER 'user_readonly'@'examplehostname.com' IDENTIFIED BY 'password';
+```
 
-Se otorgaron permisos de solo lectura (`SELECT`) sobre todas las tablas de la base de datos `DataBase` con el siguiente comando:
+**Notes**:
+- It is a good security practice to restrict the host from which the user can connect to the database server.
+- Replace `'password'` with a secure password.
+
+### 3. Grant Read-Only Permissions
+
+Granted read-only permissions (`SELECT`) on all tables in the `DataBase` database using the following command:
 
 ```sql
 GRANT SELECT ON DataBase.* TO 'user_readonly'@'%';
 ```
 
-### 4. Aplicar Cambios
+### 4. Apply Changes
 
-Se aplicaron los cambios realizados para asegurar que los nuevos permisos tomen efecto:
+Applied the changes to ensure that the new permissions take effect:
 
 ```sql
 FLUSH PRIVILEGES;
 ```
 
-### 5. Verificación de la Creación del Usuario
+### 5. Verify User Creation
 
-Para verificar que el usuario fue creado correctamente, se ejecutó la siguiente consulta:
+To verify that the user was created successfully, the following query was executed:
 
 ```sql
 SELECT User, Host FROM mysql.user;
 ```
 
-Se buscó el usuario `user_readonly` en la lista de usuarios. La salida esperada debería incluir:
+The `user_readonly` user was searched for in the list of users. The expected output should include:
 
 ```
 +---------------------+-----------+
@@ -94,32 +92,29 @@ Se buscó el usuario `user_readonly` en la lista de usuarios. La salida esperada
 +---------------------+-----------+
 ```
 
-### 6. Verificación de Permisos
+### 6. Verify Permissions
 
-Para verificar que el usuario tiene los permisos correctos, se inició sesión como `user_readonly` y se ejecutó:
+To verify that the user has the correct permissions, logged in as `user_readonly` and executed:
 
 ```sql
 SHOW GRANTS;
 ```
 
-La salida esperada debería incluir:
+The expected output should include:
 
 ```
 +----------------------------------------------------+
-| Grants for user_readonly@%                     |
+| Grants for user_readonly@%                         |
 +----------------------------------------------------+
-| GRANT USAGE ON *.* TO `user_readonly`@`%`      |
-| GRANT SELECT ON `DataBase`.* TO `user_readonly`@`%` |
+| GRANT USAGE ON *.* TO `user_readonly`@`%`          |
+| GRANT SELECT ON `DataBase`.* TO `user_readonly`@`%`|
 +----------------------------------------------------+
 ```
-
-## 
-
-## Conclusiones
-
-Se ha creado un usuario `user_readonly` con permisos de solo lectura en la base de datos `DataBase`, permitiendo conexiones desde cualquier host. Se recomienda asegurar la contraseña y considerar el uso de conexiones seguras (SSL) si el servidor es accesible a través de Internet.
-
-
 
 ---
 
+## Conclusions
+
+A `user_readonly` user with read-only permissions has been created for the `DataBase` database, allowing connections from any host. It is recommended to secure the password and consider using secure connections (SSL) if the server is accessible over the Internet.
+
+---

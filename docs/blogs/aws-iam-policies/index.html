@@ -30,12 +30,12 @@
 
 <meta property="og:url" content="https://gomezjoaquin.github.io/blogs/aws-iam-policies/">
   <meta property="og:site_name" content="Joaquín Gómez">
-  <meta property="og:title" content="I AM Policies">
-  <meta property="og:description" content="AWS: IAM Policies Las políticas se utilizan para definir los permisos de los usuarios.
-A los usuarios se les pueden asignar políticas mediante documentos JSON.
-Es una buena práctica aplicar el principio de mínimo privilegio: No dar más permisos de los que el usuario necesita.
-Herencia de políticas IAM Existen las políticas por grupo y las políticas directas.
-Las políticas directas se aplican directamente sobre el usuario. Las políticas de grupo se aplican a todos los usuarios pertenecientes a ese grupo. Estructura de las políticas IAM Las políticas IAM tienen la siguiente estructura:">
+  <meta property="og:title" content="IAM Policies">
+  <meta property="og:description" content="AWS: IAM Policies Policies are used to define permissions for users.
+Users can be assigned policies through JSON documents.
+It is a best practice to apply the principle of least privilege: Do not grant more permissions than the user needs.
+Inheritance of IAM Policies There are group policies and direct policies.
+Direct policies are applied directly to the user. Group policies are applied to all users belonging to that group. Structure of IAM Policies IAM policies have the following structure:">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blogs">
@@ -47,12 +47,12 @@ Las políticas directas se aplican directamente sobre el usuario. Las políticas
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="I AM Policies">
-  <meta name="twitter:description" content="AWS: IAM Policies Las políticas se utilizan para definir los permisos de los usuarios.
-A los usuarios se les pueden asignar políticas mediante documentos JSON.
-Es una buena práctica aplicar el principio de mínimo privilegio: No dar más permisos de los que el usuario necesita.
-Herencia de políticas IAM Existen las políticas por grupo y las políticas directas.
-Las políticas directas se aplican directamente sobre el usuario. Las políticas de grupo se aplican a todos los usuarios pertenecientes a ese grupo. Estructura de las políticas IAM Las políticas IAM tienen la siguiente estructura:">
+  <meta name="twitter:title" content="IAM Policies">
+  <meta name="twitter:description" content="AWS: IAM Policies Policies are used to define permissions for users.
+Users can be assigned policies through JSON documents.
+It is a best practice to apply the principle of least privilege: Do not grant more permissions than the user needs.
+Inheritance of IAM Policies There are group policies and direct policies.
+Direct policies are applied directly to the user. Group policies are applied to all users belonging to that group. Structure of IAM Policies IAM policies have the following structure:">
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -127,7 +127,7 @@ Las políticas directas se aplican directamente sobre el usuario. Las políticas
   
 
   <title>
-I AM Policies | Joaquín Gómez
+IAM Policies | Joaquín Gómez
 
   </title>
 </head>
@@ -227,6 +227,13 @@ I AM Policies | Joaquín Gómez
                     
 
                     
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience"
+                            aria-label="experience">
+                            Experience
+                        </a>
+                    </li>
+                    
 
                     
                     <li class="nav-item navbar-text">
@@ -239,6 +246,13 @@ I AM Policies | Joaquín Gómez
 
                     
 
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#achievements"
+                            aria-label="achievements">
+                            Achievements
+                        </a>
+                    </li>
                     
 
                     
@@ -302,7 +316,7 @@ I AM Policies | Joaquín Gómez
       <div class="col-sm-12 col-md-12 col-lg-9">
         <div class="pr-lg-4">
           <div class="title mb-5">
-            <h1 class="text-center mb-4">I AM Policies</h1>
+            <h1 class="text-center mb-4">IAM Policies</h1>
             <div class="text-center">
               
                 Joaquín Gómez
@@ -319,36 +333,35 @@ I AM Policies | Joaquín Gómez
           </div>
           
           <div class="featured-image">
-            <img class="img-fluid mx-auto d-block" src="/images/structure-policies.png" alt="I AM Policies">
+            <img class="img-fluid mx-auto d-block" src="/images/structure-policies.png" alt="IAM Policies">
           </div>
           
           <article class="page-content  p-2">
           <h2 id="aws-iam-policies">AWS: IAM Policies</h2>
-<p>Las políticas se utilizan para <strong>definir los permisos</strong> de los usuarios.<br>
-A los usuarios se les pueden asignar políticas mediante documentos JSON.</p>
-<p>Es una buena práctica aplicar el <strong><em>principio de mínimo privilegio</em></strong>: No dar más permisos de los que el usuario necesita.</p>
+<p>Policies are used to <strong>define permissions</strong> for users.<br>
+Users can be assigned policies through JSON documents.</p>
+<p>It is a best practice to apply the <strong><em>principle of least privilege</em></strong>: Do not grant more permissions than the user needs.</p>
 <hr>
-<h2 id="herencia-de-políticas-iam">Herencia de políticas IAM</h2>
-<p>Existen las políticas <strong>por grupo</strong> y las <strong>políticas directas</strong>.</p>
+<h2 id="inheritance-of-iam-policies">Inheritance of IAM Policies</h2>
+<p>There are <strong>group policies</strong> and <strong>direct policies</strong>.</p>
 <ul>
-<li>Las <strong>políticas directas</strong> se aplican directamente sobre el usuario.</li>
-<li>Las <strong>políticas de grupo</strong> se aplican a todos los usuarios pertenecientes a ese grupo.</li>
+<li><strong>Direct policies</strong> are applied directly to the user.</li>
+<li><strong>Group policies</strong> are applied to all users belonging to that group.</li>
 </ul>
 <hr>
-<h2 id="estructura-de-las-políticas-iam">Estructura de las políticas IAM</h2>
-<p>Las políticas IAM tienen la siguiente estructura:</p>
+<h2 id="structure-of-iam-policies">Structure of IAM Policies</h2>
+<p>IAM policies have the following structure:</p>
 <ul>
-<li><strong>Version</strong>: Versión del lenguaje de la política, siempre incluye <code>&quot;2012-10-17&quot;</code>.</li>
-<li><strong>Id</strong>: Un identificador único para la política (opcional).</li>
-<li><strong>Statement</strong>: Una o más declaraciones individuales (Obligatorio).</li>
-<li><strong>Sid</strong>: Identificador para la declaración (opcional).</li>
-<li><strong>Principal</strong>: Cuenta/Usuario/Rol al que se aplica esta política.</li>
-<li><strong>Action</strong>: Lista de acciones que se pueden realizar sobre los recursos.</li>
-<li><strong>Resource</strong>: Lista de recursos sobre los que se pueden realizar las acciones.</li>
-<li><strong>Condition</strong>: Condiciones para cuando esta política está en efecto (opcional).</li>
+<li><strong>Version</strong>: The version of the policy language, always includes <code>&quot;2012-10-17&quot;</code>.</li>
+<li><strong>Id</strong>: A unique identifier for the policy (optional).</li>
+<li><strong>Statement</strong>: One or more individual statements (Required).</li>
+<li><strong>Sid</strong>: Identifier for the statement (optional).</li>
+<li><strong>Principal</strong>: The account/user/role to which this policy applies.</li>
+<li><strong>Action</strong>: A list of actions that can be performed on the resources.</li>
+<li><strong>Resource</strong>: A list of resources on which the actions can be performed.</li>
+<li><strong>Condition</strong>: Conditions for when this policy is in effect (optional).</li>
 </ul>
 <hr>
-<p>¡Ahora tienes una idea clara sobre las políticas IAM de AWS y su estructura!</p>
 
           </article>
         </div>
@@ -364,8 +377,8 @@ A los usuarios se les pueden asignar políticas mediante documentos JSON.</p>
                 <nav id="TableOfContents">
   <ul>
     <li><a href="#aws-iam-policies">AWS: IAM Policies</a></li>
-    <li><a href="#herencia-de-políticas-iam">Herencia de políticas IAM</a></li>
-    <li><a href="#estructura-de-las-políticas-iam">Estructura de las políticas IAM</a></li>
+    <li><a href="#inheritance-of-iam-policies">Inheritance of IAM Policies</a></li>
+    <li><a href="#structure-of-iam-policies">Structure of IAM Policies</a></li>
   </ul>
 </nav>
               </div>
@@ -404,17 +417,17 @@ A los usuarios se les pueden asignar políticas mediante documentos JSON.</p>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://twitter.com/share?text=I%20AM%20Policies&url=https%3a%2f%2fgomezjoaquin.github.io%2fblogs%2faws-iam-policies%2f">
+                  <a target="_blank" href="https://twitter.com/share?text=IAM%20Policies&url=https%3a%2f%2fgomezjoaquin.github.io%2fblogs%2faws-iam-policies%2f">
                     <i class="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://api.whatsapp.com/send?text=I%20AM%20Policies: https%3a%2f%2fgomezjoaquin.github.io%2fblogs%2faws-iam-policies%2f">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=IAM%20Policies: https%3a%2f%2fgomezjoaquin.github.io%2fblogs%2faws-iam-policies%2f">
                     <i class="fab fa-whatsapp"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href='mailto:?subject=I%20AM%20Policies&amp;body=Check%20out%20this%20site https%3a%2f%2fgomezjoaquin.github.io%2fblogs%2faws-iam-policies%2f'>
+                  <a target="_blank" href='mailto:?subject=IAM%20Policies&amp;body=Check%20out%20this%20site https%3a%2f%2fgomezjoaquin.github.io%2fblogs%2faws-iam-policies%2f'>
                     <i class="fa fa-envelope"></i>
                   </a>
                 </li>
@@ -494,21 +507,24 @@ A los usuarios se les pueden asignar políticas mediante documentos JSON.</p>
                 
                 <div class="card-header">
                     <a href="/blogs/add-users-mysql/">
-                        <img src="/images/add-user-mysq.jpg" class="card-img-top" alt="Crear un Usuario de Solo Lectura en MySQL">
+                        <img src="/images/add-user-mysq.jpg" class="card-img-top" alt="Create a Read-Only User in MySQL">
                     </a>
                 </div>
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
                     <a href="/blogs/add-users-mysql/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Crear un Usuario de Solo Lectura en MySQL">Crear un Usuario de Solo …</h5>
+                        <h5 class="card-title bg-transparent" title="Create a Read-Only User in MySQL">Create a Read-Only User …</h5>
                     </a>
                     <div class="card-text secondary-font">
-                        <p><h2 id="creación-de-usuario-solo-lectura-en-mysql">Creación de Usuario solo lectura en MySQL</h2>
-<p>Crear un usuario de solo lectura para la base de datos <code>DataBase</code>, permitiendo conexiones desde cualquier host.</p>
+                        <p><h2 id="creating-a-read-only-user-in-mysql">Creating a Read-Only User in MySQL</h2>
+<p>Create a read-only user for the <code>DataBase</code> database, allowing connections from any host.</p>
 <hr>
-<h2 id="pasos-realizados">Pasos Realizados</h2>
-<h3 id="1-conexión-al-servidor-mysql">1. Conexión al Servidor MySQL</h3>
-<p>Se realizó la conexión al servidor MySQL utilizando un usuario con privilegios suficientes (por …</p></p>
+<h2 id="steps-performed">Steps Performed</h2>
+<h3 id="1-connect-to-the-mysql-server">1. Connect to the MySQL Server</h3>
+<p>Connected to the MySQL server using a user with sufficient privileges (e.g., <code>root</code>).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mysql -u root -p
+</span></span></code></pre></div><h3 id="2-create-the-user">2. Create the User</h3>
+<p>Created …</p></p>
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
@@ -523,20 +539,22 @@ A los usuarios se les pueden asignar políticas mediante documentos JSON.</p>
                 
                 <div class="card-header">
                     <a href="/blogs/ssh-clave-publica/">
-                        <img src="/images/cifrado-asimetrico.jpg" class="card-img-top" alt="Configuración de Claves SSH en Windows y Linux: Guía Práctica">
+                        <img src="/images/cifrado-asimetrico.jpg" class="card-img-top" alt="Configuring SSH Keys on Windows and Linux: A Practical Guide">
                     </a>
                 </div>
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
                     <a href="/blogs/ssh-clave-publica/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Configuración de Claves SSH en Windows y Linux: Guía Práctica">Configuración de Claves …</h5>
+                        <h5 class="card-title bg-transparent" title="Configuring SSH Keys on Windows and Linux: A Practical Guide">Configuring SSH Keys on …</h5>
                     </a>
                     <div class="card-text secondary-font">
-                        <p><h2 id="habilita-conexión-ssh-con-clave-pública-en-windows-y-servidores-linux">Habilita Conexión SSH con Clave Pública en Windows y Servidores Linux</h2>
-<h6 id="usar-la-clave-pública-que-en-windows-se-encuentra-en-la-carpeta-del-usuario">Usar la clave pública que en Windows se encuentra en la carpeta del usuario</h6>
-<p>La clave pública de SSH en Windows se encuentra en la siguiente ruta:</p>
-<pre tabindex="0"><code>C:\Users\TuUsuario\.ssh\id_rsa.pub
-</code></pre><p>Si no hay una clave, será necesario <strong>generar una</strong>. …</p></p>
+                        <p><h2 id="enable-ssh-connection-with-public-key-on-windows-and-linux-servers">Enable SSH Connection with Public Key on Windows and Linux Servers</h2>
+<h6 id="use-the-public-key-located-in-the-users-folder-on-windows">Use the public key located in the user&rsquo;s folder on Windows</h6>
+<p>The SSH public key on Windows can be found at the following path:</p>
+<pre tabindex="0"><code>C:UsersYourUser.sshid_rsa.pub
+</code></pre><p>If there is no key, you will need to <strong>generate one</strong>.</p>
+<hr>
+<h6 id="generate-an-ssh-key-on-the-local-machine">Generate an SSH key …</h6></p>
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
@@ -551,19 +569,21 @@ A los usuarios se les pueden asignar políticas mediante documentos JSON.</p>
                 
                 <div class="card-header">
                     <a href="/blogs/aws-iam/">
-                        <img src="/images/iam.png" class="card-img-top" alt="I AM">
+                        <img src="/images/iam.png" class="card-img-top" alt="IAM">
                     </a>
                 </div>
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
                     <a href="/blogs/aws-iam/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="I AM">I AM</h5>
+                        <h5 class="card-title bg-transparent" title="IAM">IAM</h5>
                     </a>
                     <div class="card-text secondary-font">
-                        <p><h2 id="aws-i-am-identity-and-acces-management">AWS: I AM Identity and Acces Management</h2>
-<p>Es un servicio global.</p>
-<p>Se utiliza para gestionar el acceso a los recursos de la nube, controlando quién puede realizar qué acciones sobre qué recursos mediante políticas de permisos.</p>
-<p><strong>Cuenta root/ raíz</strong> es la cuenta que se crea por defecto, es buena práctica …</p></p>
+                        <p><h2 id="aws-iam-identity-and-access-management">AWS: IAM (Identity and Access Management)</h2>
+<p>IAM is a <strong>global service</strong>.</p>
+<p>It is used to manage access to cloud resources, controlling <strong>who</strong> can perform <strong>what actions</strong> on <strong>which resources</strong> through permission policies.</p>
+<hr>
+<h3 id="root-account"><strong>Root Account</strong></h3>
+<p>The <strong>root account</strong> is the account that is created by default when setting up AWS. It …</p></p>
                     </div>
                 </div>
                 <div class="mt-auto card-footer">

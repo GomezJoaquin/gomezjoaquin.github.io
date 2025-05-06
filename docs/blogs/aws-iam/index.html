@@ -30,11 +30,10 @@
 
 <meta property="og:url" content="https://gomezjoaquin.github.io/blogs/aws-iam/">
   <meta property="og:site_name" content="Joaquín Gómez">
-  <meta property="og:title" content="I AM">
-  <meta property="og:description" content="AWS: I AM Identity and Acces Management Es un servicio global.
-Se utiliza para gestionar el acceso a los recursos de la nube, controlando quién puede realizar qué acciones sobre qué recursos mediante políticas de permisos.
-Cuenta root/ raíz es la cuenta que se crea por defecto, es buena práctica utilizarla unicamente cuando es necesario ser root, para el resto de tareas utilizar una cuenta con el mimino privilegio.
-Usuarios: Representan a personas dentro de una organización. 1 usuario = 1 persona.">
+  <meta property="og:title" content="IAM">
+  <meta property="og:description" content="AWS: IAM (Identity and Access Management) IAM is a global service.
+It is used to manage access to cloud resources, controlling who can perform what actions on which resources through permission policies.
+Root Account The root account is the account that is created by default when setting up AWS. It is a best practice to use the root account only when absolutely necessary (e.g., for account-level tasks). For all other tasks, use an account with the principle of least privilege.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blogs">
@@ -46,11 +45,10 @@ Usuarios: Representan a personas dentro de una organización. 1 usuario = 1 pers
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="I AM">
-  <meta name="twitter:description" content="AWS: I AM Identity and Acces Management Es un servicio global.
-Se utiliza para gestionar el acceso a los recursos de la nube, controlando quién puede realizar qué acciones sobre qué recursos mediante políticas de permisos.
-Cuenta root/ raíz es la cuenta que se crea por defecto, es buena práctica utilizarla unicamente cuando es necesario ser root, para el resto de tareas utilizar una cuenta con el mimino privilegio.
-Usuarios: Representan a personas dentro de una organización. 1 usuario = 1 persona.">
+  <meta name="twitter:title" content="IAM">
+  <meta name="twitter:description" content="AWS: IAM (Identity and Access Management) IAM is a global service.
+It is used to manage access to cloud resources, controlling who can perform what actions on which resources through permission policies.
+Root Account The root account is the account that is created by default when setting up AWS. It is a best practice to use the root account only when absolutely necessary (e.g., for account-level tasks). For all other tasks, use an account with the principle of least privilege.">
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -125,7 +123,7 @@ Usuarios: Representan a personas dentro de una organización. 1 usuario = 1 pers
   
 
   <title>
-I AM | Joaquín Gómez
+IAM | Joaquín Gómez
 
   </title>
 </head>
@@ -225,6 +223,13 @@ I AM | Joaquín Gómez
                     
 
                     
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience"
+                            aria-label="experience">
+                            Experience
+                        </a>
+                    </li>
+                    
 
                     
                     <li class="nav-item navbar-text">
@@ -237,6 +242,13 @@ I AM | Joaquín Gómez
 
                     
 
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#achievements"
+                            aria-label="achievements">
+                            Achievements
+                        </a>
+                    </li>
                     
 
                     
@@ -300,7 +312,7 @@ I AM | Joaquín Gómez
       <div class="col-sm-12 col-md-12 col-lg-9">
         <div class="pr-lg-4">
           <div class="title mb-5">
-            <h1 class="text-center mb-4">I AM</h1>
+            <h1 class="text-center mb-4">IAM</h1>
             <div class="text-center">
               
               Dec 28, 2024
@@ -314,21 +326,84 @@ I AM | Joaquín Gómez
           </div>
           
           <div class="featured-image">
-            <img class="img-fluid mx-auto d-block" src="/images/iam.png" alt="I AM">
+            <img class="img-fluid mx-auto d-block" src="/images/iam.png" alt="IAM">
           </div>
           
           <article class="page-content  p-2">
-          <h2 id="aws-i-am-identity-and-acces-management">AWS: I AM Identity and Acces Management</h2>
-<p>Es un servicio global.</p>
-<p>Se utiliza para gestionar el acceso a los recursos de la nube, controlando quién puede realizar qué acciones sobre qué recursos mediante políticas de permisos.</p>
-<p><strong>Cuenta root/ raíz</strong> es la cuenta que se crea por defecto, es buena práctica utilizarla unicamente cuando es necesario ser root, para el resto de tareas utilizar una cuenta con el mimino privilegio.</p>
-<p><strong>Usuarios</strong>: Representan a personas dentro de una organización. 1 usuario  = 1 persona.</p>
-<p><strong>Grupos:</strong> Su única función en contener a los usuarios, no es posible que un grupo contenga a otro grupo.</p>
+          <h2 id="aws-iam-identity-and-access-management">AWS: IAM (Identity and Access Management)</h2>
+<p>IAM is a <strong>global service</strong>.</p>
+<p>It is used to manage access to cloud resources, controlling <strong>who</strong> can perform <strong>what actions</strong> on <strong>which resources</strong> through permission policies.</p>
+<hr>
+<h3 id="root-account"><strong>Root Account</strong></h3>
+<p>The <strong>root account</strong> is the account that is created by default when setting up AWS. It is a best practice to use the root account <strong>only when absolutely necessary</strong> (e.g., for account-level tasks). For all other tasks, use an account with the <strong>principle of least privilege</strong>.</p>
+<hr>
+<h3 id="users"><strong>Users</strong></h3>
+<p><strong>Users</strong> represent individuals within an organization. The general rule is <strong>1 user = 1 person</strong>.</p>
+<hr>
+<h3 id="groups"><strong>Groups</strong></h3>
+<p><strong>Groups</strong> are used to organize users. Their sole purpose is to contain users, and it is not possible for one group to contain another group.</p>
 <ul>
-<li>Los usuarios no tienen por que pertenecer a un grupo.</li>
-<li>Los usuarios pueden pertenecer a multiples grupos en simultaneo.</li>
+<li>Users do not need to belong to a group.</li>
+<li>Users can belong to multiple groups simultaneously.</li>
 </ul>
-<p><a href="https://gomezjoaquin.github.io/blogs/aws-iam-policies/">IAM Policies</a>.</p>
+<p>For example:</p>
+<ul>
+<li>A user can belong to both the &ldquo;Developers&rdquo; group and the &ldquo;Admins&rdquo; group, inheriting permissions from both.</li>
+</ul>
+<p>For more details on IAM policies, check out this <a href="https://gomezjoaquin.github.io/blogs/aws-iam-policies/">IAM Policies Guide</a>.</p>
+<hr>
+<h2 id="difference-between-groups-and-roles"><strong>Difference Between Groups and Roles</strong></h2>
+<h3 id="groups-1"><strong>Groups</strong></h3>
+<ul>
+<li><strong>Purpose</strong>: Groups are used to manage permissions for multiple users at once.</li>
+<li><strong>Use Case</strong>: When you have multiple users who need the same set of permissions, you can assign them to a group and attach the necessary policies to the group. This simplifies permission management.</li>
+<li><strong>Example</strong>:
+<ul>
+<li>A &ldquo;Developers&rdquo; group might have permissions to access EC2 instances and S3 buckets.</li>
+<li>An &ldquo;Admins&rdquo; group might have full access to all resources.</li>
+</ul>
+</li>
+</ul>
+<h3 id="roles"><strong>Roles</strong></h3>
+<ul>
+<li><strong>Purpose</strong>: Roles are used to grant temporary permissions to entities (users, applications, or services) without requiring long-term credentials.</li>
+<li><strong>Use Case</strong>: When an AWS service or external entity (e.g., an application running on an EC2 instance) needs to access AWS resources, you assign a role to that service or entity. Roles are also used for cross-account access.</li>
+<li><strong>Example</strong>:
+<ul>
+<li>An EC2 instance needs to read data from an S3 bucket. You assign a role to the EC2 instance with the necessary permissions.</li>
+<li>A Lambda function needs to write logs to CloudWatch. You assign a role to the Lambda function with the appropriate permissions.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="when-to-use-groups-vs-roles"><strong>When to Use Groups vs. Roles</strong></h3>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Feature</strong></th>
+          <th><strong>Groups</strong></th>
+          <th><strong>Roles</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Who uses it?</strong></td>
+          <td>Users within your AWS account</td>
+          <td>AWS services, applications, or external entities</td>
+      </tr>
+      <tr>
+          <td><strong>Purpose</strong></td>
+          <td>Manage permissions for multiple users</td>
+          <td>Grant temporary permissions to entities</td>
+      </tr>
+      <tr>
+          <td><strong>Example</strong></td>
+          <td>Assign &ldquo;Developers&rdquo; group to all developers</td>
+          <td>Assign a role to an EC2 instance to access S3</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
 
           </article>
         </div>
@@ -343,7 +418,20 @@ I AM | Joaquín Gómez
               <div class="toc-content">
                 <nav id="TableOfContents">
   <ul>
-    <li><a href="#aws-i-am-identity-and-acces-management">AWS: I AM Identity and Acces Management</a></li>
+    <li><a href="#aws-iam-identity-and-access-management">AWS: IAM (Identity and Access Management)</a>
+      <ul>
+        <li><a href="#root-account"><strong>Root Account</strong></a></li>
+        <li><a href="#users"><strong>Users</strong></a></li>
+        <li><a href="#groups"><strong>Groups</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#difference-between-groups-and-roles"><strong>Difference Between Groups and Roles</strong></a>
+      <ul>
+        <li><a href="#groups-1"><strong>Groups</strong></a></li>
+        <li><a href="#roles"><strong>Roles</strong></a></li>
+        <li><a href="#when-to-use-groups-vs-roles"><strong>When to Use Groups vs. Roles</strong></a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
               </div>
@@ -382,17 +470,17 @@ I AM | Joaquín Gómez
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://twitter.com/share?text=I%20AM&url=https%3a%2f%2fgomezjoaquin.github.io%2fblogs%2faws-iam%2f">
+                  <a target="_blank" href="https://twitter.com/share?text=IAM&url=https%3a%2f%2fgomezjoaquin.github.io%2fblogs%2faws-iam%2f">
                     <i class="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://api.whatsapp.com/send?text=I%20AM: https%3a%2f%2fgomezjoaquin.github.io%2fblogs%2faws-iam%2f">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=IAM: https%3a%2f%2fgomezjoaquin.github.io%2fblogs%2faws-iam%2f">
                     <i class="fab fa-whatsapp"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href='mailto:?subject=I%20AM&amp;body=Check%20out%20this%20site https%3a%2f%2fgomezjoaquin.github.io%2fblogs%2faws-iam%2f'>
+                  <a target="_blank" href='mailto:?subject=IAM&amp;body=Check%20out%20this%20site https%3a%2f%2fgomezjoaquin.github.io%2fblogs%2faws-iam%2f'>
                     <i class="fa fa-envelope"></i>
                   </a>
                 </li>
@@ -472,21 +560,24 @@ I AM | Joaquín Gómez
                 
                 <div class="card-header">
                     <a href="/blogs/add-users-mysql/">
-                        <img src="/images/add-user-mysq.jpg" class="card-img-top" alt="Crear un Usuario de Solo Lectura en MySQL">
+                        <img src="/images/add-user-mysq.jpg" class="card-img-top" alt="Create a Read-Only User in MySQL">
                     </a>
                 </div>
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
                     <a href="/blogs/add-users-mysql/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Crear un Usuario de Solo Lectura en MySQL">Crear un Usuario de Solo …</h5>
+                        <h5 class="card-title bg-transparent" title="Create a Read-Only User in MySQL">Create a Read-Only User …</h5>
                     </a>
                     <div class="card-text secondary-font">
-                        <p><h2 id="creación-de-usuario-solo-lectura-en-mysql">Creación de Usuario solo lectura en MySQL</h2>
-<p>Crear un usuario de solo lectura para la base de datos <code>DataBase</code>, permitiendo conexiones desde cualquier host.</p>
+                        <p><h2 id="creating-a-read-only-user-in-mysql">Creating a Read-Only User in MySQL</h2>
+<p>Create a read-only user for the <code>DataBase</code> database, allowing connections from any host.</p>
 <hr>
-<h2 id="pasos-realizados">Pasos Realizados</h2>
-<h3 id="1-conexión-al-servidor-mysql">1. Conexión al Servidor MySQL</h3>
-<p>Se realizó la conexión al servidor MySQL utilizando un usuario con privilegios suficientes (por …</p></p>
+<h2 id="steps-performed">Steps Performed</h2>
+<h3 id="1-connect-to-the-mysql-server">1. Connect to the MySQL Server</h3>
+<p>Connected to the MySQL server using a user with sufficient privileges (e.g., <code>root</code>).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mysql -u root -p
+</span></span></code></pre></div><h3 id="2-create-the-user">2. Create the User</h3>
+<p>Created …</p></p>
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
@@ -501,20 +592,22 @@ I AM | Joaquín Gómez
                 
                 <div class="card-header">
                     <a href="/blogs/ssh-clave-publica/">
-                        <img src="/images/cifrado-asimetrico.jpg" class="card-img-top" alt="Configuración de Claves SSH en Windows y Linux: Guía Práctica">
+                        <img src="/images/cifrado-asimetrico.jpg" class="card-img-top" alt="Configuring SSH Keys on Windows and Linux: A Practical Guide">
                     </a>
                 </div>
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
                     <a href="/blogs/ssh-clave-publica/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Configuración de Claves SSH en Windows y Linux: Guía Práctica">Configuración de Claves …</h5>
+                        <h5 class="card-title bg-transparent" title="Configuring SSH Keys on Windows and Linux: A Practical Guide">Configuring SSH Keys on …</h5>
                     </a>
                     <div class="card-text secondary-font">
-                        <p><h2 id="habilita-conexión-ssh-con-clave-pública-en-windows-y-servidores-linux">Habilita Conexión SSH con Clave Pública en Windows y Servidores Linux</h2>
-<h6 id="usar-la-clave-pública-que-en-windows-se-encuentra-en-la-carpeta-del-usuario">Usar la clave pública que en Windows se encuentra en la carpeta del usuario</h6>
-<p>La clave pública de SSH en Windows se encuentra en la siguiente ruta:</p>
-<pre tabindex="0"><code>C:\Users\TuUsuario\.ssh\id_rsa.pub
-</code></pre><p>Si no hay una clave, será necesario <strong>generar una</strong>. …</p></p>
+                        <p><h2 id="enable-ssh-connection-with-public-key-on-windows-and-linux-servers">Enable SSH Connection with Public Key on Windows and Linux Servers</h2>
+<h6 id="use-the-public-key-located-in-the-users-folder-on-windows">Use the public key located in the user&rsquo;s folder on Windows</h6>
+<p>The SSH public key on Windows can be found at the following path:</p>
+<pre tabindex="0"><code>C:UsersYourUser.sshid_rsa.pub
+</code></pre><p>If there is no key, you will need to <strong>generate one</strong>.</p>
+<hr>
+<h6 id="generate-an-ssh-key-on-the-local-machine">Generate an SSH key …</h6></p>
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
@@ -529,19 +622,21 @@ I AM | Joaquín Gómez
                 
                 <div class="card-header">
                     <a href="/blogs/aws-iam/">
-                        <img src="/images/iam.png" class="card-img-top" alt="I AM">
+                        <img src="/images/iam.png" class="card-img-top" alt="IAM">
                     </a>
                 </div>
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
                     <a href="/blogs/aws-iam/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="I AM">I AM</h5>
+                        <h5 class="card-title bg-transparent" title="IAM">IAM</h5>
                     </a>
                     <div class="card-text secondary-font">
-                        <p><h2 id="aws-i-am-identity-and-acces-management">AWS: I AM Identity and Acces Management</h2>
-<p>Es un servicio global.</p>
-<p>Se utiliza para gestionar el acceso a los recursos de la nube, controlando quién puede realizar qué acciones sobre qué recursos mediante políticas de permisos.</p>
-<p><strong>Cuenta root/ raíz</strong> es la cuenta que se crea por defecto, es buena práctica …</p></p>
+                        <p><h2 id="aws-iam-identity-and-access-management">AWS: IAM (Identity and Access Management)</h2>
+<p>IAM is a <strong>global service</strong>.</p>
+<p>It is used to manage access to cloud resources, controlling <strong>who</strong> can perform <strong>what actions</strong> on <strong>which resources</strong> through permission policies.</p>
+<hr>
+<h3 id="root-account"><strong>Root Account</strong></h3>
+<p>The <strong>root account</strong> is the account that is created by default when setting up AWS. It …</p></p>
                     </div>
                 </div>
                 <div class="mt-auto card-footer">

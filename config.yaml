@@ -170,18 +170,19 @@ params:
         - "Docker"
 
   # Experience
-    experience:
-      enable: true
-      items:
-        - job: "DevOps Engineer"
-          company: "GeneXus Consulting"
-          companyUrl: "https://www.genexusconsulting.com/"
-          date: "Sep 2021 - Present"
-          content: |
-            - Designed and implemented CI/CD pipelines using Jenkins and Kubernetes, reducing deployment time by 50%.
-            - Automated infrastructure provisioning using CDK and Ansible, improving scalability and reliability.
-            - Migrated on-premise applications to AWS and Azure, optimizing costs and performance.
-            - Provided DevOps consulting services to clients, helping them adopt best practices in automation and cloud computing.
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "DevOps Engineer "
+        company: "GeneXus Consulting"
+        companyUrl: "https://www.genexusconsulting.com/"
+        date: "Sep 2021 - present"
+        featuredLink:
+          enable: false
+          name: "View the project"
+          url: "https://example.com"
+        content: "I am currently working as a DevOps Enginer at [GeneXus Consulting](https://www.genexusconsulting.com/) in Montevideo, Uruguay. I am currently providing DevOps consulting services for clients who want to automate their development workflow."
 
     #  - job: "Software Developer"
     #    company: "Amazon"
@@ -260,19 +261,19 @@ params:
 
   # Achievements
   achievements:
-  enable: true
-  items:
-    - title: "AWS Cloud Practitioner"
-      content: |
-        Earned AWS Cloud Practitioner certification, demonstrating foundational knowledge of AWS Cloud concepts, services, and security.
-      url: https://www.credly.com/badges/dc0a3411-721b-45ed-88df-02b271e2b570
-      image: /images/aws-cloud-practitioner.png
+    enable: true
+    items:
+      - title: "AWS Cloud Practitioner"
+        content: |
+          Earned AWS Cloud Practitioner certification, demonstrating foundational knowledge of AWS Cloud concepts, services, and security.
+        url: https://www.credly.com/badges/dc0a3411-721b-45ed-88df-02b271e2b570
+        image: /images/aws-cloud-practitioner.png
 
-    - title: "Azure Fundamentals"
-      content: |
-        Achieved Azure Fundamentals certification, showcasing essential knowledge of core Azure services, cloud concepts, security, compliance, and pricing.
-      url: https://learn.microsoft.com/api/credentials/share/es-mx/JoaqunGmez-2593/16A11669F0EE1F91?sharingId
-      image: /images/azure-az.png
+      - title: "Azure Fundamentals"
+        content: |
+          Achieved Azure Fundamentals certification, showcasing essential knowledge of core Azure services, cloud concepts, security, compliance, and pricing.
+        url: https://learn.microsoft.com/api/credentials/share/es-mx/JoaqunGmez-2593/16A11669F0EE1F91?sharingId
+        image: /images/azure-az.png
 
   #Projects
   projects:
@@ -331,6 +332,12 @@ params:
       I'm always open to discussing new opportunities, collaborations, or just having a chat. Feel free to reach out to me!
     btnName: "Email Me"
     btnLink: mailto:ggomezjjoaquin@gmail.com
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+    #   messageRows: 5
 
   footer:
     recentPosts:
@@ -347,7 +354,7 @@ params:
 
   # List pages like blogs and posts
   listPages:
-    disableFeaturedImage: false
+    disableFeaturedImage: true
 
   # Single pages like blog and post
   singlePages:
