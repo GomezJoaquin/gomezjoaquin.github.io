@@ -137,10 +137,10 @@ params:
     image: /images/hero.png
     roundImage: true
     button:
-      enable: true
+      enable: false
       name: "Download Resume"
       url: "/resume.pdf"
-      download: true
+      download: false
       newPage: false
     socialLinks:
       fontAwesomeIcons:
