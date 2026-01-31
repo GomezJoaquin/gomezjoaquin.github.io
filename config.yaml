@@ -89,23 +89,23 @@ params:
 
   # color preference
   # When using hex codes for colors, quotations must be used along with the # sign
-  color:
-    textColor: "#343a40"
-    secondaryTextColor: "#6c757d"
-    textLinkColor: "#FF6B35"
-    backgroundColor: "#eaedf0"
-    secondaryBackgroundColor: "#64ffda1a"
-    primaryColor: "#FF6B35"
-    secondaryColor: "#232F3E"
+  # color:
+  #   textColor: "#343a40"
+  #   secondaryTextColor: "#6c757d"
+  #   textLinkColor: "#007bff"
+  #   backgroundColor: "#eaedf0"
+  #   secondaryBackgroundColor: "#64ffda1a"
+  #   primaryColor: "#007bff"
+  #   secondaryColor: "#f8f9fa"
 
-    darkmode:
-      textColor: "#e4e6eb"
-      secondaryTextColor: "#b0b3b8"
-      textLinkColor: "#FF6B35"
-      backgroundColor: "#18191a"
-      secondaryBackgroundColor: "#212529"
-      primaryColor: "#FF6B35"
-      secondaryColor: "#232F3E"
+  #   darkmode:
+  #     textColor: "#e4e6eb"
+  #     secondaryTextColor: "#b0b3b8"
+  #     textLinkColor: "#ffffff"
+  #     backgroundColor: "#18191a"
+  #     secondaryBackgroundColor: "#212529"
+  #     primaryColor: "#ffffff"
+  #     secondaryColor: "#212529"
 
   # If you want to customize the menu, you can change it here
   navbar:
@@ -163,8 +163,6 @@ params:
       - Orchestrate containerized applications with Kubernetes and Docker
       - Automate server provisioning and configuration with Ansible
       
-      📈 **Impact:** Reduced deployment time by 70% and improved system reliability by 95% at GeneXus Consulting.
-      
       Currently, I work at GeneXus Consulting, where I provide DevOps consulting services to help clients automate their development workflows and optimize their cloud infrastructure.
     skills:
       enable: true
@@ -195,8 +193,6 @@ params:
         content: "DevOps Engineer at [GeneXus Consulting](https://www.genexusconsulting.com/) providing automation solutions that deliver measurable results:
 
         • **Reduced deployment time** from 2 hours to 20 minutes (83% improvement)
-        
-        • **Achieved 99.9% uptime** across client infrastructures
         
         • **Automated 15+ manual processes** saving 40 hours/week
         
@@ -355,10 +351,8 @@ params:
   contact:
     enable: true
     content: |
-      Looking for a DevOps Engineer to optimize your infrastructure? 
-      
-      Let's discuss how I can help automate your workflows, scale your systems, and reduce operational costs through proven cloud solutions.
-    btnName: "Let's Talk DevOps"
+      I'm always interested in connecting with other professionals, discussing new ideas, and exploring opportunities to collaborate. Feel free to reach out!
+    btnName: "Get in Touch"
     btnLink: mailto:ggomezjjoaquin@gmail.com
     # formspree:
     #   enable: true # `contact.email` value will be ignored
