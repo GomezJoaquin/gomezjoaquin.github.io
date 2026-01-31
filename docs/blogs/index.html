@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
-<link rel="icon" href=/fav.png type="image/gif">
+<link rel="icon" href=/images/fav.png type="image/gif">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,14 +28,25 @@
 
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-MEASUREMENT_ID', { 'anonymize_ip': false });
+}
+</script>
+
 <meta property="og:title" content="Blogs" />
-<meta property="og:description" content="Welcome to my personal website! I am a DevOps Engineer passionate about automation, cloud computing, and optimizing workflows." />
+<meta property="og:description" content="DevOps Engineer specializing in AWS, Kubernetes, Terraform, and CI/CD automation. AWS Solutions Architect Associate certified. Expert in cloud infrastructure optimization." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://gomezjoaquin.github.io/blogs/" /><meta property="og:site_name" content="Joaquín Gómez - DevOps Engineer" />
+<meta property="og:url" content="https://gomezjoaquin.github.io/blogs/" /><meta property="og:site_name" content="Joaquín Gómez - AWS Certified DevOps Engineer | Cloud Infrastructure Specialist" />
 
 
 <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Blogs"/>
-<meta name="twitter:description" content="Welcome to my personal website! I am a DevOps Engineer passionate about automation, cloud computing, and optimizing workflows."/>
+<meta name="twitter:description" content="DevOps Engineer specializing in AWS, Kubernetes, Terraform, and CI/CD automation. AWS Solutions Architect Associate certified. Expert in cloud infrastructure optimization."/>
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -48,20 +59,20 @@
     :root {
         --text-color: #343a40;
         --text-secondary-color: #6c757d;
-        --text-link-color: #007bff;
+        --text-link-color: #FF6B35;
         --background-color: #eaedf0;
         --secondary-background-color: #64ffda1a;
-        --primary-color: #007bff;
-        --secondary-color: #f8f9fa;
+        --primary-color: #FF6B35;
+        --secondary-color: #232F3E;
 
          
         --text-color-dark: #e4e6eb;
         --text-secondary-color-dark: #b0b3b8;
-        --text-link-color-dark: #ffffff;
+        --text-link-color-dark: #FF6B35;
         --background-color-dark: #18191a;
         --secondary-background-color-dark: #212529;
-        --primary-color-dark: #ffffff;
-        --secondary-color-dark: #212529;
+        --primary-color-dark: #FF6B35;
+        --secondary-color-dark: #232F3E;
     }
     body {
         font-size: 1rem;
@@ -168,6 +179,8 @@ Blogs | Joaquín Gómez
             
             <a class="navbar-brand primary-font text-wrap" href="/">
                 
+                <img src="/images/fav.png" width="30" height="30"
+                    class="d-inline-block align-top">
                 Joaquín Gómez
                 
             </a>
@@ -534,6 +547,13 @@ Root Account The root account is the account that is created by default when set
 </div><div class="container py-4">
     <div class="row justify-content-center">
         <div class="col-md-4 text-center">
+            
+                <div class="pb-2">
+                    <a href="https://gomezjoaquin.github.io/" title="Joaquín Gómez">
+                        <img alt="Footer logo" src="/images/fav.png"
+                            height="40px" width="40px">
+                    </a>
+                </div>
             
             &copy; 2026  All rights reserved
             <div class="text-secondary">
