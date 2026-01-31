@@ -263,6 +263,12 @@ params:
   achievements:
     enable: true
     items:
+      - title: "AWS Certified Solutions Architect – Associate"
+        content: |
+          Earned AWS Certified Solutions Architect – Associate certification, demonstrating comprehensive understanding of AWS services and the ability to build secure, robust solutions using architectural design principles based on customer requirements.
+        url: https://www.credly.com/badges/5fb6c7af-0cfe-404b-abdb-f2f1f181a516
+        image: /images/aws-solutions-architect-associate.png
+
       - title: "AWS Cloud Practitioner"
         content: |
           Earned AWS Cloud Practitioner certification, demonstrating foundational knowledge of AWS Cloud concepts, services, and security.

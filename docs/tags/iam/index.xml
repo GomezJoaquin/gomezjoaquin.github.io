@@ -4,7 +4,7 @@
     <title>IAM on Joaquín Gómez</title>
     <link>https://gomezjoaquin.github.io/tags/iam/</link>
     <description>Recent content in IAM on Joaquín Gómez</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 28 Dec 2024 01:54:00 +0530</lastBuildDate>
     <atom:link href="https://gomezjoaquin.github.io/tags/iam/index.xml" rel="self" type="application/rss+xml" />
@@ -13,14 +13,14 @@
       <link>https://gomezjoaquin.github.io/blogs/aws-iam/</link>
       <pubDate>Sat, 28 Dec 2024 01:54:00 +0530</pubDate>
       <guid>https://gomezjoaquin.github.io/blogs/aws-iam/</guid>
-      <description>&lt;h2 id=&#34;aws-iam-identity-and-access-management&#34;&gt;AWS: IAM (Identity and Access Management)&lt;/h2&gt;&#xA;&lt;p&gt;IAM is a &lt;strong&gt;global service&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;It is used to manage access to cloud resources, controlling &lt;strong&gt;who&lt;/strong&gt; can perform &lt;strong&gt;what actions&lt;/strong&gt; on &lt;strong&gt;which resources&lt;/strong&gt; through permission policies.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;root-account&#34;&gt;&lt;strong&gt;Root Account&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;The &lt;strong&gt;root account&lt;/strong&gt; is the account that is created by default when setting up AWS. It is a best practice to use the root account &lt;strong&gt;only when absolutely necessary&lt;/strong&gt; (e.g., for account-level tasks). For all other tasks, use an account with the &lt;strong&gt;principle of least privilege&lt;/strong&gt;.&lt;/p&gt;</description>
+      <description>AWS: IAM (Identity and Access Management) IAM is a global service.&#xA;It is used to manage access to cloud resources, controlling who can perform what actions on which resources through permission policies.&#xA;Root Account The root account is the account that is created by default when setting up AWS. It is a best practice to use the root account only when absolutely necessary (e.g., for account-level tasks). For all other tasks, use an account with the principle of least privilege.</description>
     </item>
     <item>
       <title>IAM Policies</title>
       <link>https://gomezjoaquin.github.io/blogs/aws-iam-policies/</link>
       <pubDate>Sat, 28 Dec 2024 01:54:00 +0530</pubDate>
       <guid>https://gomezjoaquin.github.io/blogs/aws-iam-policies/</guid>
-      <description>&lt;h2 id=&#34;aws-iam-policies&#34;&gt;AWS: IAM Policies&lt;/h2&gt;&#xA;&lt;p&gt;Policies are used to &lt;strong&gt;define permissions&lt;/strong&gt; for users.&lt;br&gt;&#xA;Users can be assigned policies through JSON documents.&lt;/p&gt;&#xA;&lt;p&gt;It is a best practice to apply the &lt;strong&gt;&lt;em&gt;principle of least privilege&lt;/em&gt;&lt;/strong&gt;: Do not grant more permissions than the user needs.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;inheritance-of-iam-policies&#34;&gt;Inheritance of IAM Policies&lt;/h2&gt;&#xA;&lt;p&gt;There are &lt;strong&gt;group policies&lt;/strong&gt; and &lt;strong&gt;direct policies&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Direct policies&lt;/strong&gt; are applied directly to the user.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Group policies&lt;/strong&gt; are applied to all users belonging to that group.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;structure-of-iam-policies&#34;&gt;Structure of IAM Policies&lt;/h2&gt;&#xA;&lt;p&gt;IAM policies have the following structure:&lt;/p&gt;</description>
+      <description>AWS: IAM Policies Policies are used to define permissions for users.&#xA;Users can be assigned policies through JSON documents.&#xA;It is a best practice to apply the principle of least privilege: Do not grant more permissions than the user needs.&#xA;Inheritance of IAM Policies There are group policies and direct policies.&#xA;Direct policies are applied directly to the user. Group policies are applied to all users belonging to that group. Structure of IAM Policies IAM policies have the following structure:</description>
     </item>
   </channel>
 </rss>
