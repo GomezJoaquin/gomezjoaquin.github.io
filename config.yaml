@@ -130,10 +130,10 @@ params:
   # Hero
   hero:
     enable: true
-    intro: "Hello, my name is"
+    intro: "Hello, I'm"
     title: "Joaquín Gómez"
-    subtitle: "AWS Certified DevOps Engineer | Cloud Infrastructure Specialist"
-    content: "I specialize in automating workflows, optimizing cloud infrastructure, and ensuring seamless CI/CD pipelines. With 3+ years of experience, I help organizations reduce deployment time by 80% and achieve 99.9% uptime. Let's build something amazing together!"
+    subtitle: "AWS Certified DevOps Engineer"
+    content: "Automating infrastructure, optimizing CI/CD pipelines, and building scalable cloud solutions. 3+ years of hands-on experience with AWS, Kubernetes, and Infrastructure as Code."
     image: /images/hero.png
     roundImage: true
     button:
@@ -155,50 +155,55 @@ params:
     title: "About Me"
     image: "/images/me.png"
     content: |
-      I am a DevOps Engineer with 3+ years of experience creating efficient, scalable, and automated systems. My expertise lies in cloud computing, CI/CD pipelines, and infrastructure as code. I thrive on solving complex problems and helping teams deliver high-quality software faster and more reliably.
+      DevOps Engineer with 3+ years of experience designing and implementing scalable cloud infrastructure. Specialized in automating deployment pipelines, managing containerized applications, and optimizing cloud costs.
       
-      🔧 **What I do:**
-      - Design and implement CI/CD pipelines using Jenkins, GitLab CI, and GitHub Actions
-      - Manage cloud infrastructure on AWS and Azure using Terraform and CloudFormation  
-      - Orchestrate containerized applications with Kubernetes and Docker
-      - Automate server provisioning and configuration with Ansible
+      **Core Expertise:**
+      - Cloud Infrastructure: AWS (EC2, S3, RDS, Lambda, CloudFormation), Azure (VMs, AKS, Storage)
+      - Container Orchestration: Kubernetes, Docker
+      - Infrastructure as Code: Terraform, CloudFormation, Ansible
+      - CI/CD Pipelines: Jenkins, GitLab CI, GitHub Actions
+      - Monitoring & Logging: Prometheus, Grafana, CloudWatch
+      - Linux Administration & Scripting (Bash, Python)
       
-      Currently, I work at GeneXus Consulting, where I provide DevOps consulting services to help clients automate their development workflows and optimize their cloud infrastructure.
+      Currently at GeneXus Consulting, helping clients automate workflows and optimize cloud infrastructure.
     skills:
       enable: true
-      title: "Technical Stack:"
+      title: "Technical Stack"
       items:
-        - "AWS (EC2, S3, RDS, Lambda, CloudFormation)"
-        - "Azure (VMs, Storage, AKS, ARM Templates)"
+        - "AWS: EC2, S3, RDS, Lambda, CloudFormation, IAM"
+        - "Azure: VMs, AKS, Storage, ARM Templates"
         - "Kubernetes & Docker"
-        - "Terraform & Ansible"
-        - "Jenkins & GitLab CI"
-        - "Python & Bash Scripting"
-        - "Monitoring (Prometheus, Grafana)"
+        - "Terraform & CloudFormation"
+        - "Ansible & Configuration Management"
+        - "Jenkins, GitLab CI, GitHub Actions"
+        - "Prometheus, Grafana, CloudWatch"
+        - "Bash & Python Scripting"
         - "Linux Administration"
+        - "Git & Version Control"
 
   # Experience
   experience:
     enable: true
     # title: "Custom Name"
     items:
-      - job: "DevOps Engineer "
+      - job: "DevOps Engineer"
         company: "GeneXus Consulting"
         companyUrl: "https://www.genexusconsulting.com/"
-        date: "Sep 2021 - present"
+        date: "Sep 2021 - Present"
         featuredLink:
           enable: false
           name: "View the project"
           url: "https://example.com"
-        content: "DevOps Engineer at [GeneXus Consulting](https://www.genexusconsulting.com/) providing automation solutions that deliver measurable results:
-
-        • **Reduced deployment time** from 2 hours to 20 minutes (83% improvement)
-        
-        • **Automated 15+ manual processes** saving 40 hours/week
-        
-        • **Managed infrastructure** for 20+ client projects
-        
-        • **Implemented CI/CD pipelines** reducing time-to-market by 60%"
+        content: |
+          • Designed and deployed CI/CD pipelines using Jenkins and GitLab CI, reducing deployment time by 83%
+          
+          • Managed AWS infrastructure (EC2, S3, RDS, Lambda) using Terraform
+          
+          • Implemented Kubernetes clusters for containerized application orchestration
+          
+          • Automated infrastructure provisioning with Ansible, reducing manual tasks by 40 hours/week
+          
+          • Set up monitoring and alerting with Prometheus and Grafana for production systems
 
     #  - job: "Software Developer"
     #    company: "Amazon"
@@ -260,11 +265,11 @@ params:
         school:
           name: "Universidad de la República - UTEC, Uruguay."
           url: "https://utec.edu.uy/es/educacion/carrera/tecnologo-en-informatica/"
-        date: "2017 - 2021"    
-      - title: "Bachiller tecnológico en Informática."
+        date: "2017 - 2021"
+        
+      - title: "Bachiller Tecnológico en Informática"
         school:
-          name: "Polo Educativo Tecnológico Arrayanes."
-          #url: "https://example.org"
+          name: "Polo Educativo Tecnológico Arrayanes"
         date: "2014 - 2016"
       #  featuredLink:
       #    enable: true
@@ -281,19 +286,19 @@ params:
     items:
       - title: "AWS Certified Solutions Architect – Associate"
         content: |
-          Earned AWS Certified Solutions Architect – Associate certification, demonstrating comprehensive understanding of AWS services and the ability to build secure, robust solutions using architectural design principles based on customer requirements.
+          Demonstrates comprehensive understanding of AWS services and the ability to design secure, scalable, and cost-effective solutions on AWS. Validates expertise in architecting distributed systems.
         url: https://www.credly.com/badges/5fb6c7af-0cfe-404b-abdb-f2f1f181a516
         image: /images/aws-solutions-architect-associate.png
 
-      - title: "AWS Cloud Practitioner"
+      - title: "AWS Certified Cloud Practitioner"
         content: |
-          Earned AWS Cloud Practitioner certification, demonstrating foundational knowledge of AWS Cloud concepts, services, and security.
+          Validates foundational knowledge of AWS Cloud concepts, services, security, compliance, pricing, and support. Entry-level certification for cloud professionals.
         url: https://www.credly.com/badges/dc0a3411-721b-45ed-88df-02b271e2b570
         image: /images/aws-cloud-practitioner.png
 
-      - title: "Azure Fundamentals"
+      - title: "Azure Fundamentals (AZ-900)"
         content: |
-          Achieved Azure Fundamentals certification, showcasing essential knowledge of core Azure services, cloud concepts, security, compliance, and pricing.
+          Demonstrates knowledge of cloud concepts, core Azure services, security, compliance, trust, and pricing. Foundation for Azure cloud professionals.
         url: https://learn.microsoft.com/api/credentials/share/es-mx/JoaqunGmez-2593/16A11669F0EE1F91?sharingId
         image: /images/azure-az.png
 
