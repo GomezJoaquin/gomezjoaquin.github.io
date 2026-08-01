@@ -7,6 +7,8 @@ tags:
   - Kubernetes
   - Learning
 description: "It teaches one thing extremely well and is silent about everything else. Knowing which is which tells you when you're done."
+images:
+  - "/images/og/kubernetes-hard-way-when-to-stop.en.png"
 toc: true
 ---
 

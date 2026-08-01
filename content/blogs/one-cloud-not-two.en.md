@@ -9,6 +9,8 @@ tags:
   - Cloud
   - Career
 description: "I hold an Azure fundamentals certification and I stopped going deeper on Azure on purpose. The reasoning, and the case against it."
+images:
+  - "/images/og/one-cloud-not-two.en.png"
 toc: true
 ---
 

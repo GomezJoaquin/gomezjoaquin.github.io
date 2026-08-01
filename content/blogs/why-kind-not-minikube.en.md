@@ -8,6 +8,8 @@ tags:
   - kind
   - Local Development
 description: "A local cluster decision made under a real constraint: 24 GB of RAM, multi-node required, and destroyed several times a day."
+images:
+  - "/images/og/why-kind-not-minikube.en.png"
 toc: true
 ---
 

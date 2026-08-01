@@ -8,6 +8,8 @@ tags:
   - kind
   - Local Development
 description: "Una decisión de cluster local tomada bajo una restricción real: 24 GB de RAM, multinodo obligatorio y destruido varias veces por día."
+images:
+  - "/images/og/why-kind-not-minikube.es.png"
 toc: true
 ---
 

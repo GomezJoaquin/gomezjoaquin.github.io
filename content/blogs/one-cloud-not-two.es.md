@@ -9,6 +9,8 @@ tags:
   - Cloud
   - Career
 description: "Tengo una certificación de fundamentos de Azure y dejé de profundizar en Azure a propósito. El razonamiento, y el caso en contra."
+images:
+  - "/images/og/one-cloud-not-two.es.png"
 toc: true
 ---
 

@@ -7,6 +7,8 @@ tags:
   - Kubernetes
   - Learning
 description: "Enseña una sola cosa muy bien y calla sobre todo lo demás. Saber cuál es cuál te dice cuándo terminaste."
+images:
+  - "/images/og/kubernetes-hard-way-when-to-stop.es.png"
 toc: true
 ---
 

@@ -28,20 +28,6 @@
 
 
 
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
-      <script>
-        var doNotTrack = false;
-        if ( true ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-MEASUREMENT_ID');
-        }
-      </script>
 <meta property="og:url" content="https://gomezjoaquin.github.io/es/blogs/postmortem-readme-was-the-incident/">
 	<meta property="og:site_name" content="Joaquín Gómez">
 	<meta property="og:title" content="Postmortem: el incidente era el README">
@@ -54,9 +40,11 @@
 		<meta property="article:tag" content="Postmortem">
 		<meta property="article:tag" content="Kubernetes">
 		<meta property="article:tag" content="CI/CD">
+		<meta property="og:image" content="https://gomezjoaquin.github.io/images/og/postmortem-readme-was-the-incident.es.png">
 
 
-	<meta name="twitter:card" content="summary">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content="https://gomezjoaquin.github.io/images/og/postmortem-readme-was-the-incident.es.png">
 	<meta name="twitter:title" content="Postmortem: el incidente era el README">
 	<meta name="twitter:description" content="Audité mi propio repositorio de portfolio y encontré que la mitad de lo que prometía el README no existía. Este es el postmortem.">
 
@@ -119,6 +107,27 @@
         background-color: var(--background-color);
     }
 </style>
+
+
+
+
+<link rel="canonical" href="https://gomezjoaquin.github.io/es/blogs/postmortem-readme-was-the-incident/">
+
+
+
+  
+<link rel="alternate" hreflang="en" href="https://gomezjoaquin.github.io/blogs/postmortem-readme-was-the-incident/">
+  
+<link rel="alternate" hreflang="es" href="https://gomezjoaquin.github.io/es/blogs/postmortem-readme-was-the-incident/">
+  
+  
+  
+    
+<link rel="alternate" hreflang="x-default" href="https://gomezjoaquin.github.io/blogs/postmortem-readme-was-the-incident/">
+    
+  
+    
+  
 
 
 

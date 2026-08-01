@@ -8,6 +8,8 @@ tags:
   - Kubernetes
   - CI/CD
 description: "Audité mi propio repositorio de portfolio y encontré que la mitad de lo que prometía el README no existía. Este es el postmortem."
+images:
+  - "/images/og/postmortem-readme-was-the-incident.es.png"
 toc: true
 ---
 

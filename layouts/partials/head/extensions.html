@@ -1,0 +1,24 @@
+{{/*
+    Project override of the theme's <head> extension point.
+    Adds canonical + hreflang, which hugo-profile does not emit.
+*/}}
+
+{{/* Canonical URL — avoids duplicate-content ambiguity. */}}
+<link rel="canonical" href="{{ .Permalink }}">
+
+{{/*
+    hreflang for the bilingual site. Tells search engines that the es/ and en
+    versions of a page are the same content in another language, rather than
+    duplicated content. .AllTranslations includes the current page.
+*/}}
+{{ if .IsTranslated }}
+  {{ range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+  {{ end }}
+  {{/* x-default → the English version of this same page. */}}
+  {{ range .AllTranslations }}
+    {{ if eq .Language.Lang "en" }}
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+    {{ end }}
+  {{ end }}
+{{ end }}

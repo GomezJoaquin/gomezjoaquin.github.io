@@ -23,7 +23,12 @@ pagination:
   pagerSize: 10
 enableRobotsTXT: true
 # disqusShortname: your-disqus-shortname
-googleAnalytics: G-MEASUREMENT_ID
+# Google Analytics — disabled until a real ID is set.
+# It used to be the template's literal placeholder (G-MEASUREMENT_ID), which
+# injected a tracking script pointing at a property that does not exist:
+# no data collected, one useless request per page load.
+# Put your real measurement ID here (format G-XXXXXXXXXX) to enable it.
+# googleAnalytics: ""
 
 markup:
   goldmark:
@@ -64,6 +69,8 @@ languages:
     params:
       title: "Joaquín Gómez - DevOps Engineer | AWS Solutions Architect Associate"
       description: "Ingeniero DevOps trabajando con AWS, Kubernetes y automatización de CI/CD. AWS Certified Solutions Architect – Associate. Escribo sobre pipelines de entrega, operación de clusters y las decisiones detrás."
+      images:
+        - "/images/og/default.png"
 
       hero:
         enable: true
@@ -89,7 +96,7 @@ languages:
       about:
         enable: true
         title: "Sobre mí"
-        image: "/images/me.png"
+        image: "/images/me.jpg"
         content: |
           Ingeniero DevOps en Montevideo, Uruguay. Trabajo desde 2021 en la misma empresa, donde pasé por desarrollo, arquitectura e infraestructura antes de dedicarme a DevOps.
 
@@ -244,6 +251,13 @@ languages:
 params:
   title: "Joaquín Gómez - DevOps Engineer | AWS Solutions Architect Associate"
   description: "DevOps Engineer working with AWS, Kubernetes and CI/CD automation. AWS Certified Solutions Architect – Associate. Writing about delivery pipelines, cluster operations and the decisions behind them."
+
+  # Open Graph / Twitter fallback card, used by any page without its own.
+  # Articles override this with `images:` in their front matter.
+  # Note: `images` (plural) feeds og:image; `image` (singular) is what the
+  # theme renders as a banner inside the post — don't swap them.
+  images:
+    - "/images/og/default.png"
   # staticPath: ""  # The path to serve the static files from
   favicon: "/images/fav.png"
 
@@ -339,7 +353,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/me.png"
+    image: "/images/me.jpg"
     content: |
       DevOps Engineer based in Montevideo, Uruguay. I've been at the same company since 2021, moving through development, architecture and infrastructure before settling into DevOps.
 
@@ -476,55 +490,30 @@ params:
         url: https://learn.microsoft.com/api/credentials/share/es-mx/JoaqunGmez-2593/16A11669F0EE1F91?sharingId
         image: /images/azure-az.png
 
-  #Projects
+  # Projects
+  #
+  # Disabled on purpose: there is nothing finished worth showing yet.
+  # Turn `enable: true` on only when a project can be verified by a reader —
+  # a command they can run, or a recording of it working. Not a scaffold.
+  #
+  # Template placeholders removed. When pipeforge's auto-rollback actually
+  # fires, the first real entry goes here, e.g.:
+  #
+  #   items:
+  #     - title: pipeforge
+  #       content: >-
+  #         Progressive delivery on Kubernetes. A bad deploy is detected from
+  #         its own metrics and rolled back without human intervention.
+  #       image: /images/projects/pipeforge-rollback.gif
+  #       featured:
+  #         name: Rollback demo
+  #         link: <link to the recording>
+  #       badges: ["Kubernetes", "Argo Rollouts", "Prometheus", "Go"]
+  #       links:
+  #         - icon: fab fa-github
+  #           url: https://github.com/GomezJoaquin/pipeforge
   projects:
     enable: false
-    # title: "Custom Name"
-    items:
-      - title: Hugo Profile
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
-        image: /images/projects/profile.png
-        featured:
-          name: Demo
-          link: https://hugo-profile.netlify.app
-        badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-          - icon: fab fa-github
-            url: https://github.com/GomezJoaquin/gurusabarish/hugo-profile
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
-
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
-        featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
-        badges:
-          - "Django"
-          - "Bootstrap"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/GomezJoaquin/gurusabarish/converter
-
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
-        featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
-        badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/GomezJoaquin/gurusabarish/HugoProfileV2
 
   #Contact
   contact:

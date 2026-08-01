@@ -28,20 +28,6 @@
 
 
 
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
-      <script>
-        var doNotTrack = false;
-        if ( true ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-MEASUREMENT_ID');
-        }
-      </script>
 <meta property="og:url" content="https://gomezjoaquin.github.io/es/blogs/why-kind-not-minikube/">
 	<meta property="og:site_name" content="Joaquín Gómez">
 	<meta property="og:title" content="Por qué corro Kubernetes en kind y no en minikube ni en un lab hosteado">
@@ -54,9 +40,11 @@
 		<meta property="article:tag" content="Kubernetes">
 		<meta property="article:tag" content="Kind">
 		<meta property="article:tag" content="Local Development">
+		<meta property="og:image" content="https://gomezjoaquin.github.io/images/og/why-kind-not-minikube.es.png">
 
 
-	<meta name="twitter:card" content="summary">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content="https://gomezjoaquin.github.io/images/og/why-kind-not-minikube.es.png">
 	<meta name="twitter:title" content="Por qué corro Kubernetes en kind y no en minikube ni en un lab hosteado">
 	<meta name="twitter:description" content="Una decisión de cluster local tomada bajo una restricción real: 24 GB de RAM, multinodo obligatorio y destruido varias veces por día.">
 
@@ -119,6 +107,27 @@
         background-color: var(--background-color);
     }
 </style>
+
+
+
+
+<link rel="canonical" href="https://gomezjoaquin.github.io/es/blogs/why-kind-not-minikube/">
+
+
+
+  
+<link rel="alternate" hreflang="en" href="https://gomezjoaquin.github.io/blogs/why-kind-not-minikube/">
+  
+<link rel="alternate" hreflang="es" href="https://gomezjoaquin.github.io/es/blogs/why-kind-not-minikube/">
+  
+  
+  
+    
+<link rel="alternate" hreflang="x-default" href="https://gomezjoaquin.github.io/blogs/why-kind-not-minikube/">
+    
+  
+    
+  
 
 
 
