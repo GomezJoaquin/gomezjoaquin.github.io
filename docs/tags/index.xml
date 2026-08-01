@@ -1,61 +1,87 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tags on Joaquín Gómez</title>
-    <link>https://gomezjoaquin.github.io/tags/</link>
-    <description>Recent content in Tags on Joaquín Gómez</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://gomezjoaquin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>MySQL</title>
-      <link>https://gomezjoaquin.github.io/tags/mysql/</link>
-      <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://gomezjoaquin.github.io/tags/mysql/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AWS</title>
-      <link>https://gomezjoaquin.github.io/tags/aws/</link>
-      <pubDate>Sat, 28 Dec 2024 01:54:00 +0530</pubDate>
-      <guid>https://gomezjoaquin.github.io/tags/aws/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cloud</title>
-      <link>https://gomezjoaquin.github.io/tags/cloud/</link>
-      <pubDate>Sat, 28 Dec 2024 01:54:00 +0530</pubDate>
-      <guid>https://gomezjoaquin.github.io/tags/cloud/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>IAM</title>
-      <link>https://gomezjoaquin.github.io/tags/iam/</link>
-      <pubDate>Sat, 28 Dec 2024 01:54:00 +0530</pubDate>
-      <guid>https://gomezjoaquin.github.io/tags/iam/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Linux</title>
-      <link>https://gomezjoaquin.github.io/tags/linux/</link>
-      <pubDate>Sat, 28 Dec 2024 01:54:00 +0530</pubDate>
-      <guid>https://gomezjoaquin.github.io/tags/linux/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>SSH</title>
-      <link>https://gomezjoaquin.github.io/tags/ssh/</link>
-      <pubDate>Sat, 28 Dec 2024 01:54:00 +0530</pubDate>
-      <guid>https://gomezjoaquin.github.io/tags/ssh/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Windows</title>
-      <link>https://gomezjoaquin.github.io/tags/windows/</link>
-      <pubDate>Sat, 28 Dec 2024 01:54:00 +0530</pubDate>
-      <guid>https://gomezjoaquin.github.io/tags/windows/</guid>
-      <description></description>
-    </item>
-  </channel>
+	<channel>
+		<title>Tags on Joaquín Gómez</title>
+		<link>https://gomezjoaquin.github.io/tags/</link>
+		<description>Recent content in Tags on Joaquín Gómez</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 01 Aug 2026 10:00:00 -0300</lastBuildDate>
+		
+			<atom:link href="https://gomezjoaquin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>CI/CD</title>
+				<link>https://gomezjoaquin.github.io/tags/ci/cd/</link>
+				<pubDate>Sat, 01 Aug 2026 10:00:00 -0300</pubDate>
+				<guid>https://gomezjoaquin.github.io/tags/ci/cd/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Kubernetes</title>
+				<link>https://gomezjoaquin.github.io/tags/kubernetes/</link>
+				<pubDate>Sat, 01 Aug 2026 10:00:00 -0300</pubDate>
+				<guid>https://gomezjoaquin.github.io/tags/kubernetes/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Postmortem</title>
+				<link>https://gomezjoaquin.github.io/tags/postmortem/</link>
+				<pubDate>Sat, 01 Aug 2026 10:00:00 -0300</pubDate>
+				<guid>https://gomezjoaquin.github.io/tags/postmortem/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Kind</title>
+				<link>https://gomezjoaquin.github.io/tags/kind/</link>
+				<pubDate>Thu, 30 Jul 2026 10:00:00 -0300</pubDate>
+				<guid>https://gomezjoaquin.github.io/tags/kind/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Local Development</title>
+				<link>https://gomezjoaquin.github.io/tags/local-development/</link>
+				<pubDate>Thu, 30 Jul 2026 10:00:00 -0300</pubDate>
+				<guid>https://gomezjoaquin.github.io/tags/local-development/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>AWS</title>
+				<link>https://gomezjoaquin.github.io/tags/aws/</link>
+				<pubDate>Tue, 28 Jul 2026 10:00:00 -0300</pubDate>
+				<guid>https://gomezjoaquin.github.io/tags/aws/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Azure</title>
+				<link>https://gomezjoaquin.github.io/tags/azure/</link>
+				<pubDate>Tue, 28 Jul 2026 10:00:00 -0300</pubDate>
+				<guid>https://gomezjoaquin.github.io/tags/azure/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Career</title>
+				<link>https://gomezjoaquin.github.io/tags/career/</link>
+				<pubDate>Tue, 28 Jul 2026 10:00:00 -0300</pubDate>
+				<guid>https://gomezjoaquin.github.io/tags/career/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Cloud</title>
+				<link>https://gomezjoaquin.github.io/tags/cloud/</link>
+				<pubDate>Tue, 28 Jul 2026 10:00:00 -0300</pubDate>
+				<guid>https://gomezjoaquin.github.io/tags/cloud/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Learning</title>
+				<link>https://gomezjoaquin.github.io/tags/learning/</link>
+				<pubDate>Sun, 26 Jul 2026 10:00:00 -0300</pubDate>
+				<guid>https://gomezjoaquin.github.io/tags/learning/</guid>
+				<description></description>
+			</item>
+	</channel>
 </rss>

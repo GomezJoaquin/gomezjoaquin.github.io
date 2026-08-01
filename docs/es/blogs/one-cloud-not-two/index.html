@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html>
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href=/images/fav.png type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="/css/font.css" media="all">
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MEASUREMENT_ID');
+        }
+      </script>
+<meta property="og:url" content="https://gomezjoaquin.github.io/es/blogs/one-cloud-not-two/">
+	<meta property="og:site_name" content="Joaquín Gómez">
+	<meta property="og:title" content="Una nube, no dos: por qué maté mi track de Azure">
+	<meta property="og:description" content="Tengo una certificación de fundamentos de Azure y dejé de profundizar en Azure a propósito. El razonamiento, y el caso en contra.">
+	<meta property="og:locale" content="es">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="blogs">
+		<meta property="article:published_time" content="2026-07-28T10:00:00-03:00">
+		<meta property="article:modified_time" content="2026-07-28T10:00:00-03:00">
+		<meta property="article:tag" content="AWS">
+		<meta property="article:tag" content="Azure">
+		<meta property="article:tag" content="Cloud">
+		<meta property="article:tag" content="Career">
+
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Una nube, no dos: por qué maté mi track de Azure">
+	<meta name="twitter:description" content="Tengo una certificación de fundamentos de Azure y dejé de profundizar en Azure a propósito. El razonamiento, y el caso en contra.">
+
+
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
+
+
+<link rel="stylesheet" href="/css/theme.css" media="all">
+
+<style>
+    :root {
+        --text-color: #343a40;
+        --text-secondary-color: #6c757d;
+        --text-link-color: #007bff;
+        --background-color: #eaedf0;
+        --secondary-background-color: #64ffda1a;
+        --primary-color: #007bff;
+        --secondary-color: #f8f9fa;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --text-link-color-dark: #ffffff;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        height: 0px;
+        width: 8px;
+        background-color: var(--background-color);
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 1rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background: #b0b0b0;
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+
+
+<meta name="description" content="Tengo una certificación de fundamentos de Azure y dejé de profundizar en Azure a propósito. El razonamiento, y el caso en contra.">
+<link rel="stylesheet" href="/css/single.css">
+
+
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
+
+
+  
+  
+
+  <title>
+Una nube, no dos: por qué maté mi track de Azure | Joaquín Gómez
+
+  </title>
+</head>
+
+<body class="light">
+  
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
+
+
+
+<script>
+    var prevScrollPos = window.pageYOffset;
+    window.addEventListener("scroll", function showHeaderOnScroll() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let currentScrollPos = window.pageYOffset;
+        let resetHeaderStyle = false;
+        let showNavBarOnScrollUp =  true ;
+        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
+        if (showNavBar) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        } else {
+            resetHeaderStyle = true;
+        }
+        if(currentScrollPos === 0) {
+            resetHeaderStyle = true;
+        }
+        if(resetHeaderStyle) {
+            profileHeaderElem.classList.remove("showHeaderOnTop");
+        }
+        prevScrollPos = currentScrollPos;
+    });
+</script>
+
+
+
+<header id="profileHeader">
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            
+            <a class="navbar-brand primary-font text-wrap" href="/">
+                
+                <img src="/images/fav.png" width="30" height="30"
+                    class="d-inline-block align-top">
+                Joaquín Gómez
+                
+            </a>
+
+            
+                <div>
+                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='Ctrl &#43; k para buscar...'
+                        aria-label="Search" oninput="searchOnChange(event)">
+                </div>
+            
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    
+                        <li class="nav-item navbar-text d-block d-md-none">
+                            <div class="nav-link">
+                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder='Ctrl &#43; k para buscar...' aria-label="Search" oninput="searchOnChange(event)">
+                            </div>
+                        </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#about" aria-label="about">
+                            Sobre mí
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience"
+                            aria-label="experience">
+                            Experiencia
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#education"
+                            aria-label="education">
+                            Formación
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#achievements"
+                            aria-label="achievements">
+                            Certificaciones
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#contact"
+                            aria-label="contact">
+                            Contacto
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/es/blogs" title="Artículos">
+                            
+                            Blog
+                        </a>
+                    </li>
+                    
+                    
+
+                    
+                    
+                    <li class="nav-item navbar-text dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            title="Español" aria-label="language">
+                            Español
+                        </a>
+                        <div class="dropdown-menu shadow-lg rounded" aria-labelledby="langDropdown">
+                            
+                            
+                                
+                                
+                                
+                                
+                                    
+                                    
+                                        
+                                    
+                                
+                            <a class="dropdown-item text-center nav-link"
+                                href="/blogs/one-cloud-not-two/" hreflang="en">
+                                English
+                            </a>
+                            
+                                
+                                
+                                
+                                
+                                    
+                                
+                            <a class="dropdown-item text-center nav-link active"
+                                href="/es/blogs/one-cloud-not-two/" hreflang="es">
+                                Español
+                            </a>
+                            
+                        </div>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        <div class="text-center">
+                            <button id="theme-toggle">
+                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content">
+<section id="single">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-12 col-lg-9">
+        <div class="pr-lg-4">
+          <div class="title mb-5">
+            <h1 class="text-center mb-4">Una nube, no dos: por qué maté mi track de Azure</h1>
+            <div class="text-center">
+              
+                Joaquín Gómez
+                <small>|</small>
+              
+              28 Jul 2026
+
+              
+              <span id="readingTime">
+                min de lectura
+              </span>
+              
+            </div>
+          </div>
+          
+          <article class="page-content  p-2">
+          <p>Tengo el AZ-900 junto a mis certificaciones de AWS, y mi proyecto de portfolio originalmente pusheaba imágenes a Azure Container Registry. A principios de este año lo migré a ECR y dejé de sumar al track de Azure por completo.</p>
+<p>No fue un juicio sobre las plataformas. Fue un juicio sobre lo que cuesta una segunda nube, y sobre lo que un CV con dos nubes comunica realmente.</p>
+<h2 id="qué-señaliza-la-amplitud">Qué señaliza la amplitud</h2>
+<p>Hay una suposición común: que listar AWS y Azure duplica tu mercado. Por lo que veo leyendo búsquedas y hablando con gente que contrata, en mi nivel hace algo más parecido a lo contrario.</p>
+<p>Un CV con dos nubes a profundidad intermedia se lee como <em>familiaridad</em>. Un CV con una nube a profundidad operativa se lee como <em>competencia</em>. Son afirmaciones distintas y solo la segunda sobrevive una entrevista, porque las entrevistas no evalúan cobertura: evalúan el fondo de tu conocimiento en un solo lugar. La pregunta nunca es &ldquo;nombrame un servicio que haga X&rdquo;. Es &ldquo;esto está roto, ¿qué mirás primero?&rdquo;, y esa pregunta tiene fondo.</p>
+<p>El que operó una nube en profundidad tiene el fondo muy abajo. El que cubrió dos nubes con el mismo esfuerzo total lo toca el doble de rápido, para cualquiera de los dos lados. Y la falla se nota más de lo que jamás se notó la amplitud, porque una respuesta superficial a una pregunta operativa se recuerda de una manera en que una lista larga de skills no.</p>
+<h2 id="qué-transfiere-y-qué-no">Qué transfiere y qué no</h2>
+<p>El argumento a favor de aprender multi-cloud es que los conceptos transfieren. Transfieren — y la transferencia es mucho más delgada de lo que suena.</p>
+<p><strong>Transfiere bien.</strong> Los modelos mentales. Identidad y evaluación de políticas, segmentación de red, la idea de un control plane manejado, el radio de impacto, la forma de una revisión bien arquitecturada. Si entendés por qué importa el menor privilegio en IAM, lo entendés en Entra ID.</p>
+<p><strong>Transfiere mal.</strong> Todo lo operativo. La forma específica en que la evaluación de políticas de IAM resuelve un deny explícito entre una SCP, una policy de recurso y un permissions boundary. Cuáles fallas son silenciosas. Qué cuota de servicio vas a tocar primero y qué error te tira cuando la tocás. Cuánto tarda de verdad una operación cuando está degradada, para saber si cinco minutos significan &ldquo;esperá&rdquo; o &ldquo;escalá&rdquo;.</p>
+<p>Esa segunda categoría es el valor entero de la experiencia, y es la parte que no transfiere. Saber el concepto significa que leés la documentación más rápido. No significa que puedas diagnosticar nada, y diagnosticar es lo escaso.</p>
+<h2 id="el-costo-real-es-el-mantenimiento-no-el-aprendizaje">El costo real es el mantenimiento, no el aprendizaje</h2>
+<p>El costo que subestimé no fueron las horas de aprender Azure. Fue que dos plataformas significan mantener dos juegos de hábitos, y los hábitos se degradan.</p>
+<p>Cada nube que decís tener es una nube en la que tenés que mantenerte al día. Los servicios cambian, los defaults cambian, la forma recomendada de hacer algo se reemplaza. Seis meses sin tocar Azure y no soy una persona con skills de Azure: soy una persona con un modelo de Azure desactualizado, que es peor que ninguno, porque voy a agarrar algo con confianza y voy a estar equivocado. En una entrevista prefiero decir &ldquo;no usé Azure&rdquo; antes que recordarlo a medias.</p>
+<p>Y el argumento de composición es decisivo para mí: toco AWS todos los días en el trabajo. La profundidad en AWS compone con mi trabajo — el mismo conocimiento se refuerza dos veces, y cada lado abarata al otro. Azure era lo opuesto: esfuerzo que ni reforzaba mi trabajo ni era reforzado por él. Era el único frente que tenía que no sacaba palanca de nada más de lo que estaba haciendo.</p>
+<h2 id="el-caso-en-contra-de-mi-decisión">El caso en contra de mi decisión</h2>
+<p>Corresponde ser honesto: esta decisión no es obviamente correcta, y los contraargumentos son reales.</p>
+<p><strong>Si trabajás en una consultora, la amplitud es el producto.</strong> A las agencias les cae lo que el cliente ya tiene corriendo. Ahí, &ldquo;tenemos gente de Azure&rdquo; es un hecho comercial, y un especialista angosto sirve menos que alguien a quien podés poner en cualquiera de las dos.</p>
+<p><strong>Los mercados regionales difieren.</strong> En mercados donde dominan la empresa grande y el sector público, la penetración de Azure es alta y el especialista solo-AWS está pescando en el estanque chico. Conviene verificarlo localmente en vez de suponerlo, porque los números globales de market share no describen tu ciudad.</p>
+<p><strong>Dos nubes son un seguro real.</strong> Apostar una carrera a la vigencia continuada de un solo proveedor es una apuesta. Es una que me resulta cómoda a cinco años y bastante menos cómoda a quince.</p>
+<p><strong>Hay roles que son genuinamente multi-cloud.</strong> Existen y pagan bien. Y también, casi sin excepción, piden profundidad en una y conocimiento funcional de la otra — que es un argumento sobre el orden, no sobre la amplitud. Primero profundo, después la segunda. El orden inverso no produce el mismo ingeniero.</p>
+<h2 id="qué-recomendaría-de-verdad">Qué recomendaría de verdad</h2>
+<p>No &ldquo;AWS&rdquo;. La regla es: elegí la nube que puedas tocar más seguido, y preferí la que usa tu trabajo actual aunque no sea la de mejores números de mercado, porque mientras construís profundidad la frecuencia le gana al market share. Sesenta horas en la nube que usás a diario valen más que sesenta horas en la que paga mejor en el papel, porque solo una de las dos se está reforzando el lunes a la mañana.</p>
+<p>Después, una vez que sabés operar una bajo falla, una segunda nube es cuestión de semanas y no de años — porque a esa altura estás aprendiendo nombres para cosas que ya entendés. Ese es el orden. Profundidad primero no es una posición moral sobre el foco: es que la profundidad abarata lo segundo, y la amplitud nunca vuelve profundo lo primero.</p>
+
+          </article>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-3">
+        <div id="stickySideBar" class="sticky-sidebar">
+          
+          <aside class="toc">
+              <h5>
+                Contenido
+              </h5>
+              <div class="toc-content">
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#qué-señaliza-la-amplitud">Qué señaliza la amplitud</a></li>
+    <li><a href="#qué-transfiere-y-qué-no">Qué transfiere y qué no</a></li>
+    <li><a href="#el-costo-real-es-el-mantenimiento-no-el-aprendizaje">El costo real es el mantenimiento, no el aprendizaje</a></li>
+    <li><a href="#el-caso-en-contra-de-mi-decisión">El caso en contra de mi decisión</a></li>
+    <li><a href="#qué-recomendaría-de-verdad">Qué recomendaría de verdad</a></li>
+  </ul>
+</nav>
+              </div>
+          </aside>
+          
+
+          
+          <aside class="tags">
+            <h5>Tags</h5>
+            <ul class="tags-ul list-unstyled list-inline">
+              
+              <li class="list-inline-item"><a href="https://gomezjoaquin.github.io/tags/aws"
+                target="_blank"
+              >AWS</a></li>
+              
+              <li class="list-inline-item"><a href="https://gomezjoaquin.github.io/tags/azure"
+                target="_blank"
+              >Azure</a></li>
+              
+              <li class="list-inline-item"><a href="https://gomezjoaquin.github.io/tags/cloud"
+                target="_blank"
+              >Cloud</a></li>
+              
+              <li class="list-inline-item"><a href="https://gomezjoaquin.github.io/tags/career"
+                target="_blank"
+              >Career</a></li>
+              
+            </ul>
+          </aside>
+          
+
+          
+          <aside class="social">
+            <h5>Social</h5>
+            <div class="social-content">
+              <ul class="list-inline">
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fgomezjoaquin.github.io%2fes%2fblogs%2fone-cloud-not-two%2f">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://twitter.com/share?text=Una%20nube%2c%20no%20dos%3a%20por%20qu%c3%a9%20mat%c3%a9%20mi%20track%20de%20Azure&url=https%3a%2f%2fgomezjoaquin.github.io%2fes%2fblogs%2fone-cloud-not-two%2f">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=Una%20nube%2c%20no%20dos%3a%20por%20qu%c3%a9%20mat%c3%a9%20mi%20track%20de%20Azure: https%3a%2f%2fgomezjoaquin.github.io%2fes%2fblogs%2fone-cloud-not-two%2f">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href='mailto:?subject=Una%20nube%2c%20no%20dos%3a%20por%20qu%c3%a9%20mat%c3%a9%20mi%20track%20de%20Azure&amp;body=Mir%c3%a1%20este%20sitio https%3a%2f%2fgomezjoaquin.github.io%2fes%2fblogs%2fone-cloud-not-two%2f'>
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-9 p-4">
+        
+      </div>
+    </div>
+  </div>
+  <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
+    <i class="fas fa-angle-up"></i>
+  </button>
+</section>
+
+
+<div class="progress">
+  <div id="scroll-progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<Script src="/js/scrollProgressBar.js"></script>
+
+
+<script>
+  var topScroll = document.getElementById("topScroll");
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topScroll.style.display = "block";
+    } else {
+      topScroll.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  
+  let stickySideBarElem = document.getElementById("stickySideBar");
+  let stickyNavBar =  true ;
+  if(stickyNavBar) {
+    let headerElem = document.getElementById("profileHeader");
+    let headerHeight = headerElem.offsetHeight + 15;
+    stickySideBarElem.style.top = headerHeight + "px";
+  } else {
+    stickySideBarElem.style.top = "50px";
+  }
+</script>
+
+
+<script src="/js/readingTime.js"></script>
+
+
+
+  </div><footer>
+    
+ 
+ 
+<div class="container py-3" id="recent-posts">
+    
+    
+    <div class="h3 text-center text-secondary py-3">
+        Artículos recientes
+    </div>
+    <div class="row justify-content-center">
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/es/blogs/postmortem-readme-was-the-incident/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Postmortem: el incidente era el README">Postmortem: el incidente …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><h2 id="resumen">Resumen</h2>
+<p><code>pipeforge</code> es mi proyecto de entrega continua sobre Kubernetes. Su README abre con cuatro palabras:</p>
+<blockquote>
+<p><strong>Scaffold, ship, observe, auto-rollback.</strong></p>
+</blockquote>
+<p>Dos de esos cuatro verbos describen software que no está en el repositorio. No hay recolección de métricas. No hay rollback automático. Nunca los hubo. …</p></p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">1 Aug 2026</span>
+                    <a href="/es/blogs/postmortem-readme-was-the-incident/" class="float-end btn btn-outline-info btn-sm">Leer</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/es/blogs/why-kind-not-minikube/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Por qué corro Kubernetes en kind y no en minikube ni en un lab hosteado">Por qué corro Kubernetes …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><p>Cada guía que te dice &ldquo;levantá un cluster local&rdquo; se saltea la parte donde elegís cuál, como si la elección fuera cosmética. No lo es. La herramienta que elegís determina qué habilidad terminás practicando, y la mayoría elige la que justamente elimina la habilidad que quería aprender. …</p></p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">30 Jul 2026</span>
+                    <a href="/es/blogs/why-kind-not-minikube/" class="float-end btn btn-outline-info btn-sm">Leer</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/es/blogs/one-cloud-not-two/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Una nube, no dos: por qué maté mi track de Azure">Una nube, no dos: por qué …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><p>Tengo el AZ-900 junto a mis certificaciones de AWS, y mi proyecto de portfolio originalmente pusheaba imágenes a Azure Container Registry. A principios de este año lo migré a ECR y dejé de sumar al track de Azure por completo.</p>
+<p>No fue un juicio sobre las plataformas. Fue un juicio sobre lo que cuesta …</p></p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">28 Jul 2026</span>
+                    <a href="/es/blogs/one-cloud-not-two/" class="float-end btn btn-outline-info btn-sm">Leer</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="text-center pt-2">
+    
+    <span class="px-1">
+        <a href="https://github.com/GomezJoaquin" aria-label="github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2.7em" height="2.7em" viewBox="0 0 1792 1792">
+                <path id="footer-socialNetworks-github-svg-path"
+                    d="M522 1352q-8 9-20-3-13-11-4-19 8-9 20 3 12 11 4 19zm-42-61q9 12 0 19-8 6-17-7t0-18q9-7 17 6zm-61-60q-5 7-13 2-10-5-7-12 3-5 13-2 10 5 7 12zm31 34q-6 7-16-3-9-11-2-16 6-6 16 3 9 11 2 16zm129 112q-4 12-19 6-17-4-13-15t19-7q16 5 13 16zm63 5q0 11-16 11-17 2-17-11 0-11 16-11 17-2 17 11zm58-10q2 10-14 14t-18-8 14-15q16-2 18 9zm964-956v960q0 119-84.5 203.5t-203.5 84.5h-224q-16 0-24.5-1t-19.5-5-16-14.5-5-27.5v-239q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-86-13.5q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 103t.5 68q0 22-11 33.5t-22 13-33 1.5h-224q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z" />
+
+                <metadata>
+                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                        <rdf:Description about="https://iconscout.com/legal#licenses"
+                            dc:title="Github, Online, Project, Hosting, Square"
+                            dc:description="Github, Online, Project, Hosting, Square" dc:publisher="Iconscout"
+                            dc:date="2016-12-14" dc:format="image/svg+xml" dc:language="en">
+                            <dc:creator>
+                                <rdf:Bag>
+                                    <rdf:li>Font Awesome</rdf:li>
+                                </rdf:Bag>
+                            </dc:creator>
+                        </rdf:Description>
+                    </rdf:RDF>
+                </metadata>
+            </svg>
+        </a>
+    </span>
+    
+
+    
+    <span class="px-1">
+        <a href="https://www.linkedin.com/in/joaquingomezalonso/" aria-label="linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width='2.4em' height='2.4em' fill="#fff" aria-label="LinkedIn"
+                viewBox="0 0 512 512">
+                <rect width="512" height="512" fill="#0077b5" rx="15%" />
+                <circle cx="142" cy="138" r="37" />
+                <path stroke="#fff" stroke-width="66" d="M244 194v198M142 194v198" />
+                <path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32" />
+            </svg>
+        </a>
+    </span>
+    
+
+    
+
+    
+
+    
+</div><div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            
+                <div class="pb-2">
+                    <a href="https://gomezjoaquin.github.io/" title="Joaquín Gómez">
+                        <img alt="Footer logo" src="/images/fav.png"
+                            height="40px" width="40px">
+                    </a>
+                </div>
+            
+            &copy; 2026  Todos los derechos reservados
+            <div class="text-secondary">
+                Made with
+                <span class="text-danger">
+                    &#10084;
+                </span>
+                and
+                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+                    title="Designed and developed by gurusabarish">
+                    Hugo Profile
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+
+
+    <script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>

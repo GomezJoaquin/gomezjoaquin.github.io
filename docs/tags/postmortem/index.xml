@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Postmortem on Joaquín Gómez</title>
+		<link>https://gomezjoaquin.github.io/tags/postmortem/</link>
+		<description>Recent content in Postmortem on Joaquín Gómez</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 01 Aug 2026 10:00:00 -0300</lastBuildDate>
+		
+			<atom:link href="https://gomezjoaquin.github.io/tags/postmortem/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Postmortem: The README Was the Incident</title>
+				<link>https://gomezjoaquin.github.io/blogs/postmortem-readme-was-the-incident/</link>
+				<pubDate>Sat, 01 Aug 2026 10:00:00 -0300</pubDate>
+				<guid>https://gomezjoaquin.github.io/blogs/postmortem-readme-was-the-incident/</guid>
+				<description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;pipeforge&lt;/code&gt; is my Kubernetes delivery project. Its README opens with a four-word pitch:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Scaffold, ship, observe, auto-rollback.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Two of those four verbs describe software that is not in the repository. There is no metrics collection. There is no automated rollback. There never was.&lt;/p&gt;&#xA;&lt;p&gt;Nothing failed in production, because I don&amp;rsquo;t have a production. What failed is the only job a portfolio has: letting a stranger predict what I can do from what I wrote. This is the postmortem.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

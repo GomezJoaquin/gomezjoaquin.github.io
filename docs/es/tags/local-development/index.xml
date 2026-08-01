@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Local Development on Joaquín Gómez</title>
+		<link>https://gomezjoaquin.github.io/es/tags/local-development/</link>
+		<description>Recent content in Local Development on Joaquín Gómez</description>
+		<generator>Hugo</generator>
+		<language>es</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 30 Jul 2026 10:00:00 -0300</lastBuildDate>
+		
+			<atom:link href="https://gomezjoaquin.github.io/es/tags/local-development/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Por qué corro Kubernetes en kind y no en minikube ni en un lab hosteado</title>
+				<link>https://gomezjoaquin.github.io/es/blogs/why-kind-not-minikube/</link>
+				<pubDate>Thu, 30 Jul 2026 10:00:00 -0300</pubDate>
+				<guid>https://gomezjoaquin.github.io/es/blogs/why-kind-not-minikube/</guid>
+				<description>&lt;p&gt;Cada guía que te dice &amp;ldquo;levantá un cluster local&amp;rdquo; se saltea la parte donde elegís cuál, como si la elección fuera cosmética. No lo es. La herramienta que elegís determina qué habilidad terminás practicando, y la mayoría elige la que justamente elimina la habilidad que quería aprender.&lt;/p&gt;&#xA;&lt;p&gt;Esta es mi decisión, las restricciones detrás, y dónde está equivocada.&lt;/p&gt;&#xA;&lt;h2 id=&#34;las-restricciones&#34;&gt;Las restricciones&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;24 GB de RAM en una laptop donde además trabajo.&lt;/strong&gt; Esta es la restricción que ata todo y elimina más opciones que cualquier otra cosa. El cluster no es lo único que corre en la máquina.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

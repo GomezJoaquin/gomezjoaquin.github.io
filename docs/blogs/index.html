@@ -28,25 +28,31 @@
 
 
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-MEASUREMENT_ID', { 'anonymize_ip': false });
-}
-</script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MEASUREMENT_ID');
+        }
+      </script>
+<meta property="og:url" content="https://gomezjoaquin.github.io/blogs/">
+	<meta property="og:site_name" content="Joaquín Gómez">
+	<meta property="og:title" content="Blogs">
+	<meta property="og:description" content="DevOps Engineer working with AWS, Kubernetes and CI/CD automation. AWS Certified Solutions Architect – Associate. Writing about delivery pipelines, cluster operations and the decisions behind them.">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="website">
 
-<meta property="og:title" content="Blogs" />
-<meta property="og:description" content="DevOps Engineer specializing in AWS, Kubernetes, Terraform, and CI/CD automation. AWS Solutions Architect Associate certified. Expert in cloud infrastructure optimization." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://gomezjoaquin.github.io/blogs/" /><meta property="og:site_name" content="Joaquín Gómez - AWS Certified DevOps Engineer | Cloud Infrastructure Specialist" />
 
-
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Blogs"/>
-<meta name="twitter:description" content="DevOps Engineer specializing in AWS, Kubernetes, Terraform, and CI/CD automation. AWS Solutions Architect Associate certified. Expert in cloud infrastructure optimization."/>
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Blogs">
+	<meta name="twitter:description" content="DevOps Engineer working with AWS, Kubernetes and CI/CD automation. AWS Certified Solutions Architect – Associate. Writing about delivery pipelines, cluster operations and the decisions behind them.">
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -273,6 +279,46 @@ Blogs | Joaquín Gómez
                     
 
                     
+                    
+                    <li class="nav-item navbar-text dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            title="English" aria-label="language">
+                            English
+                        </a>
+                        <div class="dropdown-menu shadow-lg rounded" aria-labelledby="langDropdown">
+                            
+                            
+                                
+                                
+                                
+                                
+                                    
+                                
+                            <a class="dropdown-item text-center nav-link active"
+                                href="/blogs/" hreflang="en">
+                                English
+                            </a>
+                            
+                                
+                                
+                                
+                                
+                                    
+                                    
+                                        
+                                    
+                                
+                            <a class="dropdown-item text-center nav-link"
+                                href="/es/blogs/" hreflang="es">
+                                Español
+                            </a>
+                            
+                        </div>
+                    </li>
+                    
+
+                    
                     <li class="nav-item navbar-text">
                         
                         <div class="text-center">
@@ -312,18 +358,22 @@ Blogs | Joaquín Gómez
                 <div class="card h-100">
                     
                     <div class="card-body bg-transparent p-4 shadow-sm">
-                        <a href="/blogs/add-users-mysql/" class="primary-font card-title">
-                            <h5 class="card-title bg-transparent" title="Create a Read-Only User in MySQL">Create a Read-Only User …</h5>
+                        <a href="/blogs/postmortem-readme-was-the-incident/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="Postmortem: The README Was the Incident">Postmortem: The README …</h5>
                         </a>
                         <div class="card-text secondary-font">
-                            <p>Creating a Read-Only User in MySQL Create a read-only user for the DataBase database, allowing connections from any host.
-Steps Performed 1. Connect to the MySQL Server Connected to the MySQL server using a user with sufficient privileges (e.g., root).
-mysql -u root -p 2. Create the User Created the …</p>
+                            <p><h2 id="summary">Summary</h2>
+<p><code>pipeforge</code> is my Kubernetes delivery project. Its README opens with a four-word pitch:</p>
+<blockquote>
+<p><strong>Scaffold, ship, observe, auto-rollback.</strong></p>
+</blockquote>
+<p>Two of those four verbs describe software that is not in the repository. There is no metrics collection. There is no automated rollback. There never was.</p>
+<p>Nothing …</p></p>
                         </div>
                     </div>
                     <div class="mt-auto post-footer bg-transparent py-3">
-                        <span class="float-start bg-transparent">Jan 4, 2025</span>
-                        <a href="/blogs/add-users-mysql/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                        <span class="float-start bg-transparent">Aug 1, 2026</span>
+                        <a href="/blogs/postmortem-readme-was-the-incident/" class="float-end btn btn-outline-info btn-sm">Read</a>
                     </div>
                 </div>
             </div>
@@ -334,18 +384,16 @@ mysql -u root -p 2. Create the User Created the …</p>
                 <div class="card h-100">
                     
                     <div class="card-body bg-transparent p-4 shadow-sm">
-                        <a href="/blogs/ssh-clave-publica/" class="primary-font card-title">
-                            <h5 class="card-title bg-transparent" title="Configuring SSH Keys on Windows and Linux: A Practical Guide">Configuring SSH Keys on …</h5>
+                        <a href="/blogs/why-kind-not-minikube/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="Why I Run Kubernetes on kind, Not minikube or a Hosted Lab">Why I Run Kubernetes on …</h5>
                         </a>
                         <div class="card-text secondary-font">
-                            <p>Enable SSH Connection with Public Key on Windows and Linux Servers Use the public key located in the user&rsquo;s folder on Windows The SSH public key on Windows can be found at the following path:
-C:UsersYourUser.sshid_rsa.pub If there is no key, you will need to generate one.
-Generate an SSH key …</p>
+                            <p><p>Every guide that tells you to &ldquo;spin up a local cluster&rdquo; skips the part where you choose which one, as if the choice were cosmetic. It isn&rsquo;t. The tool you pick determines which skill you end up practising, and most people pick the one that quietly removes the skill they were trying …</p></p>
                         </div>
                     </div>
                     <div class="mt-auto post-footer bg-transparent py-3">
-                        <span class="float-start bg-transparent">Dec 28, 2024</span>
-                        <a href="/blogs/ssh-clave-publica/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                        <span class="float-start bg-transparent">Jul 30, 2026</span>
+                        <a href="/blogs/why-kind-not-minikube/" class="float-end btn btn-outline-info btn-sm">Read</a>
                     </div>
                 </div>
             </div>
@@ -356,18 +404,17 @@ Generate an SSH key …</p>
                 <div class="card h-100">
                     
                     <div class="card-body bg-transparent p-4 shadow-sm">
-                        <a href="/blogs/aws-iam/" class="primary-font card-title">
-                            <h5 class="card-title bg-transparent" title="IAM">IAM</h5>
+                        <a href="/blogs/one-cloud-not-two/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="One Cloud, Not Two: Why I Killed My Azure Track">One Cloud, Not Two: Why I …</h5>
                         </a>
                         <div class="card-text secondary-font">
-                            <p>AWS: IAM (Identity and Access Management) IAM is a global service.
-It is used to manage access to cloud resources, controlling who can perform what actions on which resources through permission policies.
-Root Account The root account is the account that is created by default when setting up AWS. It …</p>
+                            <p><p>I hold AZ-900 alongside my AWS certifications, and my portfolio project originally pushed images to Azure Container Registry. Earlier this year I migrated it to ECR and stopped adding to the Azure track entirely.</p>
+<p>This wasn&rsquo;t a judgement about the platforms. It was a judgement about what a …</p></p>
                         </div>
                     </div>
                     <div class="mt-auto post-footer bg-transparent py-3">
-                        <span class="float-start bg-transparent">Dec 28, 2024</span>
-                        <a href="/blogs/aws-iam/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                        <span class="float-start bg-transparent">Jul 28, 2026</span>
+                        <a href="/blogs/one-cloud-not-two/" class="float-end btn btn-outline-info btn-sm">Read</a>
                     </div>
                 </div>
             </div>
@@ -378,19 +425,16 @@ Root Account The root account is the account that is created by default when set
                 <div class="card h-100">
                     
                     <div class="card-body bg-transparent p-4 shadow-sm">
-                        <a href="/blogs/aws-iam-policies/" class="primary-font card-title">
-                            <h5 class="card-title bg-transparent" title="IAM Policies">IAM Policies</h5>
+                        <a href="/blogs/kubernetes-hard-way-when-to-stop/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="Kubernetes the Hard Way: What It&#39;s For, and When to Stop">Kubernetes the Hard Way: …</h5>
                         </a>
                         <div class="card-text secondary-font">
-                            <p>AWS: IAM Policies Policies are used to define permissions for users.
-Users can be assigned policies through JSON documents.
-It is a best practice to apply the principle of least privilege: Do not grant more permissions than the user needs.
-Inheritance of IAM Policies There are group policies and …</p>
+                            <p><p>I worked through Kubernetes the Hard Way, it did its job, and then I stopped and moved to <code>kind</code>. Both halves of that matter. The exercise is widely recommended and rarely bounded, so people either skip it and stay superstitious about the control plane, or repeat it and mistake the repetition for …</p></p>
                         </div>
                     </div>
                     <div class="mt-auto post-footer bg-transparent py-3">
-                        <span class="float-start bg-transparent">Dec 28, 2024</span>
-                        <a href="/blogs/aws-iam-policies/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                        <span class="float-start bg-transparent">Jul 26, 2026</span>
+                        <a href="/blogs/kubernetes-hard-way-when-to-stop/" class="float-end btn btn-outline-info btn-sm">Read</a>
                     </div>
                 </div>
             </div>
@@ -419,25 +463,23 @@ Inheritance of IAM Policies There are group policies and …</p>
         <div class="col-lg-4 col-md-6 pt-2">
             <div class="card h-100">
                 
-                <div class="card-header">
-                    <a href="/blogs/add-users-mysql/">
-                        <img src="/images/add-user-mysq.jpg" class="card-img-top" alt="Create a Read-Only User in MySQL">
-                    </a>
-                </div>
-                
                 <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/add-users-mysql/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Create a Read-Only User in MySQL">Create a Read-Only User …</h5>
+                    <a href="/blogs/postmortem-readme-was-the-incident/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Postmortem: The README Was the Incident">Postmortem: The README …</h5>
                     </a>
                     <div class="card-text secondary-font">
-                        <p>Creating a Read-Only User in MySQL Create a read-only user for the DataBase database, allowing connections from any host.
-Steps Performed 1. Connect to the MySQL Server Connected to the MySQL server using a user with sufficient privileges (e.g., root).
-mysql -u root -p 2. Create the User Created the …</p>
+                        <p><h2 id="summary">Summary</h2>
+<p><code>pipeforge</code> is my Kubernetes delivery project. Its README opens with a four-word pitch:</p>
+<blockquote>
+<p><strong>Scaffold, ship, observe, auto-rollback.</strong></p>
+</blockquote>
+<p>Two of those four verbs describe software that is not in the repository. There is no metrics collection. There is no automated rollback. There never was.</p>
+<p>Nothing …</p></p>
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
-                    <span class="float-start">Jan 4, 2025</span>
-                    <a href="/blogs/add-users-mysql/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    <span class="float-start">Aug 1, 2026</span>
+                    <a href="/blogs/postmortem-readme-was-the-incident/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
@@ -445,25 +487,17 @@ mysql -u root -p 2. Create the User Created the …</p>
         <div class="col-lg-4 col-md-6 pt-2">
             <div class="card h-100">
                 
-                <div class="card-header">
-                    <a href="/blogs/ssh-clave-publica/">
-                        <img src="/images/cifrado-asimetrico.jpg" class="card-img-top" alt="Configuring SSH Keys on Windows and Linux: A Practical Guide">
-                    </a>
-                </div>
-                
                 <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/ssh-clave-publica/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Configuring SSH Keys on Windows and Linux: A Practical Guide">Configuring SSH Keys on …</h5>
+                    <a href="/blogs/why-kind-not-minikube/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Why I Run Kubernetes on kind, Not minikube or a Hosted Lab">Why I Run Kubernetes on …</h5>
                     </a>
                     <div class="card-text secondary-font">
-                        <p>Enable SSH Connection with Public Key on Windows and Linux Servers Use the public key located in the user&rsquo;s folder on Windows The SSH public key on Windows can be found at the following path:
-C:UsersYourUser.sshid_rsa.pub If there is no key, you will need to generate one.
-Generate an SSH key …</p>
+                        <p><p>Every guide that tells you to &ldquo;spin up a local cluster&rdquo; skips the part where you choose which one, as if the choice were cosmetic. It isn&rsquo;t. The tool you pick determines which skill you end up practising, and most people pick the one that quietly removes the skill they were trying …</p></p>
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
-                    <span class="float-start">Dec 28, 2024</span>
-                    <a href="/blogs/ssh-clave-publica/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    <span class="float-start">Jul 30, 2026</span>
+                    <a href="/blogs/why-kind-not-minikube/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
@@ -471,25 +505,18 @@ Generate an SSH key …</p>
         <div class="col-lg-4 col-md-6 pt-2">
             <div class="card h-100">
                 
-                <div class="card-header">
-                    <a href="/blogs/aws-iam/">
-                        <img src="/images/iam.png" class="card-img-top" alt="IAM">
-                    </a>
-                </div>
-                
                 <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/aws-iam/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="IAM">IAM</h5>
+                    <a href="/blogs/one-cloud-not-two/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="One Cloud, Not Two: Why I Killed My Azure Track">One Cloud, Not Two: Why I …</h5>
                     </a>
                     <div class="card-text secondary-font">
-                        <p>AWS: IAM (Identity and Access Management) IAM is a global service.
-It is used to manage access to cloud resources, controlling who can perform what actions on which resources through permission policies.
-Root Account The root account is the account that is created by default when setting up AWS. It …</p>
+                        <p><p>I hold AZ-900 alongside my AWS certifications, and my portfolio project originally pushed images to Azure Container Registry. Earlier this year I migrated it to ECR and stopped adding to the Azure track entirely.</p>
+<p>This wasn&rsquo;t a judgement about the platforms. It was a judgement about what a …</p></p>
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
-                    <span class="float-start">Dec 28, 2024</span>
-                    <a href="/blogs/aws-iam/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    <span class="float-start">Jul 28, 2026</span>
+                    <a href="/blogs/one-cloud-not-two/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>

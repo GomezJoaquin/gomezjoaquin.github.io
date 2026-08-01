@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Learning on Joaquín Gómez</title>
+		<link>https://gomezjoaquin.github.io/tags/learning/</link>
+		<description>Recent content in Learning on Joaquín Gómez</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 26 Jul 2026 10:00:00 -0300</lastBuildDate>
+		
+			<atom:link href="https://gomezjoaquin.github.io/tags/learning/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Kubernetes the Hard Way: What It&#39;s For, and When to Stop</title>
+				<link>https://gomezjoaquin.github.io/blogs/kubernetes-hard-way-when-to-stop/</link>
+				<pubDate>Sun, 26 Jul 2026 10:00:00 -0300</pubDate>
+				<guid>https://gomezjoaquin.github.io/blogs/kubernetes-hard-way-when-to-stop/</guid>
+				<description>&lt;p&gt;I worked through Kubernetes the Hard Way, it did its job, and then I stopped and moved to &lt;code&gt;kind&lt;/code&gt;. Both halves of that matter. The exercise is widely recommended and rarely bounded, so people either skip it and stay superstitious about the control plane, or repeat it and mistake the repetition for progress.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-its-actually-for&#34;&gt;What it&amp;rsquo;s actually for&lt;/h2&gt;&#xA;&lt;p&gt;The point is not learning to install Kubernetes. Nobody installs Kubernetes that way, including the people who recommend the exercise. The point is that it removes the abstraction that lets you treat the control plane as one opaque thing called &amp;ldquo;the cluster.&amp;rdquo;&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

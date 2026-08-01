@@ -1,40 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Joaquín Gómez</title>
-    <link>https://gomezjoaquin.github.io/</link>
-    <description>Recent content on Joaquín Gómez</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://gomezjoaquin.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Create a Read-Only User in MySQL</title>
-      <link>https://gomezjoaquin.github.io/blogs/add-users-mysql/</link>
-      <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://gomezjoaquin.github.io/blogs/add-users-mysql/</guid>
-      <description>Creating a Read-Only User in MySQL Create a read-only user for the DataBase database, allowing connections from any host.&#xA;Steps Performed 1. Connect to the MySQL Server Connected to the MySQL server using a user with sufficient privileges (e.g., root).&#xA;mysql -u root -p 2. Create the User Created the user_readonly user, allowing connections from any host (%). This user was created without initial privileges using the following command:&#xA;CREATE USER &amp;#39;user_readonly&amp;#39;@&amp;#39;%&amp;#39; IDENTIFIED BY &amp;#39;password&amp;#39;; 2.</description>
-    </item>
-    <item>
-      <title>Configuring SSH Keys on Windows and Linux: A Practical Guide</title>
-      <link>https://gomezjoaquin.github.io/blogs/ssh-clave-publica/</link>
-      <pubDate>Sat, 28 Dec 2024 01:54:00 +0530</pubDate>
-      <guid>https://gomezjoaquin.github.io/blogs/ssh-clave-publica/</guid>
-      <description>Enable SSH Connection with Public Key on Windows and Linux Servers Use the public key located in the user&amp;rsquo;s folder on Windows The SSH public key on Windows can be found at the following path:&#xA;C:UsersYourUser.sshid_rsa.pub If there is no key, you will need to generate one.&#xA;Generate an SSH key on the local machine Open PowerShell and run the following command to generate a new SSH key:&#xA;ssh-keygen -t rsa -b 4096 Copy the public key to the server To copy the public key to the server, you can use the following command:</description>
-    </item>
-    <item>
-      <title>IAM</title>
-      <link>https://gomezjoaquin.github.io/blogs/aws-iam/</link>
-      <pubDate>Sat, 28 Dec 2024 01:54:00 +0530</pubDate>
-      <guid>https://gomezjoaquin.github.io/blogs/aws-iam/</guid>
-      <description>AWS: IAM (Identity and Access Management) IAM is a global service.&#xA;It is used to manage access to cloud resources, controlling who can perform what actions on which resources through permission policies.&#xA;Root Account The root account is the account that is created by default when setting up AWS. It is a best practice to use the root account only when absolutely necessary (e.g., for account-level tasks). For all other tasks, use an account with the principle of least privilege.</description>
-    </item>
-    <item>
-      <title>IAM Policies</title>
-      <link>https://gomezjoaquin.github.io/blogs/aws-iam-policies/</link>
-      <pubDate>Sat, 28 Dec 2024 01:54:00 +0530</pubDate>
-      <guid>https://gomezjoaquin.github.io/blogs/aws-iam-policies/</guid>
-      <description>AWS: IAM Policies Policies are used to define permissions for users.&#xA;Users can be assigned policies through JSON documents.&#xA;It is a best practice to apply the principle of least privilege: Do not grant more permissions than the user needs.&#xA;Inheritance of IAM Policies There are group policies and direct policies.&#xA;Direct policies are applied directly to the user. Group policies are applied to all users belonging to that group. Structure of IAM Policies IAM policies have the following structure:</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Joaquín Gómez</title>
+		<link>https://gomezjoaquin.github.io/</link>
+		<description>Recent content on Joaquín Gómez</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 01 Aug 2026 10:00:00 -0300</lastBuildDate>
+		
+			<atom:link href="https://gomezjoaquin.github.io/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Postmortem: The README Was the Incident</title>
+				<link>https://gomezjoaquin.github.io/blogs/postmortem-readme-was-the-incident/</link>
+				<pubDate>Sat, 01 Aug 2026 10:00:00 -0300</pubDate>
+				<guid>https://gomezjoaquin.github.io/blogs/postmortem-readme-was-the-incident/</guid>
+				<description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;pipeforge&lt;/code&gt; is my Kubernetes delivery project. Its README opens with a four-word pitch:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Scaffold, ship, observe, auto-rollback.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Two of those four verbs describe software that is not in the repository. There is no metrics collection. There is no automated rollback. There never was.&lt;/p&gt;&#xA;&lt;p&gt;Nothing failed in production, because I don&amp;rsquo;t have a production. What failed is the only job a portfolio has: letting a stranger predict what I can do from what I wrote. This is the postmortem.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Why I Run Kubernetes on kind, Not minikube or a Hosted Lab</title>
+				<link>https://gomezjoaquin.github.io/blogs/why-kind-not-minikube/</link>
+				<pubDate>Thu, 30 Jul 2026 10:00:00 -0300</pubDate>
+				<guid>https://gomezjoaquin.github.io/blogs/why-kind-not-minikube/</guid>
+				<description>&lt;p&gt;Every guide that tells you to &amp;ldquo;spin up a local cluster&amp;rdquo; skips the part where you choose which one, as if the choice were cosmetic. It isn&amp;rsquo;t. The tool you pick determines which skill you end up practising, and most people pick the one that quietly removes the skill they were trying to learn.&lt;/p&gt;&#xA;&lt;p&gt;Here is my decision, the constraints behind it, and where it&amp;rsquo;s wrong.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-constraints&#34;&gt;The constraints&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;24 GB of RAM on a laptop that is also running my actual job.&lt;/strong&gt; This is the binding constraint and it eliminates more options than anything else. The cluster is not the only thing on the machine.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>One Cloud, Not Two: Why I Killed My Azure Track</title>
+				<link>https://gomezjoaquin.github.io/blogs/one-cloud-not-two/</link>
+				<pubDate>Tue, 28 Jul 2026 10:00:00 -0300</pubDate>
+				<guid>https://gomezjoaquin.github.io/blogs/one-cloud-not-two/</guid>
+				<description>&lt;p&gt;I hold AZ-900 alongside my AWS certifications, and my portfolio project originally pushed images to Azure Container Registry. Earlier this year I migrated it to ECR and stopped adding to the Azure track entirely.&lt;/p&gt;&#xA;&lt;p&gt;This wasn&amp;rsquo;t a judgement about the platforms. It was a judgement about what a second cloud costs, and about what a CV listing two clouds actually communicates.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-breadth-signals&#34;&gt;What breadth signals&lt;/h2&gt;&#xA;&lt;p&gt;There&amp;rsquo;s a common assumption that listing AWS and Azure doubles your addressable market. In my experience reading job posts and talking to people who hire, it does something closer to the opposite at my level.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Kubernetes the Hard Way: What It&#39;s For, and When to Stop</title>
+				<link>https://gomezjoaquin.github.io/blogs/kubernetes-hard-way-when-to-stop/</link>
+				<pubDate>Sun, 26 Jul 2026 10:00:00 -0300</pubDate>
+				<guid>https://gomezjoaquin.github.io/blogs/kubernetes-hard-way-when-to-stop/</guid>
+				<description>&lt;p&gt;I worked through Kubernetes the Hard Way, it did its job, and then I stopped and moved to &lt;code&gt;kind&lt;/code&gt;. Both halves of that matter. The exercise is widely recommended and rarely bounded, so people either skip it and stay superstitious about the control plane, or repeat it and mistake the repetition for progress.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-its-actually-for&#34;&gt;What it&amp;rsquo;s actually for&lt;/h2&gt;&#xA;&lt;p&gt;The point is not learning to install Kubernetes. Nobody installs Kubernetes that way, including the people who recommend the exercise. The point is that it removes the abstraction that lets you treat the control plane as one opaque thing called &amp;ldquo;the cluster.&amp;rdquo;&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

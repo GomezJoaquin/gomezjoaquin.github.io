@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Career on Joaquín Gómez</title>
+		<link>https://gomezjoaquin.github.io/tags/career/</link>
+		<description>Recent content in Career on Joaquín Gómez</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 28 Jul 2026 10:00:00 -0300</lastBuildDate>
+		
+			<atom:link href="https://gomezjoaquin.github.io/tags/career/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>One Cloud, Not Two: Why I Killed My Azure Track</title>
+				<link>https://gomezjoaquin.github.io/blogs/one-cloud-not-two/</link>
+				<pubDate>Tue, 28 Jul 2026 10:00:00 -0300</pubDate>
+				<guid>https://gomezjoaquin.github.io/blogs/one-cloud-not-two/</guid>
+				<description>&lt;p&gt;I hold AZ-900 alongside my AWS certifications, and my portfolio project originally pushed images to Azure Container Registry. Earlier this year I migrated it to ECR and stopped adding to the Azure track entirely.&lt;/p&gt;&#xA;&lt;p&gt;This wasn&amp;rsquo;t a judgement about the platforms. It was a judgement about what a second cloud costs, and about what a CV listing two clouds actually communicates.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-breadth-signals&#34;&gt;What breadth signals&lt;/h2&gt;&#xA;&lt;p&gt;There&amp;rsquo;s a common assumption that listing AWS and Azure doubles your addressable market. In my experience reading job posts and talking to people who hire, it does something closer to the opposite at my level.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

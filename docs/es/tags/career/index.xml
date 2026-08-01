@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Career on Joaquín Gómez</title>
+		<link>https://gomezjoaquin.github.io/es/tags/career/</link>
+		<description>Recent content in Career on Joaquín Gómez</description>
+		<generator>Hugo</generator>
+		<language>es</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 28 Jul 2026 10:00:00 -0300</lastBuildDate>
+		
+			<atom:link href="https://gomezjoaquin.github.io/es/tags/career/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Una nube, no dos: por qué maté mi track de Azure</title>
+				<link>https://gomezjoaquin.github.io/es/blogs/one-cloud-not-two/</link>
+				<pubDate>Tue, 28 Jul 2026 10:00:00 -0300</pubDate>
+				<guid>https://gomezjoaquin.github.io/es/blogs/one-cloud-not-two/</guid>
+				<description>&lt;p&gt;Tengo el AZ-900 junto a mis certificaciones de AWS, y mi proyecto de portfolio originalmente pusheaba imágenes a Azure Container Registry. A principios de este año lo migré a ECR y dejé de sumar al track de Azure por completo.&lt;/p&gt;&#xA;&lt;p&gt;No fue un juicio sobre las plataformas. Fue un juicio sobre lo que cuesta una segunda nube, y sobre lo que un CV con dos nubes comunica realmente.&lt;/p&gt;&#xA;&lt;h2 id=&#34;qué-señaliza-la-amplitud&#34;&gt;Qué señaliza la amplitud&lt;/h2&gt;&#xA;&lt;p&gt;Hay una suposición común: que listar AWS y Azure duplica tu mercado. Por lo que veo leyendo búsquedas y hablando con gente que contrata, en mi nivel hace algo más parecido a lo contrario.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

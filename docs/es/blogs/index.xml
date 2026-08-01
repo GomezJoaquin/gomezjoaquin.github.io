@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Blogs on Joaquín Gómez</title>
+		<link>https://gomezjoaquin.github.io/es/blogs/</link>
+		<description>Recent content in Blogs on Joaquín Gómez</description>
+		<generator>Hugo</generator>
+		<language>es</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 01 Aug 2026 10:00:00 -0300</lastBuildDate>
+		
+			<atom:link href="https://gomezjoaquin.github.io/es/blogs/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Postmortem: el incidente era el README</title>
+				<link>https://gomezjoaquin.github.io/es/blogs/postmortem-readme-was-the-incident/</link>
+				<pubDate>Sat, 01 Aug 2026 10:00:00 -0300</pubDate>
+				<guid>https://gomezjoaquin.github.io/es/blogs/postmortem-readme-was-the-incident/</guid>
+				<description>&lt;h2 id=&#34;resumen&#34;&gt;Resumen&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;pipeforge&lt;/code&gt; es mi proyecto de entrega continua sobre Kubernetes. Su README abre con cuatro palabras:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Scaffold, ship, observe, auto-rollback.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Dos de esos cuatro verbos describen software que no está en el repositorio. No hay recolección de métricas. No hay rollback automático. Nunca los hubo.&lt;/p&gt;&#xA;&lt;p&gt;No se cayó nada en producción, porque no tengo producción. Lo que falló es lo único que un portfolio tiene que hacer: permitirle a un desconocido predecir lo que sé hacer a partir de lo que escribí. Este es el postmortem.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Por qué corro Kubernetes en kind y no en minikube ni en un lab hosteado</title>
+				<link>https://gomezjoaquin.github.io/es/blogs/why-kind-not-minikube/</link>
+				<pubDate>Thu, 30 Jul 2026 10:00:00 -0300</pubDate>
+				<guid>https://gomezjoaquin.github.io/es/blogs/why-kind-not-minikube/</guid>
+				<description>&lt;p&gt;Cada guía que te dice &amp;ldquo;levantá un cluster local&amp;rdquo; se saltea la parte donde elegís cuál, como si la elección fuera cosmética. No lo es. La herramienta que elegís determina qué habilidad terminás practicando, y la mayoría elige la que justamente elimina la habilidad que quería aprender.&lt;/p&gt;&#xA;&lt;p&gt;Esta es mi decisión, las restricciones detrás, y dónde está equivocada.&lt;/p&gt;&#xA;&lt;h2 id=&#34;las-restricciones&#34;&gt;Las restricciones&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;24 GB de RAM en una laptop donde además trabajo.&lt;/strong&gt; Esta es la restricción que ata todo y elimina más opciones que cualquier otra cosa. El cluster no es lo único que corre en la máquina.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Una nube, no dos: por qué maté mi track de Azure</title>
+				<link>https://gomezjoaquin.github.io/es/blogs/one-cloud-not-two/</link>
+				<pubDate>Tue, 28 Jul 2026 10:00:00 -0300</pubDate>
+				<guid>https://gomezjoaquin.github.io/es/blogs/one-cloud-not-two/</guid>
+				<description>&lt;p&gt;Tengo el AZ-900 junto a mis certificaciones de AWS, y mi proyecto de portfolio originalmente pusheaba imágenes a Azure Container Registry. A principios de este año lo migré a ECR y dejé de sumar al track de Azure por completo.&lt;/p&gt;&#xA;&lt;p&gt;No fue un juicio sobre las plataformas. Fue un juicio sobre lo que cuesta una segunda nube, y sobre lo que un CV con dos nubes comunica realmente.&lt;/p&gt;&#xA;&lt;h2 id=&#34;qué-señaliza-la-amplitud&#34;&gt;Qué señaliza la amplitud&lt;/h2&gt;&#xA;&lt;p&gt;Hay una suposición común: que listar AWS y Azure duplica tu mercado. Por lo que veo leyendo búsquedas y hablando con gente que contrata, en mi nivel hace algo más parecido a lo contrario.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Kubernetes the Hard Way: para qué sirve y cuándo parar</title>
+				<link>https://gomezjoaquin.github.io/es/blogs/kubernetes-hard-way-when-to-stop/</link>
+				<pubDate>Sun, 26 Jul 2026 10:00:00 -0300</pubDate>
+				<guid>https://gomezjoaquin.github.io/es/blogs/kubernetes-hard-way-when-to-stop/</guid>
+				<description>&lt;p&gt;Hice Kubernetes the Hard Way, cumplió su función, y después paré y me pasé a &lt;code&gt;kind&lt;/code&gt;. Las dos mitades importan. El ejercicio se recomienda mucho y se acota poco, así que la gente o lo saltea y queda supersticiosa respecto del control plane, o lo repite y confunde la repetición con avance.&lt;/p&gt;&#xA;&lt;h2 id=&#34;para-qué-sirve-realmente&#34;&gt;Para qué sirve realmente&lt;/h2&gt;&#xA;&lt;p&gt;El punto no es aprender a instalar Kubernetes. Nadie instala Kubernetes así, incluida la gente que recomienda el ejercicio. El punto es que saca la abstracción que te permite tratar al control plane como una única cosa opaca llamada &amp;ldquo;el cluster&amp;rdquo;.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

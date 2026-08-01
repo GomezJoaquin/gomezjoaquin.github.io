@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Learning on Joaquín Gómez</title>
+		<link>https://gomezjoaquin.github.io/es/tags/learning/</link>
+		<description>Recent content in Learning on Joaquín Gómez</description>
+		<generator>Hugo</generator>
+		<language>es</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 26 Jul 2026 10:00:00 -0300</lastBuildDate>
+		
+			<atom:link href="https://gomezjoaquin.github.io/es/tags/learning/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Kubernetes the Hard Way: para qué sirve y cuándo parar</title>
+				<link>https://gomezjoaquin.github.io/es/blogs/kubernetes-hard-way-when-to-stop/</link>
+				<pubDate>Sun, 26 Jul 2026 10:00:00 -0300</pubDate>
+				<guid>https://gomezjoaquin.github.io/es/blogs/kubernetes-hard-way-when-to-stop/</guid>
+				<description>&lt;p&gt;Hice Kubernetes the Hard Way, cumplió su función, y después paré y me pasé a &lt;code&gt;kind&lt;/code&gt;. Las dos mitades importan. El ejercicio se recomienda mucho y se acota poco, así que la gente o lo saltea y queda supersticiosa respecto del control plane, o lo repite y confunde la repetición con avance.&lt;/p&gt;&#xA;&lt;h2 id=&#34;para-qué-sirve-realmente&#34;&gt;Para qué sirve realmente&lt;/h2&gt;&#xA;&lt;p&gt;El punto no es aprender a instalar Kubernetes. Nadie instala Kubernetes así, incluida la gente que recomienda el ejercicio. El punto es que saca la abstracción que te permite tratar al control plane como una única cosa opaca llamada &amp;ldquo;el cluster&amp;rdquo;.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

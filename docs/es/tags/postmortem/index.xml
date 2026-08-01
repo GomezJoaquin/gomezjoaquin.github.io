@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Postmortem on Joaquín Gómez</title>
+		<link>https://gomezjoaquin.github.io/es/tags/postmortem/</link>
+		<description>Recent content in Postmortem on Joaquín Gómez</description>
+		<generator>Hugo</generator>
+		<language>es</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 01 Aug 2026 10:00:00 -0300</lastBuildDate>
+		
+			<atom:link href="https://gomezjoaquin.github.io/es/tags/postmortem/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Postmortem: el incidente era el README</title>
+				<link>https://gomezjoaquin.github.io/es/blogs/postmortem-readme-was-the-incident/</link>
+				<pubDate>Sat, 01 Aug 2026 10:00:00 -0300</pubDate>
+				<guid>https://gomezjoaquin.github.io/es/blogs/postmortem-readme-was-the-incident/</guid>
+				<description>&lt;h2 id=&#34;resumen&#34;&gt;Resumen&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;pipeforge&lt;/code&gt; es mi proyecto de entrega continua sobre Kubernetes. Su README abre con cuatro palabras:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Scaffold, ship, observe, auto-rollback.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Dos de esos cuatro verbos describen software que no está en el repositorio. No hay recolección de métricas. No hay rollback automático. Nunca los hubo.&lt;/p&gt;&#xA;&lt;p&gt;No se cayó nada en producción, porque no tengo producción. Lo que falló es lo único que un portfolio tiene que hacer: permitirle a un desconocido predecir lo que sé hacer a partir de lo que escribí. Este es el postmortem.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

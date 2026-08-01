@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Kind on Joaquín Gómez</title>
+		<link>https://gomezjoaquin.github.io/tags/kind/</link>
+		<description>Recent content in Kind on Joaquín Gómez</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 30 Jul 2026 10:00:00 -0300</lastBuildDate>
+		
+			<atom:link href="https://gomezjoaquin.github.io/tags/kind/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Why I Run Kubernetes on kind, Not minikube or a Hosted Lab</title>
+				<link>https://gomezjoaquin.github.io/blogs/why-kind-not-minikube/</link>
+				<pubDate>Thu, 30 Jul 2026 10:00:00 -0300</pubDate>
+				<guid>https://gomezjoaquin.github.io/blogs/why-kind-not-minikube/</guid>
+				<description>&lt;p&gt;Every guide that tells you to &amp;ldquo;spin up a local cluster&amp;rdquo; skips the part where you choose which one, as if the choice were cosmetic. It isn&amp;rsquo;t. The tool you pick determines which skill you end up practising, and most people pick the one that quietly removes the skill they were trying to learn.&lt;/p&gt;&#xA;&lt;p&gt;Here is my decision, the constraints behind it, and where it&amp;rsquo;s wrong.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-constraints&#34;&gt;The constraints&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;24 GB of RAM on a laptop that is also running my actual job.&lt;/strong&gt; This is the binding constraint and it eliminates more options than anything else. The cluster is not the only thing on the machine.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
